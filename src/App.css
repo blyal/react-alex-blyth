@@ -1,0 +1,141 @@
+/* General CSS */
+
+.App {
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-family: Monaco, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-delay: 5s;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+#main {
+  text-align: center;
+ }
+ 
+hr {
+   width: 60%;
+   opacity: 90%;
+ }
+ 
+.centered {
+   text-align: center;
+ }
+
+ .center-content {
+   display: flex;
+   justify-content: center;
+   padding: 0 1em;
+ }
+
+.cyanLink {
+   color: Cyan;
+   /* text-decoration: underline; */
+ }
+
+ul.cool-list {
+   list-style: none;
+ }
+
+.disclaimer {
+  font-size: 0.75em;
+}
+
+#directorList {
+  padding-left: 10em;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* Header CSS  */
+
+#top-name {
+  letter-spacing: 0.25em;
+}
+
+#top-name:hover {
+  color: Cyan;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+#navbar li {
+  list-style-type: none;
+  margin-left: .25em;
+  margin-right: .25em;
+  width: 15%;
+  height: 2.5em;
+}
+
+#navbar li a {
+  display: block;
+  padding: 0.5em 0;
+  cursor: pointer;
+  border: solid 0.125em grey;
+}
+
+#navbar li a:hover {
+  color: Cyan;
+  border-color: Cyan;
+}
+
+
+/* Footer CSS */
+
+footer {
+  text-align: center;
+  height: 100%;
+  border-top: solid 0.125em grey;
+  /* margin-top: 10em; */
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+footer li {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+
+/* Blog/Code page transitions  */
+
+.expand-enter {
+  opacity: 0.2;
+}
+.expand-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+.expand-exit {
+  opacity: 0.5;
+}
+.expand-exit-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
