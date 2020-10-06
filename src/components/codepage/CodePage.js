@@ -14,7 +14,7 @@ class CodePage extends React.Component {
                 year: '2020',
                 open: true,
                 content: <LearningReact />,
-                img: <img src={'images/react-screenshot.png'} alt="Screenshot of Coding for this page" height='438.9' width='674.8'/>
+                img: <img src={'images/react-screenshot.png'} alt="Screenshot of Coding for this page" height='100%' width='100%'/>
             },
             {
                 id: uuid(),
@@ -22,7 +22,7 @@ class CodePage extends React.Component {
                 year: '2019',
                 open: false,
                 content: <EssayMateApp />,
-                img: <img src={'images/studytime-pic-1.png'} alt="Screenshot of EssayMate app" height='345.25' width='709.25'/>
+                img: <img src={'images/studytime-pic-1.png'} alt="Screenshot of EssayMate app" height='100%' width='100%'/>
             },
             {
                 id: uuid(),
@@ -30,7 +30,7 @@ class CodePage extends React.Component {
                 year: '2019',
                 open: false,
                 content: <TrackApplication />,
-                img: <img src={'images/track-screenshot-1.png'} alt="Screenshot of Track App" height='332.25' width='679'/>
+                img: <img src={'images/track-screenshot-1.png'} alt="Screenshot of Track App" height='100%' width='100%'/>
             }
         ]
     }

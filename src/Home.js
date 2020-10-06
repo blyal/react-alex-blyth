@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
     return (
         <>
-        <img src={'/images/Hvar-sailing.JPG'} alt="Sailing in Hvar, Croatia" id="hvarPic" height="524" width="478.8" />
+        <img src={'/images/Hvar-sailing.JPG'} alt="Sailing in Hvar, Croatia" id="hvarPic" height="33%" width="33%" />
         <div style={homeStyle}>
             <h3 style={{color: 'Cyan'}}>Me in 10 Seconds</h3>
             <p>Programmer, traveller, creater, lover of films, good music, and good times.</p>

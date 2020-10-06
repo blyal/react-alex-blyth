@@ -6,8 +6,8 @@ import Home from './Home';
 import BlogPage from './components/blogpage/BlogPage';
 import CodePage from './components/codepage/CodePage';
 import Now from './components/Now';
-import CoolStuff from './components/CoolStuff';
-import FilmStuff from './components/Film';
+import CoolStuff from './components/coolstuff/CoolStuff';
+import FilmStuff from './components/film/Film';
 import './App.css';
 
 function App() {

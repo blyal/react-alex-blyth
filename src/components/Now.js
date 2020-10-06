@@ -6,7 +6,7 @@ class Now extends React.Component {
     return (
       <>
         <h2 style={{color: 'Cyan'}}>What am I up to now?</h2>
-        <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="413.6" width="1024" />
+        <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="70%" width="70%" />
         <div style={homeStyle}>
           <br />
           <h3 style={{color: 'Cyan'}}>In 10 Seconds</h3>
@@ -15,7 +15,7 @@ class Now extends React.Component {
           <p>Creating memories with people I love.</p>
           <br />
         </div>
-        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="604.8" width="806.4" />
+        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" />
         <div style={homeStyle}>
           <br />
           <h3 style={{color: 'Cyan'}}>In 10x10 Seconds</h3>
@@ -27,7 +27,7 @@ class Now extends React.Component {
               Simultaneously to talking to companies and start-ups in Spain, I'm continuously coding. This website is the latest project I have been working on - I built it with react.js, using the construction of the website as a chance to learn the react library which I had previously never used.</p>
           <br />
         </div>
-        <img src={'/images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="604.8" width="806.4" />
+        <img src={'/images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="50%" width="50%" />
         <br />
       </>
     );

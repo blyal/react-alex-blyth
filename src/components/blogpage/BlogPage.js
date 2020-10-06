@@ -11,7 +11,7 @@ class BlogPage extends React.Component {
                 title: ['Review of ', <i>The Mentalist</i>, ' (2008 – 2015)'],
                 open: true,
                 content: <MentalistReview />,
-                img: <img src={'images/mentalist-poster.JPG'} alt="Poster for The Mentalist show" height='360' width='640'/>
+                img: <img src={'images/mentalist-poster.JPG'} alt="Poster for The Mentalist show" height='95%' width='95%'/>
             }
         ]
     }
