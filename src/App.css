@@ -139,3 +139,28 @@ footer li {
   opacity: 1;
   transition: opacity 1000ms linear;
 }
+
+
+/* Film / Cool Stuff pages */
+
+.page-flow {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  line-height: 1.75em;
+}
+
+.content-pocket {
+  height: 20em;
+  overflow: scroll;
+}
+
+.selected-content {
+  background-color: grey;
+  padding: 0 2.5em;
+}
+
+.selected-content h3 {
+  text-align: center;
+}

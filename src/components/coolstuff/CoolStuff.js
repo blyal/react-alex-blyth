@@ -29,6 +29,17 @@ class CoolStuff extends React.Component {
         ]
     }
     
+    selectPodcast = (id) => {
+        this.setState({
+            mainView: !this.state.mainView,
+            podcasts: this.state.podcasts.map(podcast => {
+                if (podcast.id === id) {
+                    podcast.selected = !podcast.selected
+                }
+                return podcast;
+            })
+        })
+    }
 
     render() {
         return (
@@ -36,20 +47,20 @@ class CoolStuff extends React.Component {
             <h2 style={{color: 'Cyan'}}>Cool Stuff</h2>
                 <hr />
                 <br />
-            <div style={coolStuff}>
+            <div className="page-flow">
                 {
                     this.state.mainView ?
-                        <div>
+                        <div class="content-pocket">
                             <h3>Favorite Podcasts</h3>
                             <ul className="cool-list" style={{color: 'Cyan'}}>
                                 {
                                     this.state.podcasts.map((podcast) => (
-                                        <li>{podcast.title}</li>
+                                        <li onClick={() => this.selectPodcast(podcast.id)}>{podcast.title}</li>
                                     ))
                                 }
                             </ul>
                         </div>
-                    : <SelectedPodcast podcast={this.state.podcasts} />
+                    : <SelectedPodcast podcasts={this.state.podcasts} />
                 }
                 
                 
@@ -68,14 +79,6 @@ class CoolStuff extends React.Component {
             </>
         );
     }
-}
-
-const coolStuff = {
-    textAlign: 'left',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    maxWidth: '50em',
-    lineHeight: '1.75em'
 }
 
 export default CoolStuff;

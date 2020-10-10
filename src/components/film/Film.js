@@ -6,7 +6,7 @@ class FilmStuff extends React.Component {
             <>
             <h2 style={{color: 'Cyan'}}>Film</h2>
                 <hr />
-            <div style={filmStuff}>
+            <div className="page-flow">
                 <div className="center-content">
                     <div style={{display: 'inline-block'}}>
                     <p>I really like cinema. I did a degree in Film, have written and directed several short films, and enjoy watching and writing about films.
@@ -62,14 +62,6 @@ class FilmStuff extends React.Component {
             </>
         );
     }
-}
-
-const filmStuff = {
-    textAlign: 'left',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    maxWidth: '50em',
-    lineHeight: '1.75em'
 }
 
 export default FilmStuff;
