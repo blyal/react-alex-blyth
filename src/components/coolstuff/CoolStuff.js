@@ -2,6 +2,7 @@ import React from 'react';
 import SelectedPodcast from './SelectedPodcast';
 import Ferriss from './Ferriss';
 import { v4 as uuid } from 'uuid';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class CoolStuff extends React.Component {
     
@@ -47,9 +48,18 @@ class CoolStuff extends React.Component {
             <h2 style={{color: 'Cyan'}}>Cool Stuff</h2>
                 <hr />
                 <br />
+            
             <div className="page-flow">
+                <TransitionGroup>
+            
                 {
                     this.state.mainView ?
+                    <CSSTransition
+                        key="1"
+                        in={this.state.mainView}
+                        timeout={1000}
+                        classNames="sliding"
+                        >
                         <div class="content-pocket">
                             <h3>Favorite Podcasts</h3>
                             <ul className="cool-list" style={{color: 'Cyan'}}>
@@ -59,9 +69,19 @@ class CoolStuff extends React.Component {
                                     ))
                                 }
                             </ul>
-                        </div>
-                    : <SelectedPodcast podcasts={this.state.podcasts} />
+                        </div>  
+                        </CSSTransition>                     
+                    : 
+                    <CSSTransition
+                        key="2"
+                        in={!this.state.mainView}
+                        timeout={1000}
+                        classNames="other-sliding"
+                        >
+                    <SelectedPodcast podcasts={this.state.podcasts} selectPodcast={this.selectPodcast} /></CSSTransition>
                 }
+                
+                </TransitionGroup>
                 
                 
                 

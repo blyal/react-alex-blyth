@@ -17,7 +17,6 @@ class CodeItem extends React.Component {
         return (
             <CSSTransition
                 in={open}
-                appear={true}
                 timeout={1000}
                 classNames='expand'
             >

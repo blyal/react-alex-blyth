@@ -149,18 +149,165 @@ footer li {
   margin-right: auto;
   max-width: 50em;
   line-height: 1.75em;
+  z-index: 1;
+  background-color: black;
+  position: relative;
 }
 
 .content-pocket {
   height: 20em;
-  overflow: scroll;
+  overflow: scroll
 }
 
 .selected-content {
   background-color: grey;
-  padding: 0 2.5em;
+  padding: 0;
+  color: black;
+  overflow: scroll;
 }
 
-.selected-content h3 {
+.selected-content-img-container {
+  background-color: grey;
+  flex-basis: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 7px 0px 6px -1px grey;
+  z-index: 2;
+  height: 20em;
+}
+
+.recommended-things {
+  background-color: rgb(1,98,131);
+  z-index: 3;
+  position: relative;
+}
+
+.recommended-things p {
+  margin: 0;
+  padding: 0.5em 0;
   text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.recommended-things hr {
+  margin: 0 auto;
+}
+
+.recommended-things a div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.recommended-things a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.recommended-things a p {
+  margin: 0 0 0 1em;
+  width: 50%;
+  font-size: 1em;
+  text-align: left;
+  font-family: adelle, serif;
+}
+
+.recommended-things table {
+  border-spacing: 2em;
+  width: 100%;
+}
+
+.recommended-things td {
+  background-color: rgba(0,0,0,.8);
+  transition: all .5s ease-in-out;
+  height: 10em;
+  width: 20em;
+  position: relative;
+}
+
+.recommended-things td:hover {
+  transform: scale(1.1);
+}
+
+.ferriss-blurb {
+  z-index: 3;
+  position: relative;
+  padding: 1em 0 0 1em;
+}
+
+.ferriss-blurb p {
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.ferriss-wheel {
+  position: relative;
+  opacity: 100%;
+  background-color: rgba(1,98,131,.8);
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: adelle, serif;
+  text-align: center;
+  margin: 1em;
+}
+
+.ferriss-wheel h2 {
+  margin: 0;
+}
+
+.ferriss-wheel a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.25em;
+}
+
+.ferriss-img {
+  position: absolute;
+  left: -23.5em;
+  top: -16em;
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+       -o-transform: scale(0.5); /* Opera 10.5+ */
+          transform: scale(0.5);
+}
+
+
+/* Film / Cool Stuff Page Transitions */
+
+.sliding-enter {
+  opacity: 0.2;
+}
+.sliding-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+
+.other-sliding-enter {
+  opacity: 0.2;
+}
+.other-sliding-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms linear;
+}
+.sliding-exit {
+  display: none;
+}
+.sliding-exit-active {
+  display: none;
 }
