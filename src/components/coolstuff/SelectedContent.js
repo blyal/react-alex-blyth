@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 var classNames = require('classnames');
 
-class SelectedPodcast extends React.Component {
+class SelectedContent extends React.Component {
     
     render() {
 
@@ -29,4 +29,4 @@ class SelectedPodcast extends React.Component {
     }
 }
 
-export default SelectedPodcast;
+export default SelectedContent;
