@@ -1,8 +1,11 @@
 import React from 'react';
 import SelectedPodcast from './SelectedPodcast';
-import Ferriss from './Ferriss';
+import Ferriss from './podcasts/Ferriss';
+import Rogan from './podcasts/Rogan';
+import HappinessLab from './podcasts/HappinessLab';
+import Harris from './podcasts/Harris';
 import { v4 as uuid } from 'uuid';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+var classNames = require('classnames');
 
 class CoolStuff extends React.Component {
     
@@ -19,23 +22,31 @@ class CoolStuff extends React.Component {
                 id: uuid(),
                 selected: false,
                 title: 'The Joe Rogan Experience',
-                content: <Ferriss />
+                content: <Rogan />
             },
             {
                 id: uuid(),
                 selected: false,
                 title: 'The Happiness Lab with Dr Laurie Santos',
-                content: <Ferriss />
+                content: <HappinessLab />
+            },
+            {
+                id: uuid(),
+                selected: false,
+                title: 'Making Sense with Sam Harris',
+                content: <Harris />
             }
         ]
     }
     
-    selectPodcast = (id) => {
+    togglePodcast = (id) => {
         this.setState({
             mainView: !this.state.mainView,
             podcasts: this.state.podcasts.map(podcast => {
                 if (podcast.id === id) {
-                    podcast.selected = !podcast.selected
+                    podcast.selected = true;
+                } else {
+                    podcast.selected = false;
                 }
                 return podcast;
             })
@@ -43,6 +54,12 @@ class CoolStuff extends React.Component {
     }
 
     render() {
+
+        var pocketView = classNames({
+            'pocket-view': true,
+            'pocket-view-changed': !this.state.mainView
+          });
+
         return (
             <>
             <h2 style={{color: 'Cyan'}}>Cool Stuff</h2>
@@ -50,49 +67,41 @@ class CoolStuff extends React.Component {
                 <br />
             
             <div className="page-flow">
-                <TransitionGroup>
+
+                <div className="cover-container">
+                    <div className="cover-main"></div>
+                    <div className="cover-middle"></div>
+                    <div className="cover-main cover-shadow"></div>
+                </div>
+        
             
-                {
-                    this.state.mainView ?
-                    <CSSTransition
-                        key="1"
-                        in={this.state.mainView}
-                        timeout={1000}
-                        classNames="sliding"
-                        >
-                        <div class="content-pocket">
-                            <h3>Favorite Podcasts</h3>
-                            <ul className="cool-list" style={{color: 'Cyan'}}>
-                                {
-                                    this.state.podcasts.map((podcast) => (
-                                        <li onClick={() => this.selectPodcast(podcast.id)}>{podcast.title}</li>
-                                    ))
-                                }
-                            </ul>
-                        </div>  
-                        </CSSTransition>                     
-                    : 
-                    <CSSTransition
-                        key="2"
-                        in={!this.state.mainView}
-                        timeout={1000}
-                        classNames="other-sliding"
-                        >
-                    <SelectedPodcast podcasts={this.state.podcasts} selectPodcast={this.selectPodcast} /></CSSTransition>
-                }
-                
-                </TransitionGroup>
-                
-                
-                
+                <div className={pocketView}>
+                    <div class="content-pocket flex-50">
+                        <h3>Favorite Podcasts</h3>
+                        <ul className="cool-list" style={{color: 'Cyan'}}>
+                            {
+                                this.state.podcasts.map((podcast) => (
+                                    <li onClick={() => this.togglePodcast(podcast.id)}>{podcast.title}</li>
+                                ))
+                            }
+                        </ul>
+                    </div>  
+                    
+                    <SelectedPodcast content={this.state.podcasts} backButton={this.togglePodcast} />
+                </div>
                 <br />
-                <h3>Favorite Literature</h3>
-                <ul className="cool-list" style={{color: 'Cyan'}}>
-                    <li>Notes from Underground by Fyodor Dostoevsky</li>
-                    <li>American Psycho by Bret Easton Ellis</li>
-                    <li>My Brilliant Friend by Elena Ferrante</li>
-                    <li>Norwegian Wood by Haruki Murakami</li>
-                </ul>
+
+                <div className={{pocketView}}>
+                    <div class="content-pocket flex-50">
+                        <h3>Favorite Literature</h3>
+                        <ul className="cool-list" style={{color: 'Cyan'}}>
+                            <li>Notes from Underground by Fyodor Dostoevsky</li>
+                            <li>American Psycho by Bret Easton Ellis</li>
+                            <li>My Brilliant Friend by Elena Ferrante</li>
+                            <li>Norwegian Wood by Haruki Murakami</li>
+                        </ul>
+                    </div>
+                </div>
                 <br />
             </div>
 

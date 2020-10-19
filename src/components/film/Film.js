@@ -13,7 +13,7 @@ class FilmStuff extends React.Component {
                     So although maybe this page could have been incorporated into the 'Cool Stuff' page, I have too much to say about film for that, and lets be honest, film deserves a page of its own.
                     </p>
                     <p>
-                        More content to come. I want to create small descriptions of all the films and directors I mention, so visitors to the site can click on each name to read a little bit more.
+                        More content to come.
                     </p>
                     </div>
                 </div>

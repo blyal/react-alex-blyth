@@ -5,6 +5,8 @@
   color: white;
   background-color: black;
   font-family: Monaco, monospace;
+  /* prevents the page from having horizontal scroll with Selected Content clickalong */
+  overflow: hidden;
 }
 
 html {
@@ -46,6 +48,11 @@ ul.cool-list {
    list-style: none;
  }
 
+ .cool-list li:hover {
+   text-decoration: underline;
+   cursor: pointer;
+ }
+
 .disclaimer {
   font-size: 0.75em;
 }
@@ -56,6 +63,16 @@ ul.cool-list {
 
 a {
   color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+.flex-50 {
+  flex-basis: 50%;
+}
+.flex-95 {
+  flex-basis: 95%;
 }
 
 
@@ -124,7 +141,6 @@ footer li {
 
 
 /* Blog/Code page transitions  */
-
 .expand-enter {
   opacity: 0.2;
 }
@@ -142,48 +158,82 @@ footer li {
 
 
 /* Film / Cool Stuff pages */
-
 .page-flow {
   text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50em;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* max-width: 50em; */
   line-height: 1.75em;
   z-index: 1;
   background-color: black;
   position: relative;
 }
-
 .content-pocket {
   height: 20em;
-  overflow: scroll
+  /* overflow: scroll; */
+  /* background-color: black; */
 }
-
+.pocket-blurb {
+  z-index: 3;
+  position: relative;
+  padding: 1em 0 0 1em;
+}
+.pocket-blurb p {
+  margin: 0;
+  padding-bottom: 1em;
+}
 .selected-content {
-  background-color: grey;
   padding: 0;
-  color: black;
   overflow: scroll;
 }
-
-.selected-content-img-container {
-  background-color: grey;
+.back-btn {
   flex-basis: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 7px 0px 6px -1px grey;
-  z-index: 2;
+  z-index: 3;
   height: 20em;
 }
-
-.recommended-things {
-  background-color: rgb(1,98,131);
-  z-index: 3;
+.pocket-img-container {
+  overflow: hidden;
   position: relative;
 }
 
+/* Film / Cool Stuff Page Transitions */
+.pocket-view {
+  left: 20em;
+  transition: left 1000ms linear;
+  display: flex;
+  min-width: 100em;
+  position: relative;
+}
+.pocket-view-changed {
+  left: -30em;
+}
+.cover-container {
+  display: flex;
+  height: 100%;
+  position: absolute;
+}
+.cover-main {
+  background-color: black;
+  width: 20em;
+  z-index: 6;
+}
+.cover-middle {
+  background-color: transparent;
+  width: 50em;
+}
+.cover-shadow {
+  box-shadow: 7px -7px 8px -1px black;
+}
+
+/* Pocket Recommendations General CSS */
+.recommended-things {
+  z-index: 4;
+  position: relative;
+}
 .recommended-things p {
   margin: 0;
   padding: 0.5em 0;
@@ -191,11 +241,9 @@ footer li {
   font-size: 1.5em;
   color: white;
 }
-
 .recommended-things hr {
   margin: 0 auto;
 }
-
 .recommended-things a div {
   display: flex;
   align-items: center;
@@ -205,27 +253,23 @@ footer li {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .recommended-things a {
   display: inline-block;
   height: 100%;
   width: 100%;
   position: relative;
 }
-
-.recommended-things a p {
+.recommended-things span {
   margin: 0 0 0 1em;
   width: 50%;
   font-size: 1em;
-  text-align: left;
   font-family: adelle, serif;
+  color: white;
 }
-
 .recommended-things table {
   border-spacing: 2em;
   width: 100%;
 }
-
 .recommended-things td {
   background-color: rgba(0,0,0,.8);
   transition: all .5s ease-in-out;
@@ -233,22 +277,15 @@ footer li {
   width: 20em;
   position: relative;
 }
-
 .recommended-things td:hover {
   transform: scale(1.1);
 }
 
-.ferriss-blurb {
-  z-index: 3;
-  position: relative;
-  padding: 1em 0 0 1em;
+/* Podcast: The Tim Ferriss Show CSS */
+.ferriss-back-btn {
+  box-shadow: 6px 0px 6px 0px #606060;
+  background-color: #606060;
 }
-
-.ferriss-blurb p {
-  margin: 0;
-  padding-bottom: 1em;
-}
-
 .ferriss-wheel {
   position: relative;
   opacity: 100%;
@@ -265,17 +302,14 @@ footer li {
   text-align: center;
   margin: 1em;
 }
-
 .ferriss-wheel h2 {
   margin: 0;
 }
-
 .ferriss-wheel a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 0.25em;
 }
-
 .ferriss-img {
   position: absolute;
   left: -23.5em;
@@ -286,28 +320,163 @@ footer li {
        -o-transform: scale(0.5); /* Opera 10.5+ */
           transform: scale(0.5);
 }
+.ferriss-pocket {
+  color: #e0e0de;
+  background-color: #606060;
+  display: flex;
+}
+.ferriss-recommendations {
+  background-color: rgba(1,98,131,.8)
+}
+.ferriss-bar-right {
+  background-color: #606060;
+  width: 10em;
+  box-shadow: -7px 0px 6px -1px #606060;
+  z-index: 2;
+}
 
+/* Podcast: The Joe Rogan Experience */
+.rogan-back-btn {
+  background-color: #000421;
+}
+.rogan-recommendations {
+  background-image: linear-gradient(to bottom right, white, #dd730f);
+}
+.rogan-recommendations p, .rogan-recommendations hr {
+  color: black;
+  border-color: black;
+}
+.rogan-pocket {
+  color: wheat;
+  background-color: #000421;
+  display: flex;
+}
+.rogan-img {
+  position: relative;
+  left: 7em;
+  top: 2em;
+  -webkit-transform: scale(1.25); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.25); /* FF3.5+ */
+      -ms-transform: scale(1.25); /* IE9 */
+       -o-transform: scale(1.25); /* Opera 10.5+ */
+          transform: scale(1.25);
+}
+.rogan-bar-right {
+  background-color: #000421;
+  width: 10em;
+}
 
-/* Film / Cool Stuff Page Transitions */
+/* Podcast: The Happiness Lab with Dr Laurie Santos */
+.happiness-back-btn {
+  background-color: #f2e11f;
+}
+.happiness-pocket {
+  display: flex;
+  color: black;
+  background-color: #f2e11f;
+}
+.happiness-img-container {
+  height: 17em;
+}
+.happiness-img-container a {
+  position: relative;
+  left: 35em;
+  top: 15em;
+  text-decoration-line: none;
+  background-color: rgba(0,0,0,.2);
+  padding: .5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.happiness-img {
+  position: absolute;
+  left: -13em;
+  top: -9.5em;
+  -webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.6); /* FF3.5+ */
+      -ms-transform: scale(0.6); /* IE9 */
+       -o-transform: scale(0.6); /* Opera 10.5+ */
+          transform: scale(0.6);
+}
+.happiness-recommendations p, .happiness-recommendations hr {
+  color: black;
+  border-color: black;
+}
+.happiness-recommendations table {
+  border-spacing: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+.happiness-recommendations td {
+  background-color: rgba(0,0,0,.6);
+  height: 4em;
+  font-size: 1.25em;
+  text-align: center;
+}
+.happiness-bar-right {
+  background-color: #f2e11f;
+  width: 10em;
+}
 
-.sliding-enter {
-  opacity: 0.2;
+/* Podcast: Making Sense with Sam Harris */
+.harris-pocket {
+  display: flex;
+  background-color: #2a3d29;
+  color: #cecece;
 }
-.sliding-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms linear;
+.harris-img-container {
+  height: 17em;
 }
-
-.other-sliding-enter {
-  opacity: 0.2;
+.harris-img {
+  position: absolute;
+  left: -19.5em;
+  top: -13em;
+  -webkit-transform: scale(0.55); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.55); /* FF3.5+ */
+      -ms-transform: scale(0.55); /* IE9 */
+       -o-transform: scale(0.55); /* Opera 10.5+ */
+          transform: scale(0.55);
 }
-.other-sliding-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms linear;
+.harris-back-btn {
+  background-color: #2a3d29;
+  box-shadow: 6px 0px 6px 0px #2a3d29;
 }
-.sliding-exit {
-  display: none;
+.harris-recommendations {
+  background-image: linear-gradient(to bottom right, #0c1c36, #986842);
 }
-.sliding-exit-active {
-  display: none;
+.harris-wheel {
+  position: relative;
+  opacity: 100%;
+  background-color: rgba(206, 206, 206, 0.4);
+  border-radius: 50%;
+  width: 11em;
+  height: 11em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: adelle, serif;
+  text-align: center;
+  margin: 1.5em;
+  transition: transform 250ms linear;
+}
+.harris-wheel:hover {
+  transform: scale(1.1);
+}
+.harris-wheel h2, .harris-wheel h4 {
+  margin: 0;
+}
+.harris-wheel h4 {
+  color: black;
+}
+.harris-wheel a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0.25em;
+}
+.harris-bar-right {
+  background-color: #2a3d29;
+  width: 10em;
+  box-shadow: -7px 0px 6px -1px #2a3d29;
+  z-index: 1;
 }
