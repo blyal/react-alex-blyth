@@ -241,6 +241,9 @@ footer li {
   font-size: 1.5em;
   color: white;
 }
+.recommended-things li {
+  list-style-type: none;
+}
 .recommended-things hr {
   margin: 0 auto;
 }
@@ -479,4 +482,18 @@ footer li {
   width: 10em;
   box-shadow: -7px 0px 6px -1px #2a3d29;
   z-index: 1;
+}
+
+/* Book: Notes from Underground by Dostoevsky */
+.dostoevsky-pocket {
+  text-align: center;
+  color: black;
+  background-color: #cdd5f7;
+  border-color: black;
+}
+.dostoevsky-pocket p {
+  text-align: left;
+}
+.dostoevsky-pocket h2, .dostoevsky-pocket h3 {
+  margin: 0;
 }

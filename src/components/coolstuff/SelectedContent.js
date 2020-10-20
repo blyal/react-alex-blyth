@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 var classNames = require('classnames');
 
 class SelectedContent extends React.Component {
+
+    state = {
+        backInBlack: [
+            "The Tim Ferriss Show",
+            "The Happiness Lab with Dr Laurie Santos",
+            "Making Sense with Sam Harris",
+            "Notes from Underground by Fyodor Dostoevsky"
+        ]
+    }
     
     render() {
 
@@ -17,11 +26,11 @@ class SelectedContent extends React.Component {
         return this.props.content.map((selected) => (
             selected.selected ? 
                 <div key={selected.id} className="flex flex-50">
-                    {selected.title === "The Tim Ferriss Show" || selected.title === "The Happiness Lab with Dr Laurie Santos" || selected.title === "Making Sense with Sam Harris" ?
-                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-black.png" height="12.5%" width="50%"/></div>
-                    : selected.title === "The Joe Rogan Experience" ?
-                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-white.png" height="12.5%" width="50%"/></div>
-                    : null }
+                    {
+                        this.state.backInBlack.includes(selected.title) ?
+                            <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-black.png" height="12.5%" width="50%"/></div>
+                        :   <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-white.png" height="12.5%" width="50%"/></div>
+                        }
                     <div className="selected-content content-pocket flex-95">{selected.content}</div>
                 </div> 
                 : null
