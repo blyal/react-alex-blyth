@@ -5,8 +5,8 @@ function Harris() {
         <div className="harris-pocket">  
             <div>
                 <div className="pocket-img-container harris-img-container">
-                            <img src="images/sam-harris.jpg"  className="harris-img" />
-                            <a href="https://samharris.org/podcast/" target="_blank" style={{textDecoration: 'none'}}>
+                            <img src="images/sam-harris.jpg" alt="Sam Harris" className="harris-img" />
+                            <a href="https://samharris.org/podcast/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
                             <div className="harris-wheel">
                                 <div>
                                     <h2>The</h2>
@@ -16,7 +16,6 @@ function Harris() {
                                 <hr />
                                 <h4>Sam Harris</h4>
                             </div></a>
-                            {/* <a href="https://samharris.org/podcast/" target="_blank">samharris.org/podcast</a> */}
                 </div>
                 <div className="pocket-blurb">
                     <p>Sam Harris’s podcast is where I go when I’m in the mood for something academic, philosophical, and thought–provoking. It’s a similar format to Tim Ferriss’s and Joe Rogan’s shows, but without ads. Unfortunately this means that listeners who aren’t members of Harris’s website can only access 75% of each podcast, but Harris’s team gives out free memberships to anyone who sends them an email asking for one.
@@ -30,12 +29,12 @@ function Harris() {
                     <table>
                         <tbody>
                             <tr>
-                                <td><a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank"><div><img src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a></td>
-                                <td><a href="https://samharris.org/podcasts/111-science-meditation/" target="_blank"><div><img src="images/making-sense.png" height="25%" width="25%"/><span>#111 - THE SCIENCE OF MEDITATION: A Conversation with Daniel Goleman and Richard J. Davidson</span></div></a></td>
+                                <td><a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a></td>
+                                <td><a href="https://samharris.org/podcasts/111-science-meditation/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#111 - THE SCIENCE OF MEDITATION: A Conversation with Daniel Goleman and Richard J. Davidson</span></div></a></td>
                             </tr>
                             <tr>
-                                <td><a href="https://samharris.org/podcasts/137-safe-space/" target="_blank"><div><img src="images/making-sense.png" height="25%" width="25%"/><span>#137 - SAFE SPACE: A Conversation with Jonathan Haidt</span></div></a></td>
-                                <td><a href="https://samharris.org/podcasts/127-freedom-known/" target="_blank"><div><img src="images/making-sense.png" height="25%" width="25%"/><span>#127 - FREEDOM FROM THE KNOWN: A Conversation with Michael Pollan</span></div></a></td>
+                                <td><a href="https://samharris.org/podcasts/137-safe-space/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#137 - SAFE SPACE: A Conversation with Jonathan Haidt</span></div></a></td>
+                                <td><a href="https://samharris.org/podcasts/127-freedom-known/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#127 - FREEDOM FROM THE KNOWN: A Conversation with Michael Pollan</span></div></a></td>
                             </tr>
                         </tbody>
                     </table>

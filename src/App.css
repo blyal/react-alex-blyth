@@ -208,7 +208,7 @@ footer li {
   min-width: 100em;
   position: relative;
 }
-.pocket-view-changed {
+.pocket-view-podcast, .pocket-view-book {
   left: -30em;
 }
 .cover-container {

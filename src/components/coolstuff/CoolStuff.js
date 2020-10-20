@@ -4,6 +4,10 @@ import Ferriss from './podcasts/Ferriss';
 import Rogan from './podcasts/Rogan';
 import HappinessLab from './podcasts/HappinessLab';
 import Harris from './podcasts/Harris';
+import Dostoevsky from './books/Dostoevsky';
+import AmericanPsycho from './books/AmericanPsycho';
+import Ferrante from './books/Ferrante';
+import Murakami from './books/Murakami';
 import { v4 as uuid } from 'uuid';
 var classNames = require('classnames');
 
@@ -42,22 +46,26 @@ class CoolStuff extends React.Component {
             {
                 id: uuid(),
                 selected: false,
-                title: 'Notes from Underground by Fyodor Dostoevsky'
+                title: 'Notes from Underground by Fyodor Dostoevsky',
+                content: <Dostoevsky />
             },
             {
                 id: uuid(),
                 selected: false,
-                title: 'American Psycho by Bret Easton Ellis'
+                title: 'American Psycho by Bret Easton Ellis',
+                content: <AmericanPsycho />
             },
             {
                 id: uuid(),
                 selected: false,
-                title: 'My Brilliant Friend by Elena Ferrante'
+                title: 'My Brilliant Friend by Elena Ferrante',
+                content: <Ferrante />
             },
             {
                 id: uuid(),
                 selected: false,
-                title: 'Norwegian Wood by Haruki Murakami'
+                title: 'Norwegian Wood by Haruki Murakami',
+                content: <Murakami />
             }
         ]
     }
@@ -74,6 +82,7 @@ class CoolStuff extends React.Component {
                 return podcast;
             })
         })
+        console.log(this.state)
     }
 
     toggleBook = (id) => {
@@ -92,9 +101,14 @@ class CoolStuff extends React.Component {
 
     render() {
 
-        var pocketView = classNames({
+        var podcastView = classNames({
             'pocket-view': true,
-            'pocket-view-changed': !this.state.podcastList
+            'pocket-view-podcast': !this.state.podcastList
+          });
+
+        var bookView = classNames({
+            'pocket-view': true,
+            'pocket-view-book': !this.state.bookList
           });
 
         return (
@@ -112,13 +126,13 @@ class CoolStuff extends React.Component {
                 </div>
         
             
-                <div className={pocketView}>
-                    <div class="content-pocket flex-50">
+                <div className={podcastView}>
+                    <div className="content-pocket flex-50">
                         <h3>Favorite Podcasts</h3>
                         <ul className="cool-list" style={{color: 'Cyan'}}>
                             {
                                 this.state.podcasts.map((podcast) => (
-                                    <li onClick={() => this.togglePodcast(podcast.id)}>{podcast.title}</li>
+                                    <li key={podcast.id} onClick={() => this.togglePodcast(podcast.id)}>{podcast.title}</li>
                                 ))
                             }
                         </ul>
@@ -126,15 +140,14 @@ class CoolStuff extends React.Component {
                     
                     <SelectedContent content={this.state.podcasts} backButton={this.togglePodcast} />
                 </div>
-                <br />
 
-                <div className={pocketView}>
-                    <div class="content-pocket flex-50">
+                <div className={bookView}>
+                    <div className="content-pocket flex-50">
                         <h3>Favorite Literature</h3>
                         <ul className="cool-list" style={{color: 'Cyan'}}>
                             {
                                 this.state.books.map((book) => (
-                                    <li onClick={() => this.toggleBook(book.id)}>{book.title}</li>
+                                    <li key={book.id} onClick={() => this.toggleBook(book.id)}>{book.title}</li>
                                 ))
                             }
                         </ul>

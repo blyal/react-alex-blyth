@@ -16,17 +16,21 @@ class SelectedContent extends React.Component {
 
         return this.props.content.map((selected) => (
             selected.selected ? 
-                <><div className="flex flex-50">
+                <div key={selected.id} className="flex flex-50">
                     {selected.title === "The Tim Ferriss Show" || selected.title === "The Happiness Lab with Dr Laurie Santos" || selected.title === "Making Sense with Sam Harris" ?
-                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img src="images/back-in-black.png" height="12.5%" width="50%"/></div>
+                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-black.png" height="12.5%" width="50%"/></div>
                     : selected.title === "The Joe Rogan Experience" ?
-                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img src="images/back-in-white.png" height="12.5%" width="50%"/></div>
+                        <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-white.png" height="12.5%" width="50%"/></div>
                     : null }
                     <div className="selected-content content-pocket flex-95">{selected.content}</div>
                 </div> 
-                </>: null
+                : null
         ))
     }
+}
+
+SelectedContent.propTypes = {
+    content: PropTypes.array.isRequired
 }
 
 export default SelectedContent;

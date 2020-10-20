@@ -5,8 +5,8 @@ function HappinessLab() {
         <div className="happiness-pocket">  
             <div>
                 <div className="pocket-img-container happiness-img-container">
-                    <img src="images/happiness-santos.jpg"  className="happiness-img" />
-                        <a href="https://www.happinesslab.fm/" target="_blank">&rarr; happinesslab.fm</a>
+                    <img src="images/happiness-santos.jpg" alt="The Happiness Lab with Dr Laurie Santos" className="happiness-img" />
+                        <a href="https://www.happinesslab.fm/" target="_blank" rel="noopener noreferrer">&rarr; happinesslab.fm</a>
                 </div>
                 <div className="pocket-blurb">
                     <p>
@@ -22,12 +22,12 @@ function HappinessLab() {
                     <table>
                         <tbody>
                             <tr>
-                                <td><a href="https://www.happinesslab.fm/season-1-episodes/you-can-change-w6YOz" target="_blank"><div><img src="images/happiness-lab.jpg" height="20%" width="20%"/><span>You Can Change</span></div></a></td>
-                                <td><a href="https://www.happinesslab.fm/season-1-episodes/the-unhappy-millionaire" target="_blank"><div><img src="images/happiness-lab.jpg" height="20%" width="20%"/><span>The Unhappy Millionaire</span></div></a></td>
+                                <td><a href="https://www.happinesslab.fm/season-1-episodes/you-can-change-w6YOz" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>You Can Change</span></div></a></td>
+                                <td><a href="https://www.happinesslab.fm/season-1-episodes/the-unhappy-millionaire" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>The Unhappy Millionaire</span></div></a></td>
                             </tr>
                             <tr>
-                                <td><a href="https://www.happinesslab.fm/season-1-episodes/a-silver-lining" target="_blank"><div><img src="images/happiness-lab.jpg" height="20%" width="20%"/><span>A Silver Lining</span></div></a></td>
-                                <td><a href="https://www.happinesslab.fm/season-1-episodes/mistakenly-seeking-solitude" target="_blank"><div><img src="images/happiness-lab.jpg" height="20%" width="20%"/><span>Mistakenly Seeking Solitude</span></div></a></td>
+                                <td><a href="https://www.happinesslab.fm/season-1-episodes/a-silver-lining" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>A Silver Lining</span></div></a></td>
+                                <td><a href="https://www.happinesslab.fm/season-1-episodes/mistakenly-seeking-solitude" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>Mistakenly Seeking Solitude</span></div></a></td>
                             </tr>
                         </tbody>
                     </table>
