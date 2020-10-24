@@ -6,7 +6,7 @@ import { CSSTransition } from 'react-transition-group';
 class BlogItem extends React.Component {
     
     render() {
-        const { id, img, content, title, open } = this.props.entry;
+        const { id, img, content, title, open, date } = this.props.entry;
         const idJump = "#" + id.toString();
         return (
             <CSSTransition
@@ -26,7 +26,11 @@ class BlogItem extends React.Component {
                         <div style={contentStyle}> { content } </div>
                     </div>
                 ) : (
-                    <h3>{ title }</h3>
+                    <>
+                    <h3 style={{margin: 0}}>{ title }</h3>
+                    <hr style={{marginBottom: 0}} />
+                    <p style={{margin: 0, fontSize: '1em'}}>{ date }</p>
+                    </>
                 )}
                 </div>
                 </a>
@@ -41,7 +45,7 @@ const itemStyle = {
     fontFamily: 'Arial, sans-serif',
     textAlign: 'center',
     margin: '0 auto',
-    padding: '1em 1em 1em 1em',
+    padding: '1em 1em 0.1em 1em',
     width: '50%',
     lineHeight: '1.75em',
     border: 'solid 0.125em grey',

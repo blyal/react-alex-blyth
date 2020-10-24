@@ -17,10 +17,14 @@ class SelectedContent extends React.Component {
 
         var backBtn = classNames({
             'back-btn': true,
-            'ferriss-back-btn': this.props.content[0].selected,
-            'rogan-back-btn': this.props.content[1].selected,
-            'happiness-back-btn': this.props.content[2].selected,
-            'harris-back-btn': this.props.content[3].selected
+            'ferriss-back-btn': this.props.content[0].selected && this.props.content[0].type === 'podcast',
+            'rogan-back-btn': this.props.content[1].selected && this.props.content[1].type === 'podcast',
+            'happiness-back-btn': this.props.content[2].selected && this.props.content[2].type === 'podcast',
+            'harris-back-btn': this.props.content[3].selected && this.props.content[3].type === 'podcast',
+            'dostoevsky-back-btn': this.props.content[0].selected && this.props.content[0].type === 'book',
+            'american-psycho-back-btn': this.props.content[1].selected && this.props.content[1].type === 'book',
+            'ferrante-back-btn': this.props.content[2].selected && this.props.content[2].type === 'book',
+            'murakami-back-btn': this.props.content[3].selected && this.props.content[3].type === 'book'
           });
 
         return this.props.content.map((selected) => (

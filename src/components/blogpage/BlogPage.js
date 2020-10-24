@@ -9,6 +9,7 @@ class BlogPage extends React.Component {
             {
                 id: uuid(),
                 title: ['Review of ', <i>The Mentalist</i>, ' (2008 – 2015)'],
+                date: '21st October 2020',
                 open: true,
                 content: <MentalistReview />,
                 img: <img src={'images/mentalist-poster.JPG'} alt="Poster for The Mentalist show" height='95%' width='95%'/>

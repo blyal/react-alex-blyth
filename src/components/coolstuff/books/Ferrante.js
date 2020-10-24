@@ -2,32 +2,43 @@ import React from 'react';
 
 function Ferrante() {
     return (
-        <div>  
+        <div className="book-pocket ferrante-pocket">  
             <div>
-                <div className="pocket-img-container">
-                    {/* <img src="images/ferriss.jpeg" alt="Tim Ferriss" className="ferriss-img" /> */}
+                <div className="book-title ferrante-second-color">
+                    <h2><i>Notes from Underground</i></h2>
+                    <span>Dostoevsky</span>
                 </div>
-                <h2>Book Title</h2>
-                <hr />
-                <p>Content</p>
-                <div className="recommended-things ferriss-recommendations">
-                    <p>Similar Books</p>
-                    <hr />
+                
+                <div className="book-blurb">
+                    <img src="images/notes-from-underground.jpg" alt="Notes from Underground" height='234' width='152.7' />
+                    <p>Within two pages of reading this book, I was laughing out loud. Notes from Underground is a very dark comedy following a bitter, lonely man’s half-arsed attempt to reconnect with humanity.</p>
+                    <p>Dostoevsky is an incredibly astute observer of human behaviour, thought, and motivation. Whereas most people see the world as they’d like it to be, Dostoevsky sees it as it actually is — or, to my mind, gets closer than almost anyone. The narrator in this book is such a loser, but he’s such a real loser. His resentful thought patterns are so realistic, and when you read this book you will laugh at yourself because you will definitely find echoes of some bitter and nonsensical thoughts you’ve had yourself in your less fine moments. The narrator seems like a caricature, like his characterisation is taken to an extreme, but then again I don’t know… we humans do get very resentful.</p>
+                    <p>It’s a fantastic book, it’s not too long, it’s full of insight. A great introduction to Dostoevsky.</p>
+                </div>
+                <div className="book-recommendations ferrante-second-color">
+                <p>Related</p>
                     <table>
                         <tbody>
                             <tr>
-                                <td><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></td>
-                                <td><a href="https://tim.blog/2015/09/25/jocko-willink/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>The Scariest Navy SEAL Imaginable…And What He Taught Me (#107)</span></div></a></td>
+                                <td>
+                                    <div><img alt="Logo" src="images/less-than-zero.jpg" height="30%" width="30%"/></div>
+                                </td>
+                                <td>
+                                <div><img alt="Logo" src="images/american-psycho.jpg" height="30%" width="30%"/></div>
+                                </td>
+                                <td>
+                                <div><img alt="Logo" src="images/devils.jpg" height="30%" width="30%"/></div>
+                                </td>
                             </tr>
                             <tr>
-                                <td><a href="https://tim.blog/2015/09/14/are-psychedelic-drugs-the-next-medical-breakthrough/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Are Psychedelic Drugs the Next Medical Breakthrough? (#104)</span></div></a></td>
-                                <td><a href="https://tim.blog/2015/07/31/tara-brach/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Tara Brach on Meditation and Overcoming FOMO (Fear Of Missing Out) (#94)</span></div></a></td>
+                                <td><i>Less Than Zero</i><br /><span>Bret Easton Ellis</span></td>
+                                <td><i>American Psycho</i><br /><span>Bret Easton Ellis</span></td>
+                                <td><i>Devils</i><br /><span>Dostoevsky</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div className="ferriss-bar-right"></div>
         </div>
     )
 }

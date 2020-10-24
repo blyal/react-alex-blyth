@@ -233,6 +233,7 @@ footer li {
 .recommended-things {
   z-index: 4;
   position: relative;
+  border-radius: 1em 1em 0 0;
 }
 .recommended-things p {
   margin: 0;
@@ -279,6 +280,7 @@ footer li {
   height: 10em;
   width: 20em;
   position: relative;
+  border-radius: 1em;
 }
 .recommended-things td:hover {
   transform: scale(1.1);
@@ -389,6 +391,10 @@ footer li {
   background-color: rgba(0,0,0,.2);
   padding: .5em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 1em;
+}
+.happiness-img-container a:hover {
+  color: yellow;
 }
 .happiness-img {
   position: absolute;
@@ -484,16 +490,115 @@ footer li {
   z-index: 1;
 }
 
+/* Book pocket CSS */
+.book-pocket {
+  text-align: center;
+  padding: 0 2em 1em 0;
+}
+.book-title {
+  width: 22em;
+  margin: 0 auto;
+  padding: 2.5em 0 1em 0;
+  margin-bottom: 1em;
+  border-radius: 0 0 1em 1em;
+}
+.book-blurb p {
+  text-align: left;
+  font-size: 0.9em;
+  margin: 0.5em 0 0 0;
+}
+.book-pocket h2 {
+  margin: 0 0 0.25em 0;
+}
+.book-pocket span {
+  font-family: monospace, sans-serif;
+  font-size: 1.25em;
+}
+.book-blurb {
+  padding-bottom: 2em;
+}
+.book-blurb img {
+  margin-right: 1em;
+  float: left;
+  position: relative;
+  top: 0.5em;
+}
+.book-recommendations {
+  border-radius: 1em;
+}
+.book-recommendations p {
+  font-size: 1.3em;
+  font-family: monospace, sans-serif;
+  margin: 0 0 0.5em 0;
+  letter-spacing: 1em;
+}
+.book-recommendations table {
+  padding: 0 0 1em 0;
+}
+.book-recommendations td {
+  width: 20em;
+  position: relative;
+  padding: 0;
+  line-height: 1;
+}
+.book-recommendations i {
+  font-size: 0.9em;
+}
+.book-recommendations span {
+  font-size: 0.8em;
+  font-family: monospace, sans-serif;
+}
+
 /* Book: Notes from Underground by Dostoevsky */
 .dostoevsky-pocket {
-  text-align: center;
   color: black;
-  background-color: #cdd5f7;
-  border-color: black;
+  background-color: #B8CCF9;
 }
-.dostoevsky-pocket p {
-  text-align: left;
+.dostoevsky-back-btn {
+  background-color: #B8CCF9;
 }
-.dostoevsky-pocket h2, .dostoevsky-pocket h3 {
-  margin: 0;
+.dostoevsky-second-color {
+  background-color: #F9E5B8;
+}
+
+/* Book: American Psycho by Bret Easton Ellis */
+.american-psycho-pocket {
+  background-color: #0F0F0F;
+  color: white;
+}
+.american-psycho-back-btn {
+  background-color: #0F0F0F;
+}
+.american-psycho-second-color {
+  background-color: #f02300;
+  color: black;
+}
+
+/* Book: My Brilliant Friend by Elena Ferrante */
+.ferrante-pocket {
+  background-color: #0F0F0F;
+  color: white;
+}
+.ferrante-back-btn {
+  background-color: #0F0F0F;
+}
+.ferrante-second-color {
+  background-color: #f02300;
+  color: black;
+}
+
+/* Book: Norwegian Wood by Haruki Murakami */
+.murakami-pocket {
+  background-color: #0F0F0F;
+  color: white;
+}
+.murakami-back-btn {
+  background-color: #0F0F0F;
+}
+.murakami-second-color {
+  background-color: #f02300;
+  color: black;
+}
+.murakami-blurb img {
+  margin-bottom: 0.1em;
 }

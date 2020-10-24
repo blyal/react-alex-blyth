@@ -8,6 +8,7 @@ import Dostoevsky from './books/Dostoevsky';
 import AmericanPsycho from './books/AmericanPsycho';
 import Ferrante from './books/Ferrante';
 import Murakami from './books/Murakami';
+import Book from './books/Book';
 import { v4 as uuid } from 'uuid';
 var classNames = require('classnames');
 
@@ -18,24 +19,28 @@ class CoolStuff extends React.Component {
         podcasts: [
             {
                 id: uuid(),
+                type: 'podcast',
                 selected: false,
                 title: 'The Tim Ferriss Show',
                 content: <Ferriss />
             },
             {
                 id: uuid(),
+                type: 'podcast',
                 selected: false,
                 title: 'The Joe Rogan Experience',
                 content: <Rogan />
             },
             {
                 id: uuid(),
+                type: 'podcast',
                 selected: false,
                 title: 'The Happiness Lab with Dr Laurie Santos',
                 content: <HappinessLab />
             },
             {
                 id: uuid(),
+                type: 'podcast',
                 selected: false,
                 title: 'Making Sense with Sam Harris',
                 content: <Harris />
@@ -45,24 +50,28 @@ class CoolStuff extends React.Component {
         books: [
             {
                 id: uuid(),
+                type: 'book',
                 selected: false,
                 title: 'Notes from Underground by Fyodor Dostoevsky',
-                content: <Dostoevsky />
+                content: <Book title={'Notes from Underground'} />
             },
             {
                 id: uuid(),
+                type: 'book',
                 selected: false,
                 title: 'American Psycho by Bret Easton Ellis',
-                content: <AmericanPsycho />
+                content: <Book title={'American Psycho'} />
             },
             {
                 id: uuid(),
+                type: 'book',
                 selected: false,
                 title: 'My Brilliant Friend by Elena Ferrante',
                 content: <Ferrante />
             },
             {
                 id: uuid(),
+                type: 'book',
                 selected: false,
                 title: 'Norwegian Wood by Haruki Murakami',
                 content: <Murakami />
