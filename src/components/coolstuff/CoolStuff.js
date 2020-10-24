@@ -4,10 +4,6 @@ import Ferriss from './podcasts/Ferriss';
 import Rogan from './podcasts/Rogan';
 import HappinessLab from './podcasts/HappinessLab';
 import Harris from './podcasts/Harris';
-import Dostoevsky from './books/Dostoevsky';
-import AmericanPsycho from './books/AmericanPsycho';
-import Ferrante from './books/Ferrante';
-import Murakami from './books/Murakami';
 import Book from './books/Book';
 import { v4 as uuid } from 'uuid';
 var classNames = require('classnames');
@@ -67,14 +63,14 @@ class CoolStuff extends React.Component {
                 type: 'book',
                 selected: false,
                 title: 'My Brilliant Friend by Elena Ferrante',
-                content: <Ferrante />
+                content: <Book title={'My Brilliant Friend'} />
             },
             {
                 id: uuid(),
                 type: 'book',
                 selected: false,
                 title: 'Norwegian Wood by Haruki Murakami',
-                content: <Murakami />
+                content: <Book title={'Norwegian Wood'} />
             }
         ]
     }

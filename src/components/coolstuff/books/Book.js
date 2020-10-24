@@ -18,17 +18,17 @@ class Book extends React.Component {
                             {
                                 title: 'Less Than Zero',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Logo" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'American Psycho',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Logo" src="images/american-psycho.jpg" height="30%" width="30%"/>
+                                image: <img alt="American Psycho" src="images/american-psycho.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Devils',
                                 author: 'Dostoevsky',
-                                image: <img alt="Logo" src="images/devils.jpg" height="30%" width="30%"/>
+                                image: <img alt="Devils" src="images/devils.jpg" height="30%" width="30%"/>
                             }
                         ]
                     },
@@ -45,18 +45,18 @@ class Book extends React.Component {
                             {
                                 title: 'Less Than Zero',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Logo" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Notes from Underground',
                                 author: 'Dostoevsky',
-                                image: <img alt="Logo" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
+                                image: <img alt="Notes from Underground" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'American Psycho',
                                 year: '(2000)',
                                 author: 'directed by Mary Harron',
-                                image: <img alt="Logo" src="images/american-psycho-2000.jpg" height="30%" width="30%"/>
+                                image: <img alt="American Psycho film" src="images/american-psycho-2000.jpg" height="30%" width="30%"/>
                             }
                         ]
                     },
@@ -73,12 +73,12 @@ class Book extends React.Component {
                             {
                                 title: 'Less Than Zero',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Logo" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Notes from Underground',
                                 author: 'Dostoevsky',
-                                image: <img alt="Logo" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
+                                image: <img alt="Notes from Underground" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'American Psycho',
@@ -91,15 +91,15 @@ class Book extends React.Component {
                     {
                         title: 'Norwegian Wood',
                         author: 'Haruki Murakami',
-                        mainImage: <img src="images/american-psycho.jpg" alt="American Psycho" height='234' width='152.7' />,
+                        mainImage: <img src="images/norwegian-wood.jpg" alt="Norwegian Wood" height='280' width='181.3' />,
                         paragraphs: [
-                            'There’s something about Murakami’s writing that is just so hypnotic. There are lots of books in the world which I can’t read because they’re just too damn boring, but Murakami never fails to hold my attention, to keep me wanting to come back for more. Norwegian Wood is probably the thing of his I’ve enjoyed the most. Most of his stories deal with love triangles alongside ambiguously supernatural occurrences… this book ditches the supernatural and just deals straight with the love triangle. It’s very touching, it’s poignant, it’s real, it feels important. You will find a lot to connect to in this book. I also really like how it’s named after a Beatles song, it’s cool how Murakami likes the Beatles. The Beatles are awesome.'
+                            'There’s something so hypnotic about Murakami’s writing. There are lots of books in the world which I can’t read because they’re just too damn boring, but Murakami never fails to hold my attention, to keep me wanting to come back for more. Norwegian Wood is probably the thing of his I’ve enjoyed the most. Most of his stories deal with love triangles alongside ambiguously supernatural occurrences… this book ditches the supernatural and just deals straight with the love triangle. It’s very touching, it’s poignant, it’s real, it feels important. You will find a lot to connect to in this book. I also really like how it’s named after a Beatles song, it’s cool how Murakami likes the Beatles. The Beatles are awesome.'
                         ],
                         related: [
                             {
-                                title: 'Less Than Zero',
-                                author: 'Bret Easton Ellis',
-                                image: <img alt="Logo" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                title: 'The Wind–Up Bird Chronicle',
+                                author: 'Haruki Murakami',
+                                image: <img alt="The Wind-Up Bird Chronicle" src="images/wind-up-bird.jpg" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Notes from Underground',
@@ -142,6 +142,11 @@ class Book extends React.Component {
             'ferrante-second-color': this.props.title === 'My Brilliant Friend',
             'murakami-second-color': this.props.title === 'Norwegian Wood'
           });
+        var blurbStyles = classNames({
+            'book-blurb': true,
+            'murakami-blurb': this.props.title === 'Norwegian Wood'
+          });
+
 
         return this.state.books.map((book) => (
             this.props.title === book.title ?
@@ -152,7 +157,7 @@ class Book extends React.Component {
                         <span>{book.author}</span>
                     </div>
 
-                    <div className="book-blurb">
+                    <div className={blurbStyles}>
                         {book.mainImage}
                        {book.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
                     </div>
