@@ -576,28 +576,28 @@ footer li {
 
 /* Book: My Brilliant Friend by Elena Ferrante */
 .ferrante-pocket {
-  background-color: #0F0F0F;
+  background-color: #446A9B;
   color: white;
 }
 .ferrante-back-btn {
-  background-color: #0F0F0F;
+  background-color: #446A9B;
 }
 .ferrante-second-color {
-  background-color: #f02300;
+  background-color: #bc9644;
   color: black;
 }
 
 /* Book: Norwegian Wood by Haruki Murakami */
 .murakami-pocket {
-  background-color: #0F0F0F;
-  color: white;
+  background-color: #f9f9ed;
+  color: black;
 }
 .murakami-back-btn {
-  background-color: #0F0F0F;
+  background-color: #f9f9ed;
 }
 .murakami-second-color {
-  background-color: #f02300;
-  color: black;
+  background-color: #c7102e;
+  color: #f9f9ed;
 }
 .murakami-blurb img {
   margin-bottom: 0.1em;

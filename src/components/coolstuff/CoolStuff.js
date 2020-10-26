@@ -55,15 +55,15 @@ class CoolStuff extends React.Component {
                 id: uuid(),
                 type: 'book',
                 selected: false,
-                title: 'American Psycho by Bret Easton Ellis',
-                content: <Book title={'American Psycho'} />
+                title: 'My Brilliant Friend by Elena Ferrante',
+                content: <Book title={'My Brilliant Friend'} />
             },
             {
                 id: uuid(),
                 type: 'book',
                 selected: false,
-                title: 'My Brilliant Friend by Elena Ferrante',
-                content: <Book title={'My Brilliant Friend'} />
+                title: 'American Psycho by Bret Easton Ellis',
+                content: <Book title={'American Psycho'} />
             },
             {
                 id: uuid(),

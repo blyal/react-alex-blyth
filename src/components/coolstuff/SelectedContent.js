@@ -9,7 +9,8 @@ class SelectedContent extends React.Component {
             "The Tim Ferriss Show",
             "The Happiness Lab with Dr Laurie Santos",
             "Making Sense with Sam Harris",
-            "Notes from Underground by Fyodor Dostoevsky"
+            "Notes from Underground by Fyodor Dostoevsky",
+            "Norwegian Wood by Haruki Murakami"
         ]
     }
     
@@ -22,8 +23,8 @@ class SelectedContent extends React.Component {
             'happiness-back-btn': this.props.content[2].selected && this.props.content[2].type === 'podcast',
             'harris-back-btn': this.props.content[3].selected && this.props.content[3].type === 'podcast',
             'dostoevsky-back-btn': this.props.content[0].selected && this.props.content[0].type === 'book',
-            'american-psycho-back-btn': this.props.content[1].selected && this.props.content[1].type === 'book',
-            'ferrante-back-btn': this.props.content[2].selected && this.props.content[2].type === 'book',
+            'ferrante-back-btn': this.props.content[1].selected && this.props.content[2].type === 'book',
+            'american-psycho-back-btn': this.props.content[2].selected && this.props.content[1].type === 'book',
             'murakami-back-btn': this.props.content[3].selected && this.props.content[3].type === 'book'
           });
 

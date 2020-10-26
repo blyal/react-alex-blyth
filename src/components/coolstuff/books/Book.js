@@ -33,6 +33,35 @@ class Book extends React.Component {
                         ]
                     },
                     {
+                        title: 'My Brilliant Friend',
+                        author: 'Elena Ferrante',
+                        mainImage: <img src="images/my-brilliant-friend.jpg" alt="My Brilliant Friend" height='245' width='158' />,
+                        paragraphs: [
+                            'I didn’t expect to like this book based on what I’d heard about it, but apparently you shouldn’t judge a book by its cover. I’m very sure this is true now, because this is definitely one of the best books I’ve ever read. I’ve never read a book that so perfectly captures the experience of growing up, from both the personal perspective, as well as the perspective of someone embedded in a friend group, as well as embedded in a community. When you read My Brilliant Friend, you’ll surely have multiple “that’s so true!” moments, that maybe make you reflect on your own childhood from a new position. This is the effect of the story, told as it is from a retrospective narratorial position of an older woman reflecting and recalling her experience of growing up in 1950s Italy, alongside her best friend — the enigmatic, proud, dominant, and brilliant Lila.',
+                            'Lila and Lenú, the main character, have a strange relationship — though I guess most relationships are probably stranger than they seem on the surface. This story covers the journey of their friendship from childhood to late adolescence, and in doing so uncovers the effect that our friends have on us as we develop, as well as the effect that the nature of our surrounding community has on us, as well as the fundamental biological changes that we undergo. Although this book isn’t exactly fun, its \'truth\' caused a lot of things to make sense to me in ways they previously hadn’t. A lot of tough things happen during childhood and adolescence! We are at the mercy of the structure of our community, we undergo disorienting physical and emotional changes, and the way people treat us and the way we feel about other people is constantly changing.',
+                            'Lila and Lenú’s very competitive-yet-devoted friendship helps to get them through these tough times, but it also underscores the fact that underneath every friendship and every friend group are a set of dimensions among which we are constantly assessing ourselves and others relative to each other, and making evaluations of relative status. This book makes the case that these status evaluations are mediated by perception, and therefore are open to conscious interference — as when Lila downplays the importance of school, for example (when her family does not allow her to continue studying, where Lenú’s family does), and begins to emphasise the importance of her family’s shoemaking profession. However, the book also demonstrates that the fact that we do make these spontaneous evaluations of status means that our capacity and proclivity to make these judgements is built into the fundamental nature of our being, and is a primary motivating psychological force. Lila and Lenú are comparing and competing from the moment where they are young children, competing to see which of them will succumb to fear first, and their status–consciousness continues until the end of the book with Lenú’s scrutinising, along with the rest of their community, of Lila’s relationship with one of the neighbourhood’s very high-status men.',
+                            'Although the book’s title may not be as simple as it appears, Lila is certainly Lenú’s brilliant friend. Their constant competing pushes them both to higher and higher achievement (as always, achievement relative to their peers and eventually to the wider community), and Lila’s hunger to constantly achieve and attain more catapults her to further and further attainment throughout her life, along with the difficulties that come along with attainment. It’s a fascinating and enlightening read, and there’s too much to say about it, so for now I’ll just say that you should put down whatever you’re currently reading and order a copy of this book.'
+                        ],
+                        related: [
+                            {
+                                title: 'The Secret History',
+                                author: 'Donna Tartt',
+                                image: <img alt="The Secret History" src="images/the-secret-history.jpg" height="30%" width="30%"/>
+                            },
+                            {
+                                title: 'Persuasion',
+                                author: 'Jane Austen',
+                                image: <img alt="Persuasion" src="images/persuasion.jpg" height="30%" width="30%"/>
+                            },
+                            {
+                                title: 'Boyhood',
+                                year: '(2014)',
+                                author: 'directed by Richard Linklater',
+                                image: <img alt="Boyhood" src="images/boyhood.jpg" height="32.5%" width="32.5%"/>
+                            }
+                        ]
+                    },
+                    {
                         title: 'American Psycho',
                         author: 'Bret Easton Ellis',
                         mainImage: <img src="images/american-psycho.jpg" alt="American Psycho" height='234' width='152.7' />,
@@ -61,34 +90,6 @@ class Book extends React.Component {
                         ]
                     },
                     {
-                        title: 'My Brilliant Friend',
-                        author: 'Elena Ferrante',
-                        mainImage: <img src="images/american-psycho.jpg" alt="American Psycho" height='234' width='152.7' />,
-                        paragraphs: [
-                            'Disclaimer — not for the faint–hearted or easily–offended. This book deals with some dark shit. However, this doesn’t mean that it’s not shit that’s worth dealing with. In fact, my personal conviction is that the darkest shit is the shit we need to deal with the most. If you look straight at something that, not just makes you scared, but horrifies you, you’re stronger for it.',
-                            'American Psycho is a fascinating reflection on the masks we wear in society, the nature of the modern capitalist social environment, the pain we hide within us, and the damage it is capable of causing if it escapes our attempts to contain it. Outside of that, American Psycho is a hilarious deadpan comedy, which might sound a little strange, but for the first half of the book it’s hard to call it anything other than a comedy. Bret Easton Ellis’s minimalism is stylistically perfect, and the wit it delivers is dynamite, Also, many of the narrative ideas of the book are comedy gold — the characters all looking so alike that they fail to tell each other apart, for example. Then the book plunges into the darkness.',
-                            'I admire Ellis — having the courage and the daring to publish something like this is quite something. Humans are capable of some very dangerous stuff. Instead of ignoring and suppressing that, we need to investigate it, to figure our how this dark stuff comes about in the first place, and to ensure that we can stay on the best path possible ourselves.'
-                        ],
-                        related: [
-                            {
-                                title: 'Less Than Zero',
-                                author: 'Bret Easton Ellis',
-                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
-                            },
-                            {
-                                title: 'Notes from Underground',
-                                author: 'Dostoevsky',
-                                image: <img alt="Notes from Underground" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
-                            },
-                            {
-                                title: 'American Psycho',
-                                year: '(2000)',
-                                author: 'directed by Mary Harron',
-                                image: <img alt="Logo" src="images/american-psycho-2000.jpg" height="30%" width="30%"/>
-                            }
-                        ]
-                    },
-                    {
                         title: 'Norwegian Wood',
                         author: 'Haruki Murakami',
                         mainImage: <img src="images/norwegian-wood.jpg" alt="Norwegian Wood" height='280' width='181.3' />,
@@ -102,15 +103,15 @@ class Book extends React.Component {
                                 image: <img alt="The Wind-Up Bird Chronicle" src="images/wind-up-bird.jpg" height="30%" width="30%"/>
                             },
                             {
-                                title: 'Notes from Underground',
-                                author: 'Dostoevsky',
-                                image: <img alt="Logo" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
+                                title: 'Lost in the Spanish Quarter',
+                                author: 'Heddi Goodrich',
+                                image: <img alt="Lost in the Spanish Quarter" src="images/spanish-quarter.jpg" height="30%" width="30%"/>
                             },
                             {
-                                title: 'American Psycho',
-                                year: '(2000)',
-                                author: 'directed by Mary Harron',
-                                image: <img alt="Logo" src="images/american-psycho-2000.jpg" height="30%" width="30%"/>
+                                title: 'Burning',
+                                year: '(2018)',
+                                author: 'directed by Lee Chang-dong',
+                                image: <img alt="Burning" src="images/burning.jpg" height="35%" width="35%"/>
                             }
                         ]
                     }
