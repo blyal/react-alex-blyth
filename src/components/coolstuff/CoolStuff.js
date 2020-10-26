@@ -40,6 +40,13 @@ class CoolStuff extends React.Component {
                 selected: false,
                 title: 'Making Sense with Sam Harris',
                 content: <Harris />
+            },
+            {
+                id: uuid(),
+                type: 'podcast',
+                selected: false,
+                title: 'The Bret Easton Ellis Podcast',
+                content: <Harris />
             }
         ],
         bookList: true,
