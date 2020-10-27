@@ -12,7 +12,7 @@ class Now extends React.Component {
           <h3 style={{color: 'Cyan'}}>In 10 Seconds</h3>
           <p>Travelling Europe, exploring job opportunities and possible cities in which to live.</p>
           <p>Learning new coding languages and frameworks.</p>
-          <p>Creating memories with people I love.</p>
+          <p>Creating awesome memories with people I love.</p>
           <br />
         </div>
         <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" />

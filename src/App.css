@@ -20,9 +20,18 @@ body {
   scroll-behavior: smooth;
 }
 
-#main {
-  text-align: center;
- }
+h1 {
+  font-size: 2.25em;
+  margin: 0.6em auto;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
  
 hr {
    width: 60%;
@@ -46,6 +55,11 @@ hr {
 
 ul.cool-list {
    list-style: none;
+ }
+
+ .cool-list li {
+   /* font-size: 1.1em; */
+   line-height: 2em;
  }
 
  .cool-list li:hover {
@@ -90,6 +104,7 @@ a {
   display: flex;
   justify-content: center;
   padding-inline-start: 0;
+  margin: 0;
 }
 
 #navbar li {
