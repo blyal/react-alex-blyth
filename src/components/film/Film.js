@@ -1,6 +1,18 @@
 import React from 'react';
+import FilmPopOut from './FilmPopOut';
 
 class FilmStuff extends React.Component {    
+
+    state = {
+        popOut: false
+    }
+
+    togglePopOut = e => {
+        this.setState({
+            popOut: !this.state.popOut
+        });
+    };
+
     render() {
         return (
             <>
@@ -8,22 +20,22 @@ class FilmStuff extends React.Component {
                 <hr />
             <div className="page-flow">
                 <div className="center-content">
-                    <div style={{display: 'inline-block'}}>
-                    <p>I really like cinema. I did a degree in Film, have written and directed several short films, and enjoy watching and writing about films.
+                    <p>I really like cinema. I have done my first degree in Film, have written and directed several short films, and enjoy talking and writing about films.
                     So although maybe this page could have been incorporated into the 'Cool Stuff' page, I have too much to say about film for that, and lets be honest, film deserves a page of its own.
                     </p>
                     <p>
                         More content to come.
                     </p>
-                    </div>
                 </div>
                 <br />
+
+                <FilmPopOut open={this.state.popOut} close={this.togglePopOut} />
 
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <div style={{display: 'inline-block'}}>
                         <h3 style={{color: 'Cyan'}}>My Top Ten Films of All Time</h3>
                         <ol className="cool-list">
-                                <li>Boogie Nights</li>
+                                <li onClick={this.togglePopOut}>Boogie Nights</li>
                                 <li>The Big Lebowski</li>
                                 <li>The Lord of the Rings trilogy</li>
                                 <li>Once Upon a Time in Hollywood</li>
@@ -32,7 +44,7 @@ class FilmStuff extends React.Component {
                                 <li>Goodfellas</li>
                                 <li>No Country for Old Men</li>
                                 <li>Labyrinth</li>
-                                <li>The Royal Tenenbaums</li>
+                                <li>Boyhood</li>
                         </ol>
                     </div>
                 </div>
@@ -46,6 +58,7 @@ class FilmStuff extends React.Component {
                             <li>Paul Thomas Anderson</li>
                             <li>Joel and Ethan Coen</li>
                             <li>Quentin Tarantino</li>
+                            <li>Richard Linklater</li>
                             <li>Martin Scorsese</li>
                             <li>Wes Anderson</li>
                             <li>David Lynch</li>
