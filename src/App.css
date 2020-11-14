@@ -71,7 +71,7 @@ ul.cool-list {
 }
 
 #directorList {
-  padding-left: 10em;
+  padding-left: 8em;
 }
 
 a {
@@ -93,6 +93,8 @@ a {
 
 #top-name {
   letter-spacing: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #top-name:hover {
@@ -169,6 +171,20 @@ footer {
   height: 5em;
 }
 
+/* Overlay CSS */
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
 
 /* Blog/Code page transitions  */
 .expand-enter {
@@ -209,12 +225,18 @@ footer {
   background-color: #0F0F0F;
   border: 1px solid beige;
   box-shadow: 0 0 15px beige;
+  overflow: scroll;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-bottom: 1em;
+  z-index: 8;
 }
 .closeFilmPopOut {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
+  transform: scale(1.25);
 }
 
 .content-pocket {
@@ -651,3 +673,15 @@ footer {
 .murakami-blurb img {
   margin-bottom: 0.1em;
 }
+
+
+/* Film popout CSS */
+.no-margin {
+  margin-top: 0;
+}
+
+.labyrinth {
+  background-image: linear-gradient(white, blue);
+  border-radius: 1em;
+}
+

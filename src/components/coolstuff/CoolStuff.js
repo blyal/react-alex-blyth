@@ -94,7 +94,6 @@ class CoolStuff extends React.Component {
                 return podcast;
             })
         })
-        console.log(this.state)
     }
 
     toggleBook = (id) => {

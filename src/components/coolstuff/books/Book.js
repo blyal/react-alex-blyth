@@ -163,7 +163,7 @@ class Book extends React.Component {
                        {book.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
                     </div>
                     <div className={recommendationStyles}>
-                    <p>Related</p>
+                        <p>Related</p>
                         <table>
                             <tbody>
                                 <tr>
