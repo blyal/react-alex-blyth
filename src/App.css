@@ -145,8 +145,8 @@ footer ul {
   padding: 0;
   overflow: hidden;
   text-align: center;
-  margin-left: 20%;
-  margin-right: 20%;
+  height: 100%;
+  margin: 0 20%;
 }
 
 footer li {
@@ -161,14 +161,14 @@ html, body, #root {
 .App {
   min-height: 100%;
   position: relative;
-  padding-bottom: 5em;
+  padding-bottom: 6em;
   box-sizing: border-box;
 }
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5em;
+  height: 6em;
 }
 
 /* Overlay CSS */
