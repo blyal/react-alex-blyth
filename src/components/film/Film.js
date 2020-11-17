@@ -50,17 +50,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Magnolia',
                         year: '1999',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Magnolia" src="images/magnolia-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'The Wolf of Wall Street',
                         year: '2013',
-                        director: 'Martin Scorsese'
+                        director: 'Martin Scorsese',
+                        img: <img alt="The Wolf of Wall Street" src="images/wolf-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Network',
                         year: '1976',
-                        director: 'Sidney Lumet'
+                        director: 'Sidney Lumet',
+                        img: <img alt="Network" src="images/network-small.webp" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -75,17 +78,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Inherent Vice',
                         year: '2014',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Inherent Vice" src="images/inherent-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Burn After Reading',
                         year: '2008',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="Burn After Reading" src="images/burn-after-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'O Brother Where Art Thou?',
                         year: '2000',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="O Brother Where Art Thou" src="images/o-brother-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -101,17 +107,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Star Wars',
                         year: '1977',
-                        director: 'George Lucas'
+                        director: 'George Lucas',
+                        img: <img alt="Star Wars" src="images/star-wars-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Harry Potter series',
                         year: '2001–11',
-                        director: 'Created by J.K. Rowling'
+                        director: 'Created by J.K. Rowling',
+                        img: <img alt="Harry Potter Film Series" src="images/hp-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Game of Thrones TV series',
                         year: '2011–19',
-                        director: 'Created by George R.R. Martin'
+                        director: 'Created by George R.R. Martin',
+                        img: <img alt="Game of Throne TV series" src="images/got-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -126,17 +135,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Inglourious Basterds',
                         year: '2007',
-                        director: 'Quentin Tarantino'
+                        director: 'Quentin Tarantino',
+                        img: <img alt="Inglourious Basterds" src="images/inglourious-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Boogie Nights',
                         year: '1997',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Boogie Nights" src="images/boogie-nights-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Hail, Caesar!',
                         year: '2016',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="Hail, Caesar!" src="images/hail-caesar-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -151,17 +163,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Boogie Nights',
                         year: '1997',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Boogie Nights" src="images/boogie-nights-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'There Will Be Blood',
                         year: '2007',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="There Will Be Blood" src="images/twbb-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Nashville',
                         year: '1975',
-                        director: 'Robert Altman'
+                        director: 'Robert Altman',
+                        img: <img alt="Nashville" src="images/nashville-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -176,17 +191,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Magnolia',
                         year: '1999',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Magnolia" src="images/magnolia-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'No Country for Old Men',
                         year: '2007',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="No Country for Old Men" src="images/no-country-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: '2001: A Space Odyssey',
                         year: '1968',
-                        director: 'Stanley Kubrick'
+                        director: 'Stanley Kubrick',
+                        img: <img alt="2001: A Spacy Odyssey" src="images/2001-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -201,17 +219,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Dazed and Confused',
                         year: '1991',
-                        director: 'Richard Linklater'
+                        director: 'Richard Linklater',
+                        img: <img alt="Dazed and Confused" src="images/dazed-and-small.jpg" height="30%" width="30%"/>
                     },
                     {
-                        title: 'Harry Potter series',
+                        title: 'Harry Potter film series',
                         year: '2001-11',
-                        director: 'created by J.K. Rowling'
+                        director: 'created by J.K. Rowling',
+                        img: <img alt="Harry Potter Film Series" src="images/hp-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Magnolia',
                         year: '1999',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="Magnolia" src="images/magnolia-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -226,17 +247,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'The Wolf of Wall Street',
                         year: '2013',
-                        director: 'Martin Scorsese'
+                        director: 'Martin Scorsese',
+                        img: <img alt="The Wolf of Wall Street" src="images/wolf-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'The Godfather',
                         year: '1972',
-                        director: 'Francis Ford Coppola'
+                        director: 'Francis Ford Coppola',
+                        img: <img alt="The Godfather" src="images/godfather-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Casino',
                         year: '1995',
-                        director: 'Martin Scorsese'
+                        director: 'Martin Scorsese',
+                        img: <img alt="Casino" src="images/casino-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -251,17 +275,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'The NeverEnding Story',
                         year: '1984',
-                        director: 'Wolfgang Petersen'
+                        director: 'Wolfgang Petersen',
+                        img: <img alt="The NeverEnding Story" src="images/neverending-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Inside Out',
                         year: '2015',
-                        director: 'Pete Docter'
+                        director: 'Pete Docter',
+                        img: <img alt="Inside Out" src="images/inside-out-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Spirited Away',
                         year: '2001',
-                        director: 'Hayao Miyazaki'
+                        director: 'Hayao Miyazaki',
+                        img: <img alt="Spirited Away" src="images/spirited-away-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -276,17 +303,20 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Fargo',
                         year: '1995',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="Fargo" src="images/fargo-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'There Will Be Blood',
                         year: '2007',
-                        director: 'Paul Thomas Anderson'
+                        director: 'Paul Thomas Anderson',
+                        img: <img alt="There Will Be Blood" src="images/twbb-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Blood Simple',
                         year: '1984',
-                        director: 'Joel and Ethan Coen'
+                        director: 'Joel and Ethan Coen',
+                        img: <img alt="Blood Simple" src="images/blood-simple-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             }
@@ -301,19 +331,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Boogie Nights',
-                        year: '1997'
+                        year: '1997',
+                        img: <img alt="Boogie Nights" src="images/boogie-nights-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Magnolia',
-                        year: '1999'
+                        year: '1999',
+                        img: <img alt="Magnolia" src="images/magnolia-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'There Will Be Blood',
-                        year: '2007'
+                        year: '2007',
+                        img: <img alt="There Will Be Blood" src="images/twbb-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Punch–Drunk Love',
-                        year: '2002'
+                        year: '2002',
+                        img: <img alt="Punch-Drunk Love" src="images/punch-drunk-small.jpg" height="35%" width="35%"/>
                     }
                 ]
             },
@@ -326,19 +360,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'The Big Lebowski',
-                        year: '1998'
+                        year: '1998',
+                        img: <img alt="The Big Lebowski" src="images/big-lebowski-small.jpeg" height="30%" width="30%"/>
                     },
                     {
                         title: 'No Country for Old Men',
-                        year: '2007'
+                        year: '2007',
+                        img: <img alt="No Country for Old Men" src="images/no-country-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Burn After Reading',
-                        year: '2008'
+                        year: '2008',
+                        img: <img alt="Burn After Reading" src="images/burn-after-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Fargo',
-                        year: '1995'
+                        year: '1995',
+                        img: <img alt="Fargo" src="images/fargo-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -351,19 +389,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Boyhood',
-                        year: '2014'
+                        year: '2014',
+                        img: <img alt="Boyhood" src="images/boyhood-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Dazed and Confused',
-                        year: '1991'
+                        year: '1991',
+                        img: <img alt="Dazed and Confused" src="images/dazed-and-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Waking Life',
-                        year: '2001'
+                        year: '2001',
+                        img: <img alt="Waking Life" src="images/waking-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Before Sunrise',
-                        year: '1995'
+                        year: '1995',
+                        img: <img alt="Before Sunrise" src="images/before-sunrise-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -376,19 +418,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Pulp Fiction',
-                        year: '1994'
+                        year: '1994',
+                        img: <img alt="Pulp Fiction" src="images/pulp-small.jpeg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Inglourious Basterds',
-                        year: '2007'
+                        year: '2007',
+                        img: <img alt="Inglourious Basterds" src="images/inglourious-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Once Upon a Time in Hollywood',
-                        year: '2019'
+                        year: '2019',
+                        img: <img alt="Once Upon a Time in Hollywood" src="images/hollywood-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Django Unchained',
-                        year: '2012'
+                        year: '2012',
+                        img: <img alt="Django Unchained" src="images/django-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -401,19 +447,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Goodfellas',
-                        year: '1991'
+                        year: '1991',
+                        img: <img alt="Goodfellas" src="images/goodfellas-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'The Wolf of Wall Street',
-                        year: '2013'
+                        year: '2013',
+                        img: <img alt="The Wolf of Wall Street" src="images/wolf-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'The Departed',
-                        year: '2006'
+                        year: '2006',
+                        img: <img alt="The Departed" src="images/departed-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Raging Bull',
-                        year: '1980'
+                        year: '1980',
+                        img: <img alt="Raging Bull" src="images/raging-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -426,19 +476,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Spirited Away',
-                        year: '2001'
+                        year: '2001',
+                        img: <img alt="Spirited Away" src="images/spirited-away-small.jpg" height="30%" width="30%"/>
                     },
                     {
-                        title: 'Howl&#39;s Moving Castle',
-                        year: '2004'
+                        title: "Howl's Moving Castle",
+                        year: '2004',
+                        img: <img alt="Howl's Moving Castle" src="images/howl's-moving-small.png" height="30%" width="30%"/>
                     },
                     {
-                        title: 'Laputa — Castle in the Sky',
-                        year: '1986'
+                        title: 'Laputa – Castle in the Sky',
+                        year: '1986',
+                        img: <img alt="Laputa — Castle in the Sky" src="images/laputa-small.jpg" height="30%" width="30%"/>
                     },
                     {
-                        title: 'Kiki&#39;s Delivery Service',
-                        year: '1989'
+                        title: "Kiki's Delivery Service",
+                        year: '1989',
+                        img: <img alt="Kiki's Delivery Service" src="images/kiki's-delivery-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -447,23 +501,27 @@ class FilmStuff extends React.Component {
                 name: 'Wes Anderson',
                 born: '1969',
                 img: <img alt="Wes Anderson" src="images/wes-anderson-bill.jpg" height="70%" width="70%"/>,
-                bio: ['No relation to Paul Thomas, Wes is completely his own Anderson. Completely — there’s no director like Wes. His films are VERY unique. They have a very definite style, so much so that if you saw two or three of his movies, then you’d be able to pick his movies out of a crowd, even if you’re not a film enthusiast. Like PTA though, Wes is very interested in family dynamics and how they shape us as people. His films usually involve Owen Wilson and/or Bill Murray feeling a bit meaningless in life, working through a family– or career–related problem. Owen Wilson and Wes Anderson actually went to university together, and began their film careers together. Though he started writing with Wilson, and although he still closely collaborates with other writers, Wes has evolved into a auteur star director. The dialogue in his films is razor–sharp, the directing style is so unique that it’s worth the price of admission alone just to witness, and his actors always give amazing performances. Like Tarantino, Wes has become one of these directors that the most in–demand actors yearn for the chance to work with. Although for me sometimes his films are a bit too cute, he mostly hits home runs.'],
+                bio: ['No relation to Paul Thomas, Wes is completely his own Anderson. Completely — there’s no director like Wes. His films are VERY unique. They have a very definite style, so much so that if you saw two or three of his movies, then you’d be able to pick his movies out of a crowd, even if you’re not a film enthusiast. Like PTA though, Wes is very interested in family dynamics and how they shape us as people. His films usually involve Owen Wilson and/or Bill Murray feeling a bit meaningless in life, working through a family– or career–related problem. Owen Wilson and Wes Anderson actually went to university together, and began their film careers together. Though he started writing with Wilson, and although he still closely collaborates with other writers, Wes has evolved into a auteur star director. The dialogue in his films is razor–sharp, the directing style is so unique that it’s worth the price of admission alone just to witness, and his actors always give amazing performances. Like Tarantino, Wes has become one of these directors that the most in–demand actors are desperate for the chance to work with. Although for me sometimes his films are a bit too cute, he mostly hits home runs.'],
                 recommendations: [
                     {
-                        title: 'The Royal Tenenbaums',
-                        year: '2001'
-                    },
-                    {
                         title: 'The Grand Budapest Hotel',
-                        year: '2014'
+                        year: '2014',
+                        img: <img alt="The Grand Budapest Hotel" src="images/the-small-budapest-hotel.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Fantastic Mr Fox',
-                        year: '2009'
+                        year: '2009',
+                        img: <img alt="Fantastic Mr Fox" src="images/fantastic-mr-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Rushmore',
-                        year: '1998'
+                        year: '1998',
+                        img: <img alt="Rushmore" src="images/rushmore-small.jpg" height="30%" width="30%"/>
+                    },
+                    {
+                        title: 'The Royal Tenenbaums',
+                        year: '2001',
+                        img: <img alt="The Royal Tenenbaums" src="images/the-royal-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             },
@@ -476,19 +534,23 @@ class FilmStuff extends React.Component {
                 recommendations: [
                     {
                         title: 'Mulholland Drive',
-                        year: '2001'
-                    },
-                    {
-                        title: 'Blue Velvet',
-                        year: '1986'
+                        year: '2001',
+                        img: <img alt="Mulholland Drive" src="images/mulholland-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Wild at Heart',
-                        year: '1990'
+                        year: '1990',
+                        img: <img alt="Wild at Heart" src="images/wild-at-small.jpg" height="30%" width="30%"/>
                     },
                     {
                         title: 'Twin Peaks: Fire Walk with Me',
-                        year: '1992'
+                        year: '1992',
+                        img: <img alt="Twin Peaks: Fire Walk with Me" src="images/twin-peaks-small.jpg" height="30%" width="30%"/>
+                    },
+                    {
+                        title: 'Blue Velvet',
+                        year: '1986',
+                        img: <img alt="Blue Velvet" src="images/blue-velvet-small.jpg" height="30%" width="30%"/>
                     }
                 ]
             }

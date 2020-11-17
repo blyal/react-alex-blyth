@@ -24,6 +24,20 @@ class FilmPopOut extends React.Component {
                             <p style={context}>Directed by {director}, {year}.</p>
                         </div>
                     </div>
+                    <div>
+                    <p>Related:</p>
+                    <table className="film-table">
+                        <tbody>
+                            <tr>
+                                {related.map((item) => <td><div>{item.img}</div></td>)}
+                            </tr>
+                            <tr>
+                                {related.map((item) => 
+                                    <td>{item.title} <br /><i><span>({item.director}, {item.year})</span></i></td>)}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 </> :
                 <>
                     <div style={imgContainer}>
@@ -37,7 +51,23 @@ class FilmPopOut extends React.Component {
                             <p className="no-margin" key={id}>{item}</p>
                         ))}
                     </div>
-                </div></>
+                </div>
+                <div>
+                    <p>Recommended Movies:</p>
+                    <table className="director-table">
+                        <tbody>
+                            <tr>
+                                {recommendations.map((item) => <td><div>{item.img}</div></td>)}
+                            </tr>
+                            <tr>
+                                {recommendations.map((item) => 
+                                    <td>{item.title} <i><span>({item.year})</span></i></td>)}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                </>
                 }
             </div>
         )

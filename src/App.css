@@ -70,10 +70,6 @@ ul.cool-list {
   font-size: 0.75em;
 }
 
-#directorList {
-  padding-left: 8em;
-}
-
 a {
   color: inherit;
 }
@@ -86,6 +82,10 @@ a {
 }
 .flex-95 {
   flex-basis: 95%;
+}
+
+.no-margin {
+  margin-top: 0;
 }
 
 
@@ -237,6 +237,9 @@ footer {
   left: 10px;
   cursor: pointer;
   transform: scale(1.25);
+}
+#directorList {
+  padding-left: 8em;
 }
 
 .content-pocket {
@@ -675,13 +678,17 @@ footer {
 }
 
 
-/* Film popout CSS */
-.no-margin {
-  margin-top: 0;
-}
-
+/* Film popout items CSS */
 .labyrinth {
   background-image: linear-gradient(white, blue);
   border-radius: 1em;
 }
-
+.filmPopOut table {
+  table-layout: fixed;
+}
+.director-table td {
+  width: 25%;
+}
+.film-table td {
+  width: 33.3%;
+}

@@ -5,12 +5,6 @@ import { CSSTransition } from 'react-transition-group';
 
 class CodeItem extends React.Component {
     
-    // getStyle = () => {
-    //     return {
-    //         display: this.props.entry.open ? 'default' : 'none'
-    //     }
-    // }
-    
     render() {
         const { id, img, content, title, open, year } = this.props.project;
         const idJump = "#" + id.toString();
