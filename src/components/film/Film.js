@@ -44,7 +44,7 @@ class FilmStuff extends React.Component {
                 title: 'Boogie Nights',
                 director: 'Paul Thomas Anderson',
                 year: '1997',
-                img: <div><img alt="Boogie Nights" src="images/boogie-nights-wallpaper.jpg" height="70%" width="70%"/><img alt="Boogie Nights Title" src="images/boogie-nights-words.jpg" height="40%" width="40%"/></div>,
+                img: <img alt="Boogie Nights" src="images/boogie-nights-wallpaper.jpg" height="70%" width="70%"/>,
                 description: ['This movie is everything — it’s about families and communities, and also rugged individualism. About discrimination and acceptance. Commitment and abandonment. Success and failure. If I explain the concept (a movie about pornstars in LA in the late 1970s), it sounds like a dumb adult comedy. In reality, while this movie is extremely funny (and sad at the same time), it’s ANYTHING but dumb. I was struck by it when I first watched it, and it’s still just as entertaining, insightful, real, and tragic now as it ever was. Mark Wahlberg is an absolute star, and Paul Thomas Anderson is an absolute genius — I still can’t believe that someone in their 20s was capable of making a movie this good.'],
                 related: [
                     {
@@ -72,8 +72,8 @@ class FilmStuff extends React.Component {
                 title: 'The Big Lebowski',
                 director: 'Joel and Ethan Coen',
                 year: '1998',
-                img: <img alt="The Big Lebowski" src="images/lebowski.jpg" height="70%" width="70%"/>,
-                description: ['It’s hard to put into words what makes The Big Lebowski one of the greatest (arguably the greatest) movie ever made. Many people have tried and failed. To describe the story is almost irrelevant, because it’s hard to know what the story is. Even the characters struggle to keep track of what their objectives are throughout the movie. Plans are made and forgotten. No one knows who the bad guy really is, if there even is one, or maybe everybody is the bad guy? Hard to tell. What I can tell you though is that this movie was so influential that it legitimately started a religion (seriously, look it up. There are ordained ‘priests’ and everything). That’s really all the reason you need to watch it, along with the fact that it’s probably the most quotable movie ever, but there are more, lots more reasons than I can share here. At the end of the day, though, as The Dude would say, “that’s just, like, your opinion man.”'],
+                img: <img alt="The Big Lebowski" src="images/big-lebowski.png" height="70%" width="70%"/>,
+                description: ['It’s hard to put into words what makes The Big Lebowski one of the greatest (arguably the greatest) movie ever made. Many people have tried and failed. To describe the story is almost irrelevant, because it’s hard to know what the story is. Even the characters struggle to keep track of what their objectives are throughout the movie. Plans are made and forgotten. No one knows who the bad guy really is, if there even is one, or maybe everybody is the bad guy? Hard to tell. What I can tell you though is that this movie was so influential that it legitimately started a religion (seriously, look it up — there are ordained priests and everything). That’s really all the reason you need to watch it, along with the fact that it’s probably the most quotable movie ever, but there are more, lots more reasons than I can share here. At the end of the day, though, as The Dude would say, “that’s just, like, your opinion man.”'],
                 related: [
                     {
                         title: 'Inherent Vice',
@@ -101,8 +101,7 @@ class FilmStuff extends React.Component {
                 director: 'Peter Jackson',
                 year: '2001-03',
                 img: <img alt="Lord of the Rings" src="images/lotr.jpg" height="70%" width="70%"/>,
-                titleWords: <img alt="Lord of the Rings Title" src="images/lotr-title.jpg" height="30%" width="30%"/>,
-                description: ['What can I even say? What is there to say? Everyone knows how awesome, how epic The Lord of the Rings is. There’s nothing I could say that would even begin to encapsulate that. And it’s definitely not just because I’m from New Zealand haha. By the way, I’m fully aware that they are technically three separate movies, but I put them together so I’d have more space for other movies on my top ten, so no need to complain about that. Anyway, true fans watch all three movies at once anyway (extended editions, of course).'],
+                description: ['What can I even say? What is there to say? Everyone knows how awesome, how epic The Lord of the Rings is. There’s nothing I could say that would even begin to encapsulate that. And it’s definitely not just because I’m from New Zealand (haha). By the way, I’m fully aware that they are technically three separate movies, but I put them together so I’d have more space for other movies on my top ten, so no need to complain about that. Anyway, true fans watch all three movies at once anyway (extended editions, of course).'],
                 related: [
                     {
                         title: 'Star Wars',
@@ -269,7 +268,7 @@ class FilmStuff extends React.Component {
                 title: 'Labyrinth',
                 director: 'Jim Henson',
                 year: '1986',
-                img: <img className='labyrinth' alt="Labyrinth" src="images/labyrinth.png" height="60%" width="60%"/>,
+                img: <img className='labyrinth-img' alt="Labyrinth" src="images/labyrinth.png" height="60%" width="60%"/>,
                 description: ['With puppets that look like the Muppets, starring David Bowie, funded by George Lucas, written by a combination of a children’s book writer, a member of Monty Python, and the creator of The Muppets, this movie is unique to say the least. I had heard a lot about it before I saw it for the first time, and when I did it hit me hard. If you are at all interested in the idea of archetypes, then this movie is definitely for you, because I think it absolutely nails them. I really like movies that are entertaining on the surface level, but then have a lot going on under the hood. It’s basically the story of a teenager who has to rescue her infant sibling (for me, her child self), after she has become a surly teenager, and to do so she has to navigate a dream–like labyrinth filled with challenging tests and psychedelic puppet characters, with the ultimate enemy she has to confront being the malevolent dreamlike David Bowie, who has kidnapped her sibling. Only when she confronts him and what he represents can she reawaken the inner child, according to my analysis. Haha damn, I gave away the plot of the movie. Watch it anyway, it’s worth it just to see David hanging out with the muppets.'],
                 related: [
                     {
@@ -385,7 +384,7 @@ class FilmStuff extends React.Component {
                 name: 'Richard Linklater',
                 born: '1960',
                 img: <img alt="Richard Linklater" src="images/linklater-yolo.jpg" height="70%" width="70%"/>,
-                bio: ['Coming soon.'],
+                bio: [<p>I’ve actually known about Richard Linklater since I was a kid, funnily enough, even though he’s maybe not the most mainstream director out there. But as a kid I was a big Jack Black fan, and had the good fortune to have a DVD of <i>School of Rock</i> directed by none other than Richard Linklater. I saw him talking on the 'Making of’ documentary on the DVD, and so remembered him when I later started coming across his name as a film student at uni. At first I wasn’t that interested, as I associated him as just being a director of kids’ movies. How wrong I was, and I’m very stoked to have found that out. Richard Linklater is a director of movies with <i>heart</i>. He has made such a diverse range of films that he’s hard to categorise, but I would say he may be the most emotionally intelligent director there is. He’s able to bring his characters to life as social beings, and rather than have a plot, most often he likes to explore situations that characters find themselves in. Because his characters are so reminiscent of real life, rather than just being dramatic creations, his movies are very engaging on an emotional level. Time and again I’ve seen him hit the nail on the head regarding any situation a movie of his tackles, whether it’s a romance (the <i>Before</i> series), a high school party (<i>Dazed and Confused</i>, which I actually saw as a 15-year old, not knowing it was his movie), or even just people hanging out (<i>Slacker</i>). He’s also a director who likes to experiment and take risks, which somehow always seem to pay off — like shooting a film over 12 years as the protagonist’s actor was growing up (<i>Boyhood</i>), or creating a film that investigates the blurred difference between dreams and reality (<em>Waking Life</em>). Simply put, Richard Linklater is the man. Mucho respect.</p>],
                 recommendations: [
                     {
                         title: 'Boyhood',
@@ -414,7 +413,7 @@ class FilmStuff extends React.Component {
                 name: 'Quentin Tarantino',
                 born: '1963',
                 img: <img alt="Quentin Tarantino" src="images/tarantino-keitel.jpg" height="70%" width="70%"/>,
-                bio: ['Quentin Tarantino needs no introduction. If you haven’t heard of him, I’m sure you’ve been living under a rock. He is probably the closest thing to a rock star director that we have working today. His films are a testament to testosterone — whether they revolve around a freed slave-turned-bounty hunter in 1850s antebellum American South seeking to free his wife from a cruel slaveowner, or a deadly female assassin looking to exact revenge on her former assassin team (kind of the reverse of Charlie’s Angels) who killed her husband and child when she tried to leave the tea,. I really can’t praise Tarantino enough. He really opened my eyes to what cinema can achieve. I remember watching Pulp Fiction over and over again when I first discovered Tarantino. There’s a reason the only film Leonardo DiCaprio has appeared in in the last five years was written and directed by Tarantino. He’s a master. His films are exciting, epic, and totally unpolitically correct, for which he makes no apologies.'],
+                bio: ['Quentin Tarantino needs no introduction. If you haven’t heard of him, I’m sure you’ve been living under a rock. He is probably the closest thing to a rock star director that we have working today. His films are a testament to testosterone — whether they revolve around a freed slave-turned-bounty hunter in 1850s antebellum American South seeking to free his wife from a cruel slaveowner, or a deadly female assassin looking to exact revenge on her former assassin team (kind of the reverse of Charlie’s Angels) who killed her husband and child when she tried to leave the squad. I really can’t praise Tarantino enough. He really opened my eyes to what cinema can achieve. I remember watching Pulp Fiction over and over again when I first discovered Tarantino. There’s a reason the only film Leonardo DiCaprio has appeared in in the last five years was written and directed by Tarantino. He’s a master. His films are exciting, epic, and totally politically incorrect, for which he makes no apologies.'],
                 recommendations: [
                     {
                         title: 'Pulp Fiction',
@@ -442,7 +441,7 @@ class FilmStuff extends React.Component {
                 id: uuid(),
                 name: 'Martin Scorsese',
                 born: '1942',
-                img: <img alt="Martin Scorsese" src="images/scorsese.jpg" height="70%" width="70%"/>,
+                img: <img alt="Martin Scorsese" style={{border: '#e0e7e7 solid 2px'}} src="images/scorsese.jpg" height="70%" width="70%"/>,
                 bio: ['What can I say? He’s the master! Every single director on my list would probably name Martin Scorsese as one of their inspirations. He just knows how to craft a really exciting and epic movie, A lot of them are testosterone-fests. However, I don’t say that pejoratively at all. Scorsese knows how to excite an audience, how to get their hearts pounding (you can definitely see some of Tarantino’s inspiration in there). His films don’t really follow conventional narrative structures, but usually explore a person or group as their lives go on (whether it’s gangsters in New York, Taxi Drivers in New York, boxers in New York, Jesus Christ, stockbrokers in New York… it’s usually in New York). Scorsese films are modern American myths on the screen, and so are an important part of Western cultural heritage in the 20th Century. There’s so much to say about Scorsese… all I can say now is that I’m a Scorsese geek. His films always express something important, are very engaging, and actors always bring their A-game to the table when Scorsese is behind the camera.'],
                 recommendations: [
                     {
@@ -471,8 +470,8 @@ class FilmStuff extends React.Component {
                 id: uuid(),
                 name: 'Hayao Miyazaki',
                 born: '1941',
-                img: <img alt="Hayao Miyazaki" src="images/miyazaki.jpg" height="70%" width="70%"/>,
-                bio: ['Miyazaki is the man behind Studio Ghibli, which you may know, and has directed many of their most successful films. Studio Ghibli is a Japanese company that makes animated movies. They are ostensibly for children, but I actually know far more adults who enjoy Studio Ghibli movies than I did as a kid. His movies are very beautiful. My other favourite directors are more in the realms of the macho, the emotional, and the strange, but if you prefer something sweet and heart–warming, but also really good quality, then go Miyazaki. The films are Japanese, but if you can’t stomach subtitles a lot of them has been dubbed in English by Disney, who saw such talent in Miyazaki that they bought the rights to dub and distribute his movies in the West. His films usually follow a female child, special in some way, who has to go through a fairytale–like hardship, and by connecting with those around her is able to do so. The films are very insightful for children’s movies — characters are often not what they first seem, the binary between good and evil is brought into question, and the beauty of innocence is contrasted with the inevitability and necessity of growing up, by overcoming hardships.'],
+                img: <img alt="Hayao Miyazaki" style={{border: 'purple solid 2px'}} src="images/miyazaki.jpg" height="70%" width="70%"/>,
+                bio: ['Miyazaki is the man behind Studio Ghibli, which you may know, and has directed many of their most successful films. Studio Ghibli is a Japanese company that makes animated movies. They are ostensibly for children, but I actually know far more people who enjoy Studio Ghibli movies as an adult than I did as a kid. His movies are very beautiful. My other favourite directors are more in the realms of the macho, the emotional, and the strange, but if you prefer something sweet and heart–warming, but also really good quality, then go Miyazaki. The films are Japanese, but if you can’t stomach subtitles a lot of them has been dubbed in English by Disney, who saw such talent in Miyazaki that they bought the rights to dub and distribute his movies in the West. His films usually follow a female child, special in some way, who has to go through a fairytale–like hardship, and by connecting with those around her is able to do so. The films are very insightful for children’s movies — characters are often not what they first seem, the binary between good and evil is brought into question, and the beauty of innocence is contrasted with the inevitability and necessity of growing up, by overcoming hardships.'],
                 recommendations: [
                     {
                         title: 'Spirited Away',
@@ -561,6 +560,7 @@ class FilmStuff extends React.Component {
         this.setState({
             popOut: !this.state.popOut
         });
+        console.log(this.state.popOut);
     };
 
     selectItem = (item, type) => {

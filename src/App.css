@@ -85,7 +85,7 @@ a {
 }
 
 .no-margin {
-  margin-top: 0;
+  margin: 0;
 }
 
 
@@ -213,33 +213,6 @@ footer {
   z-index: 1;
   background-color: black;
   position: relative;
-}
-
-.filmPopOut {
-  width: 75%;
-  height: 75%;
-  position: fixed;
-  top: 12.5%;
-  left: 12.5%;
-  border-radius: 0.5em;
-  background-color: #0F0F0F;
-  border: 1px solid beige;
-  box-shadow: 0 0 15px beige;
-  overflow: scroll;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding-bottom: 1em;
-  z-index: 8;
-}
-.closeFilmPopOut {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  transform: scale(1.25);
-}
-#directorList {
-  padding-left: 8em;
 }
 
 .content-pocket {
@@ -688,7 +661,167 @@ footer {
 }
 .director-table td {
   width: 25%;
+  letter-spacing: 0.03em;
 }
 .film-table td {
   width: 33.3%;
+  font-size: 20px;
+  letter-spacing: 0.05em;
 }
+.film-table span {
+  font-size: 15px;
+}
+.fpo-body {
+  text-align: left;
+  border-radius: 1em;
+  padding: 0 1em 1em 1em;
+}
+.fpo-words {
+  line-height: 1.5em;
+  margin-top: 0;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+.fpo-words p {
+  margin: 0;
+}
+.boogie-nights {
+  background-image: linear-gradient(#e80011,#000400)
+}
+.big-lebowski {
+  background-image: linear-gradient(#9A896C,#695744)
+}
+.lotr {
+  background-image: linear-gradient(#000f00,#454922);
+  color: #c6a21a;
+}
+.ouatih {
+  background-image: linear-gradient(#0e2f36,#a77c48)
+}
+.magnolia {
+  background-image: linear-gradient(#ceb156,#efe9d6);
+  color: black;
+}
+.twbb {
+  background-image: linear-gradient(#000400,#963407)
+}
+.boyhood {
+  background-image: linear-gradient(grey, #f9f9ed);
+  color: black;
+}
+.goodfellas {
+  background-image: linear-gradient(#691c26,#000400)
+}
+.labyrinth {
+  background-image: linear-gradient(blue,white);
+  color: black;
+}
+.no-country {
+  background-image: linear-gradient(#e6caa4,#b45c2a);
+  color: black;
+}
+.director-name {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.pta {
+  display: inline-block;
+  border: white solid 1px;
+  background-image: linear-gradient(grey, #4d5d6c);
+  border-radius: 0.3em;
+  width: 50%;
+  padding-bottom: 0.2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.coen-bros {
+  display: inline-block;
+  background-color: black;
+  letter-spacing: 1em;
+  font-size: 0.9em;
+  border: rgb(58, 40, 40) solid 1px;
+  border-radius: 0.3em;
+  padding: 0.3em;
+  padding-left: 0.8em;
+  margin-bottom: 1.5em;
+}
+.coen-bros h4 {
+  letter-spacing: 0.3em;
+}
+.linklater {
+  display: inline-block;
+  background-image: url('./background-images/pink-brush.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.scorsese {
+  display: inline-block;
+  color: black;
+  background-color: #e0e7e7;
+  padding: 1em 2em;
+  width: 40%;
+  border-radius: 0 0 1em 1em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+.miyazaki {
+  display: inline-block;
+  background-color: purple;
+  padding: 1em 2em;
+  width: 40%;
+  border-radius: 0 0 1em 1em;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+.w-anderson {
+  display: inline-block;
+  width: 50%;
+  background-image: url('./background-images/nice-sign.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+.w-anderson h3 {
+  color: black;
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: Futura;
+}
+.w-anderson h4 {
+  font-size: 1.25em;
+  color: black;
+  font-family: Futura;
+}
+.w-anderson hr {
+  display: none;
+}
+.lynch {
+  display: inline-block;
+  width: 35%;
+  background-image: url('./background-images/smoke.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 1em;
+  padding-bottom: 2.5em;
+}
+.lynch h3 {
+  font-size: 1.5em;
+  font-family: 'Bradley Hand', 'Times New Roman', serif;
+}
+.lynch hr {
+  display: none;
+}
+.lynch h4 {
+  font-size: 1em;
+  font-family: 'Bradley Hand', 'Times New Roman', serif;
+}
+.fpo-bottom {
+  letter-spacing: 1em;
+}
+
+/* Try this font: Apercu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif */

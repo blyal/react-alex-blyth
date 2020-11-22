@@ -1,31 +1,57 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import classNames from 'classnames';
 // import PropTypes from 'prop-types';
-// var classNames = require('classnames');
 
 class FilmPopOut extends React.Component {
     render() {
-        const {id, director, year, img, description, related, name, born, bio, recommendations} = this.props.selected;
+        const {id, title, director, year, img, description, related, name, born, bio, recommendations} = this.props.selected;
+
+        const bodyWords = classNames({
+            'fpo-body': true,
+            'boogie-nights': title === 'Boogie Nights',
+            'big-lebowski': title === 'The Big Lebowski',
+            'lotr': title === 'The Lord of the Rings Trilogy',
+            'ouatih': title === 'Once Upon a Time in Hollywood',
+            'magnolia': title === 'Magnolia',
+            'twbb': title === 'There Will Be Blood',
+            'boyhood': title === 'Boyhood',
+            'goodfellas': title === 'Goodfellas',
+            'labyrinth': title === 'Labyrinth',
+            'no-country': title === 'No Country for Old Men'
+        });
+
+        const littleBox = classNames({
+            'pta': name === 'Paul Thomas Anderson',
+            'coen-bros': name === 'Joel and Ethan Coen',
+            'linklater': name === 'Richard Linklater',
+            'scorsese': name === 'Martin Scorsese',
+            'miyazaki': name === 'Hayao Miyazaki',
+            'w-anderson': name === 'Wes Anderson',
+            'lynch': name === 'David Lynch'
+        });
+        
+
         return (
-            <div className="filmPopOut" style={{display: this.props.open ? 'block' : 'none'}}>
-                <FontAwesomeIcon icon={faTimesCircle} className="closeFilmPopOut" onClick={this.props.close} />
+            <div className="film-popout">
+                <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={this.props.close} />
                 {
                     this.props.type === 'film' ? <>
                     <div style={imgContainer}>
                         {img}
                     </div>
                     <div style={contents}>
-                        {'titleWords' in this.props.selected ? this.props.selected.titleWords : null }
-                        <div style={{textAlign: 'left'}}>
+                        <div className={bodyWords}>
+                            <p className="fpo-words">{title.toUpperCase()}</p>
                             {description.map((item) => (
-                                <p className="no-margin" key={id}>{item}</p>
+                                <p className="fpo-words" key={id}>{item}</p>
                             ))}
-                            <p style={context}>Directed by {director}, {year}.</p>
+                            <p className="fpo-words">Directed by {director}, {year}.</p>
                         </div>
-                    </div>
+                    </div><br />
                     <div>
-                    <p>Related:</p>
+                    <p className="fpo-words fpo-bottom">Related</p>
                     <table className="film-table">
                         <tbody>
                             <tr>
@@ -44,16 +70,21 @@ class FilmPopOut extends React.Component {
                         {img}
                     </div>
                 <div style={contents}>
-                    <h3 style={head}>{name}</h3>
-                    <hr />
-                    <div style={{textAlign: 'left'}}>
+                    <div className={littleBox}>
+                        <h3 className="director-name">{name}</h3>
+                        <hr />
+                        <h4 className="no-margin">Born {born}.</h4>
+                    </div>
+                    
+                    <br />
+                    <div className={bodyWords}>
                         {bio.map((item) => (
-                            <p className="no-margin" key={id}>{item}</p>
+                            <p className="fpo-words" key={id}>{item}</p>
                         ))}
                     </div>
-                </div>
+                </div><br />
                 <div>
-                    <p>Recommended Movies:</p>
+                    <p className="fpo-words fpo-bottom">Recommended Movies</p>
                     <table className="director-table">
                         <tbody>
                             <tr>
@@ -76,23 +107,15 @@ class FilmPopOut extends React.Component {
 
 const imgContainer = {
     margin: '1em 0 0',
-    textAlign: 'center'
+    textAlign: 'center',
+    zIndex: '4',
+    position: 'relative'
 }
 
 const contents = {
     textAlign: 'center',
     width: '85%',
     margin: '0 auto'
-}
-
-const head = {
-    marginTop: '0.5em',
-    marginBottom: '0.5em'
-}
-
-const context = {
-    marginTop: '0.25em',
-    marginBottom: '0.25em'
 }
 
 export default FilmPopOut;

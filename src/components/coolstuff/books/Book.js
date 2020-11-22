@@ -1,5 +1,5 @@
 import React from 'react';
-var classNames = require('classnames');
+import classNames from 'classnames';
 
 class Book extends React.Component {
 
@@ -120,7 +120,7 @@ class Book extends React.Component {
 
     render() {
 
-        var pocketStyles = classNames({
+        let pocketStyles = classNames({
             'book-pocket': true,
             'dostoevsky-pocket': this.props.title === 'Notes from Underground',
             'american-psycho-pocket': this.props.title === 'American Psycho',
