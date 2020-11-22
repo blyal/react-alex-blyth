@@ -651,8 +651,54 @@ footer {
 }
 
 
-/* Film popout items CSS */
-.labyrinth {
+/* Film section CSS */
+.film-popout {
+  width: 75%;
+  height: 75%;
+  position: fixed;
+  top: 12.5%;
+  left: 12.5%;
+  border-radius: 0.5em;
+  background-color: #0F0F0F;
+  border: 1px solid beige;
+  box-shadow: 0 0 15px beige;
+  overflow: scroll;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-bottom: 1em;
+  z-index: 8;
+}
+.open-fpo-enter {
+  transform: scale(0);
+  opacity: 0;
+}
+.open-fpo-enter-active {
+
+  transform: scale(1);
+  opacity: 1;
+  transition: all 800ms ease-in-out;
+}
+.open-fpo-exit {
+  /* transform: scale(1); */
+  opacity: 1;
+}
+.open-fpo-exit-active {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 800ms ease-in-out;
+}
+.close-fpo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  transform: scale(1.25);
+  z-index: 5;
+}
+#directorList {
+  padding-left: 8em;
+}
+.labyrinth-img {
   background-image: linear-gradient(white, blue);
   border-radius: 1em;
 }

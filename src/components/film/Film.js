@@ -2,6 +2,7 @@ import React from 'react';
 import FilmPopOut from './FilmPopOut';
 import Overlay from '../layout/Overlay';
 import { v4 as uuid } from 'uuid';
+import { CSSTransition } from 'react-transition-group';
 
 class FilmStuff extends React.Component {
 
@@ -569,6 +570,7 @@ class FilmStuff extends React.Component {
             selected: item,
             selectedType: type
         });
+        console.log(this.state.popOut);
     };
 
     componentDidUpdate(){
@@ -628,7 +630,14 @@ class FilmStuff extends React.Component {
 
             </div>
 
-            <FilmPopOut open={this.state.popOut} type={this.state.selectedType} selected={this.state.selected} close={this.togglePopOut} />
+            <CSSTransition
+                in={this.state.popOut}
+                timeout={800}
+                classNames='open-fpo'
+                unmountOnExit
+            >
+                <FilmPopOut type={this.state.selectedType} selected={this.state.selected} close={this.togglePopOut} />
+                </CSSTransition>
             <Overlay open={this.state.popOut} close={this.togglePopOut} />
             </>
         );
