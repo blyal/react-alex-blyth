@@ -152,6 +152,7 @@ class CoolStuff extends React.Component {
                     
                     <SelectedContent content={this.state.podcasts} backButton={this.togglePodcast} />
                 </div>
+                <br />
 
                 <div className={bookView}>
                     <div className="content-pocket flex-50">

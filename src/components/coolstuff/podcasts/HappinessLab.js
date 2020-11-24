@@ -26,7 +26,7 @@ function HappinessLab() {
                                 <td><a href="https://www.happinesslab.fm/season-1-episodes/the-unhappy-millionaire" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>The Unhappy Millionaire</span></div></a></td>
                             </tr>
                             <tr>
-                                <td><a href="https://www.happinesslab.fm/season-1-episodes/a-silver-lining" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>A Silver Lining</span></div></a></td>
+                                <td><a href="https://www.happinesslab.fm/season-1-episodes/dont-think-of-a-white-bear" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>Don't Think of a White Bear</span></div></a></td>
                                 <td><a href="https://www.happinesslab.fm/season-1-episodes/mistakenly-seeking-solitude" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>Mistakenly Seeking Solitude</span></div></a></td>
                             </tr>
                         </tbody>
