@@ -536,6 +536,46 @@ footer {
   box-shadow: -7px 0px 6px -1px #2a3d29;
   z-index: 1;
 }
+/* The Bret Easton Ellis Podcast */
+.ellis-img {
+  position: absolute;
+  left: 7em;
+  top: -2em;
+  z-index: 3;
+  -webkit-transform: scale(0.9); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.9); /* FF3.5+ */
+      -ms-transform: scale(0.9); /* IE9 */
+       -o-transform: scale(0.9); /* Opera 10.5+ */
+          transform: scale(0.9);
+}
+.ellis-title {
+  position: relative;
+  /* opacity: 100%; */
+  background-color: black;
+  border-radius: 2%;
+  width: 20%;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #691c26;
+  font-family: adelle, serif;
+  text-align: center;
+  margin-right: auto;
+  z-index: 3;
+  /* margin: 1em; */
+}
+.ellis-title:hover {
+  color: #e0e0de;
+}
+.ellis-title h2 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.ellis-recommendations {
+  background-color: #691c26;
+}
 
 /* Book pocket CSS */
 .book-pocket {
@@ -679,7 +719,6 @@ footer {
   transition: all 800ms ease-in-out;
 }
 .open-fpo-exit {
-  /* transform: scale(1); */
   opacity: 1;
 }
 .open-fpo-exit-active {

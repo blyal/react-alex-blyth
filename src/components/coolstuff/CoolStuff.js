@@ -4,6 +4,7 @@ import Ferriss from './podcasts/Ferriss';
 import Rogan from './podcasts/Rogan';
 import HappinessLab from './podcasts/HappinessLab';
 import Harris from './podcasts/Harris';
+import Ellis from './podcasts/Ellis';
 import Book from './books/Book';
 import { v4 as uuid } from 'uuid';
 var classNames = require('classnames');
@@ -46,7 +47,7 @@ class CoolStuff extends React.Component {
                 type: 'podcast',
                 selected: false,
                 title: 'The Bret Easton Ellis Podcast',
-                content: <Harris />
+                content: <Ellis />
             }
         ],
         bookList: true,
