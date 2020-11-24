@@ -149,7 +149,7 @@ class CoolStuff extends React.Component {
             
                 <div className={podcastView}>
                     <div className="content-pocket flex-50">
-                        <h3>Favorite Podcasts</h3>
+                        <h3>Podcasts I Like</h3>
                         <ul className="cool-list" style={{color: 'Cyan'}}>
                             {
                                 this.state.podcasts.map((podcast) => (
@@ -165,7 +165,7 @@ class CoolStuff extends React.Component {
 
                 <div className={bookView}>
                     <div className="content-pocket flex-50">
-                        <h3>Favorite Literature</h3>
+                        <h3>Books I Like</h3>
                         <ul className="cool-list" style={{color: 'Cyan'}}>
                             {
                                 this.state.books.map((book) => (
