@@ -588,12 +588,13 @@ class FilmStuff extends React.Component {
                 <hr />
             <div className="page-flow">
                 <div className="center-content">
-                    <p>I really like cinema. I have done my first degree in Film, have written and directed several short films, and enjoy talking and writing about films.
+                    <p>I really like cinema. I did my first degree in Film, have written and directed several short films, and enjoy talking and writing about films.
                     So although maybe this page could have been incorporated into the 'Cool Stuff' page, I have too much to say about film for that, and lets be honest, film deserves a page of its own.
                     </p>
                     <p>
                         More content to come.
                     </p>
+                    <p>Please click the name of a movie or director for further film–geek information.</p>
                 </div>
                 <br />
 

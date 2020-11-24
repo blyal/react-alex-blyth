@@ -127,9 +127,18 @@ class CoolStuff extends React.Component {
             <>
             <h2 style={{color: 'Cyan'}}>Cool Stuff</h2>
                 <hr />
-                <br />
             
             <div className="page-flow">
+
+                <div className="center-content">
+                    <p>
+                        The title says it all. More content to come.
+                    </p>
+                    <p>
+                        Click on the <span style={{color: 'cyan'}}>colored</span> cool stuff on this page for further cool facts.
+                    </p>
+                </div>
+                <br />
 
                 <div className="cover-container">
                     <div className="cover-main"></div>
