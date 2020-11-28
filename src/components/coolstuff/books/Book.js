@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import { v4 as uuid } from 'uuid';
 
 class Book extends React.Component {
 
@@ -8,6 +9,7 @@ class Book extends React.Component {
                     {
                         title: 'Notes from Underground',
                         author: 'Dostoevsky',
+                        id: uuid(),
                         mainImage: <img src="images/notes-from-underground.jpg" alt="Notes from Underground" height='234' width='152.7' />,
                         paragraphs: [
                             'Within two pages of reading this book, I was laughing out loud. Notes from Underground is a very dark comedy following a bitter, lonely man’s half-arsed attempt to reconnect with humanity.',
@@ -35,6 +37,7 @@ class Book extends React.Component {
                     {
                         title: 'My Brilliant Friend',
                         author: 'Elena Ferrante',
+                        id: uuid(),
                         mainImage: <img src="images/my-brilliant-friend.jpg" alt="My Brilliant Friend" height='245' width='158' />,
                         paragraphs: [
                             'I didn’t expect to like this book based on what I’d heard about it, but apparently you shouldn’t judge a book by its cover. I’m very sure this is true now, because this is definitely one of the best books I’ve ever read. I’ve never read a book that so perfectly captures the experience of growing up, from both the personal perspective, as well as the perspective of someone embedded in a friend group, as well as embedded in a community. When you read My Brilliant Friend, you’ll surely have multiple “that’s so true!” moments, that maybe make you reflect on your own childhood from a new position. This is the effect of the story, told as it is from a retrospective narratorial position of an older woman reflecting and recalling her experience of growing up in 1950s Italy, alongside her best friend — the enigmatic, proud, dominant, and brilliant Lila.',
@@ -64,6 +67,7 @@ class Book extends React.Component {
                     {
                         title: 'American Psycho',
                         author: 'Bret Easton Ellis',
+                        id: uuid(),
                         mainImage: <img src="images/american-psycho.jpg" alt="American Psycho" height='234' width='152.7' />,
                         paragraphs: [
                             'Disclaimer — not for the faint–hearted or easily–offended. This book deals with some dark shit. However, this doesn’t mean that it’s not shit that’s worth dealing with. In fact, my personal conviction is that the darkest shit is the shit we need to deal with the most. If you look straight at something that, not just makes you scared, but horrifies you, you’re stronger for it.',
@@ -92,6 +96,7 @@ class Book extends React.Component {
                     {
                         title: 'Norwegian Wood',
                         author: 'Haruki Murakami',
+                        id: uuid(),
                         mainImage: <img src="images/norwegian-wood.jpg" alt="Norwegian Wood" height='280' width='181.3' />,
                         paragraphs: [
                             'There’s something so hypnotic about Murakami’s writing. There are lots of books in the world which I can’t read because they’re just too damn boring, but Murakami never fails to hold my attention, to keep me wanting to come back for more. Norwegian Wood is probably the thing of his I’ve enjoyed the most. Most of his stories deal with love triangles alongside ambiguously supernatural occurrences… this book ditches the supernatural and just deals straight with the love triangle. It’s very touching, it’s poignant, it’s real, it feels important. You will find a lot to connect to in this book. I also really like how it’s named after a Beatles song, it’s cool how Murakami likes the Beatles. The Beatles are awesome.'
@@ -151,7 +156,7 @@ class Book extends React.Component {
 
         return this.state.books.map((book) => (
             this.props.title === book.title ?
-            <div className={pocketStyles}>  
+            <div className={pocketStyles} key={book.id}>  
                 <div>
                     <div className={titleStyles}>
                         <h2><i>{book.title}</i></h2>
@@ -160,20 +165,20 @@ class Book extends React.Component {
 
                     <div className={blurbStyles}>
                         {book.mainImage}
-                       {book.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                       {book.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
                     </div>
                     <div className={recommendationStyles}>
                         <p>Related</p>
                         <table>
                             <tbody>
                                 <tr>
-                                    {book.related.map((item) => <td><div>{item.image}</div></td>)}
+                                    {book.related.map((item, index) => <td key={index}><div>{item.image}</div></td>)}
                                 </tr>
                                 <tr>
-                                    {book.related.map((item) => 
+                                    {book.related.map((item, index) => 
                                         'year' in item ? 
-                                        <td><i>{item.title} <span>{item.year}</span></i><br /><span>{item.author}</span></td> :
-                                        <td><i>{item.title}</i><br /><span>{item.author}</span></td>)}
+                                        <td key={index}><i>{item.title} <span>{item.year}</span></i><br /><span>{item.author}</span></td> :
+                                        <td key={index}><i>{item.title}</i><br /><span>{item.author}</span></td>)}
                                 </tr>
                             </tbody>
                         </table>

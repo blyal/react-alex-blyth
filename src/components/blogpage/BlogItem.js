@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
 
 
-class BlogItem extends React.Component {
-    
-    render() {
-        const { id, img, content, title, open, date } = this.props.entry;
+const BlogItem = (props) => {
+        const { id, img, content, title, open, date } = props.entry;
         const idJump = "#" + id.toString();
+
         return (
             <CSSTransition
                 in={open}
@@ -16,7 +15,7 @@ class BlogItem extends React.Component {
             >
             <div>
                 <a style={{textDecorationLine: 'none'}} href={idJump}>
-                <div style={ itemStyle } id={ id } onClick={this.props.toggleBlog.bind(this, id)}>
+                <div style={ itemStyle } id={ id } onClick={props.toggleBlog.bind(this, id)}>
                     {open ? (
                     <div>
                         <div>
@@ -38,7 +37,6 @@ class BlogItem extends React.Component {
             </div>
             </CSSTransition>
         )
-    }
 }
 
 const itemStyle = {

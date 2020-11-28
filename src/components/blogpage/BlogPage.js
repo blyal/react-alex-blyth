@@ -8,7 +8,8 @@ class BlogPage extends React.Component {
         blogEntries: [
             {
                 id: uuid(),
-                title: ['Review of ', <i>The Mentalist</i>, ' (2008 – 2015)'],
+                //apparently the italics tag below needs a key, because it's part of a list. Doesn't make any difference
+                title: ['Review of ', <i key="mentalist-italics">The Mentalist</i>, ' (2008 – 2015)'],
                 date: '21st October 2020',
                 open: false,
                 content: <MentalistReview />,

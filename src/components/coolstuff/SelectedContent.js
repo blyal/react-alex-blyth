@@ -17,7 +17,6 @@ class SelectedContent extends React.Component {
     render() {
 
         const { content } = this.props;
-        console.log(content);
 
         let backBtn = classNames({
             'back-btn': true,

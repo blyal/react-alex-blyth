@@ -2,11 +2,12 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
+import { CSSTransition } from 'react-transition-group';
 // import PropTypes from 'prop-types';
 
-class FilmPopOut extends React.Component {
-    render() {
-        const {id, title, director, year, img, description, related, name, born, bio, recommendations} = this.props.selected;
+const FilmPopOut = (props) => {
+
+        const {id, title, director, year, img, description, related, name, born, bio, recommendations} = props.selected;
 
         const bodyWords = classNames({
             'fpo-body': true,
@@ -34,10 +35,16 @@ class FilmPopOut extends React.Component {
         
 
         return (
+            <CSSTransition
+            in={props.popOut}
+            timeout={800}
+            classNames='open-fpo'
+            unmountOnExit
+                >
             <div className="film-popout">
-                <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={this.props.close} />
+                <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={props.close} />
                 {
-                    this.props.type === 'film' ? <>
+                    props.type === 'film' ? <>
                     <div style={imgContainer}>
                         {img}
                     </div>
@@ -55,11 +62,11 @@ class FilmPopOut extends React.Component {
                     <table className="film-table">
                         <tbody>
                             <tr>
-                                {related.map((item) => <td><div>{item.img}</div></td>)}
+                                {related.map((item, index) => <td key={index}><div>{item.img}</div></td>)}
                             </tr>
                             <tr>
-                                {related.map((item) => 
-                                    <td>{item.title} <br /><i><span>({item.director}, {item.year})</span></i></td>)}
+                                {related.map((item, index) => 
+                                    <td key={index}>{item.title} <br /><i><span>({item.director}, {item.year})</span></i></td>)}
                             </tr>
                         </tbody>
                     </table>
@@ -88,11 +95,11 @@ class FilmPopOut extends React.Component {
                     <table className="director-table">
                         <tbody>
                             <tr>
-                                {recommendations.map((item) => <td><div>{item.img}</div></td>)}
+                                {recommendations.map((item, index) => <td key={index}><div>{item.img}</div></td>)}
                             </tr>
                             <tr>
-                                {recommendations.map((item) => 
-                                    <td>{item.title} <i><span>({item.year})</span></i></td>)}
+                                {recommendations.map((item, index) => 
+                                    <td key={index}>{item.title} <i><span>({item.year})</span></i></td>)}
                             </tr>
                         </tbody>
                     </table>
@@ -101,8 +108,8 @@ class FilmPopOut extends React.Component {
                 </>
                 }
             </div>
+            </CSSTransition>
         )
-    }
 }
 
 const imgContainer = {
