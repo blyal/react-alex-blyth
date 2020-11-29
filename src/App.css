@@ -180,7 +180,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 5;
+  z-index: 11;
+  /* z-index: 11, above footer 10 and under fpo 12 */
   background-color: rgba(0,0,0,0.5);
   cursor: pointer;
 }
@@ -708,9 +709,11 @@ footer {
   box-shadow: 0 0 15px beige;
   overflow: scroll;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 2em;
   text-align: center;
   padding-bottom: 1em;
-  z-index: 8;
+  z-index: 12;
+  /* z-index: 12, above footer 10 and overlay 11 */
 }
 .open-fpo-enter {
   transform: scale(0);
@@ -756,23 +759,28 @@ footer {
   width: 33.3%;
   font-size: 20px;
   letter-spacing: 0.05em;
+  line-height: 1em;
+  font-family: adelle, serif;
 }
 .film-table span {
-  font-size: 15px;
+  font-size: 17.5px;
 }
 .fpo-body {
   text-align: left;
   border-radius: 1em;
   padding: 0 1em 1em 1em;
+  font-family: adelle, serif;
 }
 .fpo-words {
-  line-height: 1.5em;
   margin-top: 0;
   font-size: 20px;
   letter-spacing: 0.02em;
 }
 .fpo-words p {
   margin: 0;
+}
+.fpo-director {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .boogie-nights {
   background-image: linear-gradient(#e80011,#000400)

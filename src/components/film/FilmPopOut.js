@@ -11,6 +11,7 @@ const FilmPopOut = (props) => {
 
         const bodyWords = classNames({
             'fpo-body': true,
+            'fpo-director': born !== undefined,
             'boogie-nights': title === 'Boogie Nights',
             'big-lebowski': title === 'The Big Lebowski',
             'lotr': title === 'The Lord of the Rings Trilogy',
