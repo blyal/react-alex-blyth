@@ -14,7 +14,6 @@ const BlogItem = (props) => {
                 classNames='expand'
             >
             <div>
-                <a style={{textDecorationLine: 'none'}} href={idJump}>
                 <div style={ itemStyle } id={ id } onClick={props.toggleBlog.bind(this, id)}>
                     {open ? (
                     <div>
@@ -25,14 +24,13 @@ const BlogItem = (props) => {
                         <div style={contentStyle}> { content } </div>
                     </div>
                 ) : (
-                    <>
-                    <h3 style={{margin: 0}}>{ title }</h3>
-                    <hr style={{marginBottom: 0}} />
-                    <p style={{margin: 0, fontSize: '1em'}}>{ date }</p>
-                    </>
+                    <a style={{textDecorationLine: 'none'}} href={idJump}>
+                        <h3 style={{margin: 0}}>{ title }</h3>
+                        <hr style={{marginBottom: 0}} />
+                        <p style={{margin: 0, fontSize: '1em'}}>{ date }</p>
+                    </a>
                 )}
                 </div>
-                </a>
                 <br />
             </div>
             </CSSTransition>

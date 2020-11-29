@@ -15,7 +15,6 @@ class CodeItem extends React.Component {
                 classNames='expand'
             >
             <div>
-                <a style={{textDecorationLine: 'none'}} href={idJump}>
                 <div style={ itemStyle } id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
                     {open ? (
                     <div>
@@ -26,14 +25,13 @@ class CodeItem extends React.Component {
                         <div style={contentStyle}> { content } </div>
                     </div>
                 ) : (
-                    <>
+                    <a style={{textDecorationLine: 'none'}} href={idJump}>
                         <h3 style={{margin: 0}}>{ title }</h3>
                         <hr style={{marginBottom: 0}} />
                         <p style={{margin: 0}}>{ year }</p>
-                    </>
+                    </a>
                 )}
                 </div>
-                </a>
                 <br />
             </div>
             </CSSTransition>
