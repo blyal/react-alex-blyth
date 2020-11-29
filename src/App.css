@@ -228,10 +228,14 @@ footer {
 .pocket-blurb p {
   margin: 0;
   padding-bottom: 1em;
+  font-size: 1.1em;
+  letter-spacing: 0.01em;
+  line-height: 1.75em;
 }
 .selected-content {
   padding: 0;
   overflow: scroll;
+  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 .back-btn {
   flex-basis: 5%;
@@ -314,7 +318,7 @@ footer {
   margin: 0 0 0 1em;
   width: 50%;
   font-size: 1em;
-  font-family: adelle, serif;
+  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: white;
 }
 .recommended-things table {
@@ -591,7 +595,7 @@ footer {
 }
 .book-blurb p {
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1.1em;
   margin: 0.5em 0 0 0;
 }
 .book-pocket h2 {
@@ -632,7 +636,7 @@ footer {
   font-size: 0.9em;
 }
 .book-recommendations span {
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: monospace, sans-serif;
 }
 
