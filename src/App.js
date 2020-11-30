@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/now" component={Now} />
         <Route path="/blog" component={BlogPage} />
-        <Route path="/code" component={CodePage} />
+        <Route path="/portfolio" component={CodePage} />
         <Route path="/stuff" component={CoolStuff} />
         <Route path="/film" component={FilmStuff} />
         <Footer />

@@ -15,7 +15,7 @@ class CodeItem extends React.Component {
                 classNames='expand'
             >
             <div>
-                <div style={ itemStyle } id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
+                <div className="code-blog-entry" id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
                     {open ? (
                     <div>
                         <div>
@@ -37,17 +37,6 @@ class CodeItem extends React.Component {
             </CSSTransition>
         )
     }
-}
-
-const itemStyle = {
-    fontFamily: 'Arial, sans-serif',
-    textAlign: 'center',
-    margin: '0 auto',
-    padding: '1em 1em 0.1em 1em',
-    width: '50%',
-    lineHeight: '1.75em',
-    border: 'solid 0.125em grey',
-    cursor: 'pointer'
 }
 
 const contentStyle = {

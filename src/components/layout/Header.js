@@ -9,7 +9,7 @@ function Header() {
               <ul>
                   <li><Link to="/now" style={linkstyle}>NOW</Link></li>
                   <li><Link to="/blog" style={linkstyle}>BLOG</Link></li>
-                  <li><Link to="/code" style={linkstyle}>CODE</Link></li>
+                  <li><Link to="/portfolio" style={linkstyle}>CODE</Link></li>
                   <li><Link to="/stuff" style={linkstyle}>COOL STUFF</Link></li>
                   <li><Link to="/film" style={linkstyle}>FILM</Link></li>
               </ul>

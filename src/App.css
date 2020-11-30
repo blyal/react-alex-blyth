@@ -196,6 +196,18 @@ footer {
   line-height: 1.75em;
 }
 
+/* Blog/Code page CSS */
+.code-blog-entry {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em 1em 0.1em 1em;
+  line-height: 1.75em;
+  border: solid 0.125em grey;
+  cursor: pointer;
+  width: 50%;
+}
+
 /* Blog/Code page transitions  */
 .expand-enter {
   opacity: 0.2;
@@ -935,14 +947,15 @@ footer {
     height: 100%;
     width: 100%;
   }
-
   .now-pix {
     height: 100%;
     width: 100%;
   }
-
   .home-style {
     margin-left: 10%;
     margin-right: 10%;
+  }
+  .code-blog-entry {
+    width: 90%;
   }
 }

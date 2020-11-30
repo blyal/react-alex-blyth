@@ -14,7 +14,7 @@ const BlogItem = (props) => {
                 classNames='expand'
             >
             <div>
-                <div style={ itemStyle } id={ id } onClick={props.toggleBlog.bind(this, id)}>
+                <div className="code-blog-entry" id={ id } onClick={props.toggleBlog.bind(this, id)}>
                     {open ? (
                     <div>
                         <div>
@@ -35,17 +35,6 @@ const BlogItem = (props) => {
             </div>
             </CSSTransition>
         )
-}
-
-const itemStyle = {
-    fontFamily: 'Arial, sans-serif',
-    textAlign: 'center',
-    margin: '0 auto',
-    padding: '1em 1em 0.1em 1em',
-    width: '50%',
-    lineHeight: '1.75em',
-    border: 'solid 0.125em grey',
-    cursor: 'pointer'
 }
 
 const contentStyle = {
