@@ -187,6 +187,15 @@ footer {
 }
 
 
+/* Home/Now pages CSS */
+.home-style {
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: Monaco, monospace;
+  line-height: 1.75em;
+}
+
 /* Blog/Code page transitions  */
 .expand-enter {
   opacity: 0.2;
@@ -921,4 +930,19 @@ footer {
   letter-spacing: 1em;
 }
 
-/* Try this font: Apercu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif */
+@media only screen and (max-width: 1024px) {
+  #hvar-pic {
+    height: 100%;
+    width: 100%;
+  }
+
+  .now-pix {
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-style {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

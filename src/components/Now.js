@@ -6,8 +6,8 @@ class Now extends React.Component {
     return (
       <>
         <h2 style={{color: 'Cyan'}}>What am I up to now?</h2>
-        <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="70%" width="70%" />
-        <div style={homeStyle}>
+        <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="70%" width="70%" className="now-pix" />
+        <div className="home-style">
           <br />
           <h3 style={{color: 'Cyan'}}>In 10 Seconds</h3>
           <p>Travelling Europe, exploring job opportunities and possible cities in which to live.</p>
@@ -15,8 +15,8 @@ class Now extends React.Component {
           <p>Creating awesome memories with people I love.</p>
           <br />
         </div>
-        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" />
-        <div style={homeStyle}>
+        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" className="now-pix" />
+        <div className="home-style">
           <br />
           <h3 style={{color: 'Cyan'}}>In 10x10 Seconds</h3>
           <p>At the start of 2020, after more than 12 months of planning, I moved to Europe to complete my degree on exchange in The Netherlands and to get a new job in Spain.
@@ -27,19 +27,11 @@ class Now extends React.Component {
               Simultaneously to talking to companies and start-ups in Spain, I'm continuously coding. This website is the latest project I have been working on - I built it with react.js, using the construction of the website as a chance to learn the react library which I had previously never used.</p>
           <br />
         </div>
-        <img src={'/images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="50%" width="50%" />
+        <img src={'/images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="50%" width="50%" className="now-pix" />
         <br />
       </>
     );
   }
-}
-
-const homeStyle = {
-  textAlign: 'left',
-  marginLeft: '15%',
-  marginRight: '15%',
-  fontFamily: 'Monaco, monospace',
-  lineHeight: '1.75em'
 }
 
 export default Now;
