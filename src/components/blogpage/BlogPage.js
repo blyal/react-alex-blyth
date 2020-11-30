@@ -13,7 +13,7 @@ class BlogPage extends React.Component {
                 date: '21st October 2020',
                 open: false,
                 content: <MentalistReview />,
-                img: <img src={'images/mentalist-poster.JPG'} alt="Poster for The Mentalist show" height='95%' width='95%'/>
+                img: <img src={'images/mentalist-poster.JPG'} alt="Poster for The Mentalist show" height='95%' width='95%' className='code-blog-img'/>
             }
         ]
     }

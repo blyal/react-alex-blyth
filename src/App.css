@@ -207,6 +207,14 @@ footer {
   cursor: pointer;
   width: 50%;
 }
+.code-blog-entry-content {
+  text-align: left;
+  padding-left: 1em;
+}
+.code-blog-entry-content-img {
+  text-align: center;
+  margin-right: 1em;
+}
 
 /* Blog/Code page transitions  */
 .expand-enter {
@@ -957,5 +965,28 @@ footer {
   }
   .code-blog-entry {
     width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .code-blog-entry h3 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .code-blog-img {
+    width: 100%;
+    height: 100%;
+  }
+  .code-blog-entry-content {
+    padding: 0;
+  }
+  .code-blog-entry-content p {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .code-blog-entry-content-img {
+    margin-right: 0;
+  }
+  .code-blog-no-padding-top {
+    margin-top: -1em;
   }
 }

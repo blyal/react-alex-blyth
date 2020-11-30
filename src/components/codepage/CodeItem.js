@@ -17,12 +17,12 @@ class CodeItem extends React.Component {
             <div>
                 <div className="code-blog-entry" id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
                     {open ? (
-                    <div>
+                    <div className="code-blog-no-padding-top">
                         <div>
                             { img }
                         </div>
                         <h3 style={{color: 'Cyan'}}>{ title }</h3>
-                        <div style={contentStyle}> { content } </div>
+                        <div className="code-blog-entry-content"> { content } </div>
                     </div>
                 ) : (
                     <a style={{textDecorationLine: 'none'}} href={idJump}>
@@ -37,11 +37,6 @@ class CodeItem extends React.Component {
             </CSSTransition>
         )
     }
-}
-
-const contentStyle = {
-    textAlign: 'left',
-    paddingLeft: '1em'
 }
 
 // Prop-Types
