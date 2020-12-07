@@ -46,7 +46,7 @@ const FilmPopOut = (props) => {
                 <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={props.close} />
                 {
                     props.type === 'film' ? <>
-                    <div style={imgContainer}>
+                    <div className="fpo-img">
                         {img}
                     </div>
                     <div style={contents}>
@@ -74,7 +74,7 @@ const FilmPopOut = (props) => {
                 </div>
                 </> :
                 <>
-                    <div style={imgContainer}>
+                    <div className="fpo-img">
                         {img}
                     </div>
                 <div style={contents}>
@@ -111,13 +111,6 @@ const FilmPopOut = (props) => {
             </div>
             </CSSTransition>
         )
-}
-
-const imgContainer = {
-    margin: '1em 0 0',
-    textAlign: 'center',
-    zIndex: '4',
-    position: 'relative'
 }
 
 const contents = {

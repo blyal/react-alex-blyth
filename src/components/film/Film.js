@@ -629,7 +629,7 @@ class FilmStuff extends React.Component {
             </div>
 
             <FilmPopOut popOut={this.state.popOut} type={this.state.selectedType} selected={this.state.selected} close={this.togglePopOut} />
-            <Overlay open={this.state.popOut} close={this.togglePopOut} />
+            <Overlay open={this.state.popOut} type="filmPopOut" close={this.togglePopOut} />
             </>
         );
     }

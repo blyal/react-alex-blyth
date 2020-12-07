@@ -1,28 +1,48 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AppLinks from './AppLinks';
+import classNames from 'classnames';
 
-function Header() {
+const Header = (props) => {
+
+    const topBar = classNames({
+        'header-bar': true,
+        'top-bar': true,
+        'top-bar-rotate': props.openMenu,
+        'top-bar-return': props.closeMenu && !props.firstTime
+    });
+
+    const middleBar = classNames({
+        'header-bar': true,
+        'middle-bar': true,
+        'middle-bar-gone': props.openMenu,
+        'middle-bar-return': props.closeMenu && !props.firstTime
+    });
+
+    const bottomBar = classNames({
+        'header-bar': true,
+        'bottom-bar': true,
+        'bottom-bar-rotate': props.openMenu,
+        'bottom-bar-return': props.closeMenu && !props.firstTime
+    });
+
     return (
-        <header>
-            <h1 id="top-name" ><Link to="/" style={linkstyle}>ALEX BLYTH</Link></h1>
+        <header className="app-link-style">
+            
+            <label className="open-links mobile-header-main" onClick={props.toggleOverlay}>
+                <div className={topBar}></div>
+                <div className={middleBar}></div>
+                <div className={bottomBar}></div>
+            </label>
+
+            <h1 id="top-name" className='mobile-header-main'><Link to="/">ALEX BLYTH</Link></h1>
+
             <nav id="navbar">
-              <ul>
-                  <li><Link to="/now" style={linkstyle}>NOW</Link></li>
-                  <li><Link to="/blog" style={linkstyle}>BLOG</Link></li>
-                  <li><Link to="/portfolio" style={linkstyle}>CODE</Link></li>
-                  <li><Link to="/stuff" style={linkstyle}>COOL STUFF</Link></li>
-                  <li><Link to="/film" style={linkstyle}>FILM</Link></li>
-              </ul>
+                <AppLinks mobile={false} open={true} />
             </nav>
+
         </header>
     )
 }
-
-const linkstyle = {
-    //removes the automatic underlining of the links in the navbar
-    textDecorationLine: "none",
-    fontFamily: "Monaco, monospace",
-    letterSpacing: "0.25em"
-  }
 
 export default Header;
