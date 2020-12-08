@@ -94,8 +94,8 @@ a {
 #top-name {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  display: inline-block;
   /* Inline-Block display because of mobile header bars */
+  display: inline-block;
 }
 
 #top-name:hover {
@@ -221,6 +221,10 @@ a {
   transition: transform .1s .1s ease-in-out, top .1s .2s ease-in-out;
 }
 
+.mobile-pic-links {
+  display: none;
+}
+
 
 /* Footer CSS */
 
@@ -234,11 +238,8 @@ footer {
 footer ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0;
-  overflow: hidden;
-  text-align: center;
   height: 100%;
   margin: 0 20%;
 }
@@ -246,6 +247,10 @@ footer ul {
 footer li {
   cursor: pointer;
   margin: 0 auto;
+}
+
+.back-to-top {
+  display: none;
 }
 
 /* Trick to fix footer to bottom (https://stackoverflow.com/a/19723677/11575550) */
@@ -1057,6 +1062,8 @@ footer {
   letter-spacing: 1em;
 }
 
+
+/* All Mobile Devices media query */
 @media only screen and (max-width: 1024px) {
   #hvar-pic {
     height: 100%;
@@ -1098,16 +1105,56 @@ footer {
   }
 }
 
+/* Mobile Devices smaller than iPad Pro media query */
 @media only screen and (max-width: 1000px) {
 
   #navbar {
     display: none;
   }
 
-  header {
+  .back-to-top {
+    display: block;
+  }
+  .back-to-top a {
+    text-decoration-line: none;
+    opacity: 50%;
+  }
+  .App {
+    padding-bottom: 4em;
+  }
+  footer {
+    height: 4em;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul {
+    display: none;
+  }
+  .mobile-pic-links {
+    display: block;
+  }
+  .mobile-pic-links ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+  }
+  .mobile-pic-links li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .mobile-pic-links a {
+    display: block;
   }
 
+  /* to ensure that the bars and the top name are adjacent */
+  .header-main {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

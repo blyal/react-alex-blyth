@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AppLinks from './AppLinks';
+import PicLinks from './PicLinks';
 import classNames from 'classnames';
 
 const Header = (props) => {
@@ -27,18 +28,24 @@ const Header = (props) => {
     });
 
     return (
-        <header className="app-link-style">
-            
-            <label className="open-links mobile-header-main" onClick={props.toggleOverlay}>
-                <div className={topBar}></div>
-                <div className={middleBar}></div>
-                <div className={bottomBar}></div>
-            </label>
+        <header className="app-link-style" id="header">
 
-            <h1 id="top-name" className='mobile-header-main'><Link to="/">ALEX BLYTH</Link></h1>
+            <div className="header-main">
+                <label className="open-links mobile-header-main" onClick={props.toggleOverlay}>
+                    <div className={topBar}></div>
+                    <div className={middleBar}></div>
+                    <div className={bottomBar}></div>
+                </label>
 
-            <nav id="navbar">
-                <AppLinks mobile={false} open={true} />
+                <h1 id="top-name" className='mobile-header-main'><Link to="/">ALEX BLYTH</Link></h1>
+
+                <nav id="navbar">
+                    <AppLinks mobile={false} open={true} />
+                </nav>
+            </div>
+
+            <nav className="mobile-pic-links">
+                <PicLinks />
             </nav>
 
         </header>
