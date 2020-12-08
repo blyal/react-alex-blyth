@@ -49,7 +49,7 @@ const FilmPopOut = (props) => {
                     <div className="fpo-img">
                         {img}
                     </div>
-                    <div style={contents}>
+                    <div className="fpo-body-container">
                         <div className={bodyWords}>
                             <p className="fpo-words">{title.toUpperCase()}</p>
                             {description.map((item) => (
@@ -77,7 +77,7 @@ const FilmPopOut = (props) => {
                     <div className="fpo-img">
                         {img}
                     </div>
-                <div style={contents}>
+                <div className="fpo-body-container">
                     <div className={littleBox}>
                         <h3 className="director-name">{name}</h3>
                         <hr />
@@ -111,12 +111,6 @@ const FilmPopOut = (props) => {
             </div>
             </CSSTransition>
         )
-}
-
-const contents = {
-    textAlign: 'center',
-    width: '85%',
-    margin: '0 auto'
 }
 
 export default FilmPopOut;

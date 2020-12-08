@@ -4,9 +4,9 @@ function Ellis() {
     return (
         <div className="ferriss-pocket">  
             <div>
-                <div style={{position: 'relative'}}>
+                <div className="ellis-header">
                     <img src="images/Bret-Easton-Ellis.jpg" alt="Bret Easton Ellis" className="ellis-img" />
-                    <a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                    <a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer">
                         <div className="ellis-title">
                             <div>
                                 <h2>The</h2><h2>Bret</h2><h2>Easton</h2><h2>Ellis</h2><h2>Podcast</h2>

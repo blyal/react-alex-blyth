@@ -52,8 +52,8 @@ class CodePage extends React.Component {
         return (
         <div>
             <div>
-                <h2 style={{color: 'Cyan'}}>Coding Projects</h2>
-                <hr style={{color: 'Cyan'}} />
+                <h2 className="cyan">Coding Projects</h2>
+                <hr />
                 <br />
             </div>
             <Code projects={this.state.codeProjects} toggleProjects={this.toggleProjects} />

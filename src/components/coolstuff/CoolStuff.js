@@ -125,7 +125,7 @@ class CoolStuff extends React.Component {
 
         return (
             <>
-            <h2 style={{color: 'Cyan'}}>Cool Stuff</h2>
+            <h2 className="cyan">Cool Stuff</h2>
                 <hr />
             
             <div className="page-flow">
@@ -135,7 +135,7 @@ class CoolStuff extends React.Component {
                         The title says it all. More content to come.
                     </p>
                     <p>
-                        Click on the <span style={{color: 'cyan'}}>colored</span> cool stuff on this page for further cool facts.
+                        Click on the <span className="cyan">colored</span> cool stuff on this page for further cool facts.
                     </p>
                 </div>
                 <br />
@@ -150,7 +150,7 @@ class CoolStuff extends React.Component {
                 <div className={podcastView}>
                     <div className="content-pocket flex-50">
                         <h3>Podcasts I Like</h3>
-                        <ul className="cool-list" style={{color: 'Cyan'}}>
+                        <ul className="cool-list cyan">
                             {
                                 this.state.podcasts.map((podcast) => (
                                     <li key={podcast.id} onClick={() => this.togglePodcast(podcast.id)}>{podcast.title}</li>
@@ -166,7 +166,7 @@ class CoolStuff extends React.Component {
                 <div className={bookView}>
                     <div className="content-pocket flex-50">
                         <h3>Books I Like</h3>
-                        <ul className="cool-list" style={{color: 'Cyan'}}>
+                        <ul className="cool-list cyan">
                             {
                                 this.state.books.map((book) => (
                                     <li key={book.id} onClick={() => this.toggleBook(book.id)}>{book.title}</li>

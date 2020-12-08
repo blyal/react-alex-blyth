@@ -47,7 +47,12 @@ hr {
    margin: 0 auto;
  }
 
-.cyanLink {
+ .flex-center-content {
+   display: flex;
+   justify-content: center;
+ }
+
+.cyan {
    color: Cyan;
    /* text-decoration: underline; */
  }
@@ -136,7 +141,7 @@ a {
   letter-spacing: 0.25em;
 }
 
-.app-link-closed {
+.display-none {
   /* Closes the mobile menu links */
   display: none;
 }
@@ -320,6 +325,18 @@ footer {
 .code-blog-entry-content-img {
   text-align: center;
   margin-right: 1em;
+}
+.code-blog-closed {
+  text-decoration-line: none;
+}
+.code-blog-closed h3 {
+  margin: 0;
+}
+.code-blog-closed hr {
+  margin-bottom: 0;
+}
+.code-blog-closed p {
+  margin: 0;
 }
 
 /* Blog/Code page transitions  */
@@ -622,6 +639,9 @@ footer {
 .harris-img-container {
   height: 17em;
 }
+.harris-img-container a {
+  text-decoration: none;
+}
 .harris-img {
   position: absolute;
   left: -19.5em;
@@ -655,6 +675,7 @@ footer {
   text-align: center;
   margin: 1.5em;
   transition: transform 250ms linear;
+  padding: 0.35em;
 }
 .harris-wheel:hover {
   transform: scale(1.1);
@@ -687,6 +708,12 @@ footer {
       -ms-transform: scale(0.9); /* IE9 */
        -o-transform: scale(0.9); /* Opera 10.5+ */
           transform: scale(0.9);
+}
+.ellis-header {
+  position: relative;
+}
+.ellis-header a {
+  text-decoration: none;
 }
 .ellis-title {
   position: relative;
@@ -905,6 +932,11 @@ footer {
   text-align: center;
   z-index: 40;
   position: relative;
+}
+.fpo-body-container {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
 }
 .fpo-body {
   text-align: left;

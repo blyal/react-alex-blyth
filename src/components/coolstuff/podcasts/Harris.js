@@ -6,7 +6,7 @@ function Harris() {
             <div>
                 <div className="pocket-img-container harris-img-container">
                             <img src="images/sam-harris.jpg" alt="Sam Harris" className="harris-img" />
-                            <a href="https://samharris.org/podcast/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+                            <a href="https://samharris.org/podcast/" target="_blank" rel="noopener noreferrer">
                             <div className="harris-wheel">
                                 <div>
                                     <h2>The</h2>

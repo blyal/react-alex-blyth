@@ -10,7 +10,7 @@ const AppLinks = (props) => {
     }
 
     return (
-        <ul className={`app-link-style ${props.mobile ? "mobile-menu" : ""} ${props.open ? "" : "app-link-closed"}`}>
+        <ul className={`app-link-style ${props.mobile ? "mobile-menu" : ""} ${props.open ? "" : "display-none"}`}>
             <li><Link to="/now" onClick={() => toggle()}>NOW</Link></li>
             <li><Link to="/blog" onClick={() => toggle()}>BLOG</Link></li>
             <li><Link to="/portfolio" onClick={() => toggle()}>CODE</Link></li>

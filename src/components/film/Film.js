@@ -581,7 +581,7 @@ class FilmStuff extends React.Component {
     render() {
         return (
             <>
-            <h2 style={{color: 'Cyan'}}>Film</h2>
+            <h2 className="cyan">Film</h2>
                 <hr />
             <div className="page-flow">
                 <div className="center-content">
@@ -595,9 +595,9 @@ class FilmStuff extends React.Component {
                 </div>
                 <br />
 
-                <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <div style={{display: 'inline-block'}}>
-                        <h3 style={{color: 'Cyan'}}>My Top Ten Films of All Time</h3>
+                <div className="flex-center-content">
+                    <div>
+                        <h3 className="cyan">My Top Ten Films of All Time</h3>
                         <ol className="cool-list">
                             {
                                 this.state.favFilms.map((film) => (
@@ -609,9 +609,9 @@ class FilmStuff extends React.Component {
                 </div>
                 <br />
 
-                <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <div style={{display: 'inline-block'}}>
-                        <h3 style={{color: 'Cyan', textAlign: 'center'}}>Best Directors in the World*</h3>
+                <div className="flex-center-content">
+                    <div>
+                        <h3 className="cyan centered">Best Directors in the World*</h3>
                         <p className='disclaimer'>*as far as I know. There are lots of amazing directors I am yet to discover.</p>
                         <ol className="cool-list" id="directorList">
                             {

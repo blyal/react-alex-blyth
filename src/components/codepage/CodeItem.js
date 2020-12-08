@@ -21,14 +21,14 @@ class CodeItem extends React.Component {
                         <div>
                             { img }
                         </div>
-                        <h3 style={{color: 'Cyan'}}>{ title }</h3>
+                        <h3 className="cyan">{ title }</h3>
                         <div className="code-blog-entry-content"> { content } </div>
                     </div>
                 ) : (
-                    <a style={{textDecorationLine: 'none'}} href={idJump}>
-                        <h3 style={{margin: 0}}>{ title }</h3>
-                        <hr style={{marginBottom: 0}} />
-                        <p style={{margin: 0}}>{ year }</p>
+                    <a className="code-blog-closed" href={idJump}>
+                        <h3>{ title }</h3>
+                        <hr />
+                        <p>{ year }</p>
                     </a>
                 )}
                 </div>
