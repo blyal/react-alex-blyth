@@ -903,7 +903,7 @@ footer {
   background-image: linear-gradient(white, blue);
   border-radius: 1em;
 }
-.filmPopOut table {
+.film-popout table {
   table-layout: fixed;
 }
 .director-table td {
@@ -1128,6 +1128,10 @@ footer {
   .code-blog-no-padding-top {
     margin-top: -1em;
   }
+  .film-popout {
+    width: 90%;
+    left: 5%;
+  }
 }
 
 /* Mobile Devices smaller than iPad Pro media query */
@@ -1182,14 +1186,6 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1000px) {
-
-  .open-links {
-    display: none;
-  }
-
-}
-
 @media only screen and (max-width: 360px) {
   #top-name {
     font-size: 1.75em;
@@ -1222,6 +1218,13 @@ footer {
   #director-list {
     padding: 0;
     margin-left: 20%;
+  }
+}
+
+/* Mobile Devices iPad pro and larger media query */
+@media only screen and (min-width: 1000px) {
+  .open-links {
+    display: none;
   }
 }
 
