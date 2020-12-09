@@ -584,7 +584,7 @@ class FilmStuff extends React.Component {
             <h2 className="cyan">Film</h2>
                 <hr />
             <div className="page-flow">
-                <div className="center-content">
+                <div className="center-content cs-film-blurb">
                     <p>I really like cinema. I did my first degree in Film, have written and directed several short films, and enjoy talking and writing about films.
                     So although maybe this page could have been incorporated into the 'Cool Stuff' page, I have too much to say about film for that, and lets be honest, film deserves a page of its own.
                     </p>
@@ -596,8 +596,8 @@ class FilmStuff extends React.Component {
                 <br />
 
                 <div className="flex-center-content">
-                    <div>
-                        <h3 className="cyan">My Top Ten Films of All Time</h3>
+                    <div className="film-list">
+                        <h3 className="cyan centered">My Top Ten Films of All Time</h3>
                         <ol className="cool-list">
                             {
                                 this.state.favFilms.map((film) => (
@@ -610,10 +610,10 @@ class FilmStuff extends React.Component {
                 <br />
 
                 <div className="flex-center-content">
-                    <div>
+                    <div className="film-list">
                         <h3 className="cyan centered">Best Directors in the World*</h3>
                         <p className='disclaimer'>*as far as I know. There are lots of amazing directors I am yet to discover.</p>
-                        <ol className="cool-list" id="directorList">
+                        <ol className="cool-list" id="director-list">
                             {
                                 this.state.favDirectors.map((director) => (
                                     <li key={director.id} onClick={() => this.selectItem(director, 'director')}>{director.name}</li>

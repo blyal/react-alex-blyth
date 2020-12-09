@@ -130,7 +130,7 @@ class CoolStuff extends React.Component {
             
             <div className="page-flow">
 
-                <div className="center-content">
+                <div className="center-content cs-film-blurb">
                     <p>
                         The title says it all. More content to come.
                     </p>

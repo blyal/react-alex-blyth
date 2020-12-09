@@ -28,10 +28,6 @@ h1 {
 h2 {
   font-size: 1.75em;
 }
-
-h3 {
-  font-size: 1.4em;
-}
  
 hr {
    width: 60%;
@@ -359,9 +355,6 @@ footer {
 /* Film / Cool Stuff pages */
 .page-flow {
   text-align: left;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* max-width: 50em; */
   line-height: 1.75em;
   z-index: 10;
   background-color: black;
@@ -903,7 +896,7 @@ footer {
   transform: scale(1.25);
   z-index: 50;
 }
-#directorList {
+#director-list {
   padding-left: 8em;
 }
 .labyrinth-img {
@@ -1211,5 +1204,30 @@ footer {
 @media only screen and (max-width: 375px) {
   .mobile-menu {
     font-size: 1.5em;
+  }
+}
+
+/* Mobile Devices smaller than iPad media query */
+@media only screen and (max-width: 765px) {
+  /* This is for the film and cool stuff blurbs margins on mobile */
+  .cs-film-blurb {
+    width: 80%;
+    font-size: 0.8em;
+    line-height: 1.75;
+  }
+  .film-list {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #director-list {
+    padding: 0;
+    margin-left: 20%;
+  }
+}
+
+/* Mobile Devices iPad and larger media query */
+@media only screen and (min-width: 765px) {
+  h3 {
+    font-size: 1.4em;
   }
 }
