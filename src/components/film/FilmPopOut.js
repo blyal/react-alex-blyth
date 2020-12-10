@@ -7,7 +7,7 @@ import { CSSTransition } from 'react-transition-group';
 
 const FilmPopOut = (props) => {
 
-        const {id, title, director, year, img, description, related, name, born, bio, recommendations} = props.selected;
+        const {id, title, director, year, img, imgPortrait, description, related, name, born, bio, recommendations} = props.selected;
 
         const bodyWords = classNames({
             'fpo-body': true,
@@ -46,12 +46,13 @@ const FilmPopOut = (props) => {
                 <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={props.close} />
                 {
                     props.type === 'film' ? <>
-                    <div className="fpo-img">
+                    <div className="fpo-img portrait-hide">
                         {img}
                     </div>
-                    <div className="fpo-body-container">
+                    <div className="fpo-body-container fpo-film-body-container">
                         <div className={bodyWords}>
-                            <p className="fpo-words">{title.toUpperCase()}</p>
+                            <p className="fpo-words portrait-hide">{title.toUpperCase()}</p>
+                            <div className="fpo-img-portrait">{ imgPortrait }</div>
                             {description.map((item) => (
                                 <p className="fpo-words" key={id}>{item}</p>
                             ))}
@@ -74,8 +75,11 @@ const FilmPopOut = (props) => {
                 </div>
                 </> :
                 <>
-                    <div className="fpo-img">
+                    <div className="fpo-img portrait-hide">
                         {img}
+                    </div>
+                    <div className="fpo-img-portrait director-img">
+                        {imgPortrait}
                     </div>
                 <div className="fpo-body-container">
                     <div className={littleBox}>

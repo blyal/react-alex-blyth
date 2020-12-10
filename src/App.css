@@ -926,6 +926,9 @@ footer {
   z-index: 40;
   position: relative;
 }
+.fpo-img-portrait {
+  display: none;
+}
 .fpo-body-container {
   text-align: center;
   width: 85%;
@@ -1031,7 +1034,7 @@ footer {
 }
 .miyazaki {
   display: inline-block;
-  background-color: purple;
+  background-color: #47afd2;
   padding: 1em 2em;
   width: 40%;
   border-radius: 0 0 1em 1em;
@@ -1132,6 +1135,27 @@ footer {
     width: 90%;
     left: 5%;
   }
+  .linklater {
+    width: 90%;
+  }
+  .scorsese {
+    width: 70%;
+    line-height: 1.5;
+    padding: 1em 0;
+    font-size: 0.8em;
+  }
+  .miyazaki {
+    width: 70%;
+    line-height: 1.5;
+    padding: 1em 0;
+  }
+  .lynch {
+    width: 70%;
+    padding: 0;
+  }
+  .lynch .director-name {
+    margin-bottom: 0;
+  }
 }
 
 /* Mobile Devices smaller than iPad Pro media query */
@@ -1219,6 +1243,9 @@ footer {
     padding: 0;
     margin-left: 20%;
   }
+  .pta {
+    width: 90%;
+  }
 }
 
 /* Mobile Devices iPad pro and larger media query */
@@ -1232,5 +1259,90 @@ footer {
 @media only screen and (min-width: 765px) {
   h3 {
     font-size: 1.4em;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .portrait-hide {
+    display: none;
+  }
+
+  .fpo-img-portrait {
+    display: block;
+    text-align: center;
+    padding-top: 1em;
+  }
+  .fpo-img-portrait img {
+    position: relative;
+    z-index: 40;
+  }
+
+  .director-img {
+    margin-top: 1em;
+  }
+  .director-img img {
+    border-radius: 1em;
+  }
+  .fpo-film-body-container {
+    margin-top: 2em;
+  }
+}
+
+/* Portrait Media Query iPad until iPad Pro */
+@media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
+  .w-anderson {
+    width: 85%;
+  }
+  .w-anderson .director-name {
+    font-size: 2.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.25em;
+  }
+}
+
+/* Portrait Media Query Surface Duo to below iPad */
+@media only screen and (min-width: 531px) and (max-width: 767px) and (orientation: portrait) {
+  .w-anderson {
+    width: 85%;
+  }
+  .w-anderson .director-name {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .w-anderson h4 {
+    font-size: 1em;
+  }
+}
+
+/* Portrait Media Query iPhone 5 to below Surface Duo */
+@media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
+  .w-anderson {
+    width: 100%;
+  }
+  .w-anderson .director-name {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+  }
+  .w-anderson h4 {
+    font-size: 0.75em;
+  }
+}
+
+/* Portrait Media Query iPhone 5 and below */
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .w-anderson {
+    width: 100%;
+  }
+  .w-anderson .director-name {
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .w-anderson h4 {
+    font-size: 0.75em;
+  }
+  .lynch {
+    width: 100%;
   }
 }
