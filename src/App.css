@@ -910,6 +910,9 @@ footer {
   width: 25%;
   letter-spacing: 0.03em;
 }
+.recommendations-mobile {
+  display: none;
+}
 .film-table td {
   width: 33.3%;
   font-size: 20px;
@@ -1156,6 +1159,23 @@ footer {
   .lynch .director-name {
     margin-bottom: 0;
   }
+
+  .director-table {
+    display: none;
+  }
+  .film-table {
+    display: none;
+  }
+  .recommendations-mobile {
+    display: block;
+  }
+  .recommendations-mobile-words {
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+  .recommendations-mobile-words-details {
+    font-size: 0.75em;
+  }
 }
 
 /* Mobile Devices smaller than iPad Pro media query */
@@ -1327,6 +1347,9 @@ footer {
   .w-anderson h4 {
     font-size: 0.75em;
   }
+  .fpo-bottom-director {
+    font-size: 15px;
+  }
 }
 
 /* Portrait Media Query iPhone 5 and below */
@@ -1344,5 +1367,8 @@ footer {
   }
   .lynch {
     width: 100%;
+  }
+  .fpo-bottom-director {
+    font-size: 12px;
   }
 }

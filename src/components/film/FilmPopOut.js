@@ -72,6 +72,14 @@ const FilmPopOut = (props) => {
                             </tr>
                         </tbody>
                     </table>
+                    <div className="recommendations-mobile">
+                        {related.map((item, index) => (
+                            <div key={index}>
+                                <div>{item.img}</div>
+                                <p className="recommendations-mobile-words">{item.title} <br /><i><span className="recommendations-mobile-words-details">({item.director}, {item.year})</span></i></p>
+                                </div>
+                        ))}
+                    </div>
                 </div>
                 </> :
                 <>
@@ -96,7 +104,7 @@ const FilmPopOut = (props) => {
                     </div>
                 </div><br />
                 <div>
-                    <p className="fpo-words fpo-bottom">Recommended Movies</p>
+                    <p className="fpo-words fpo-bottom fpo-bottom-director">Recommended Movies</p>
                     <table className="director-table">
                         <tbody>
                             <tr>
@@ -108,6 +116,10 @@ const FilmPopOut = (props) => {
                             </tr>
                         </tbody>
                     </table>
+                    <div className="recommendations-mobile">
+                        {recommendations.map((item, index) => <div key={index}>{item.img}</div>
+                                )}
+                    </div>
                 </div>
                 
                 </>
