@@ -1275,6 +1275,14 @@ footer {
 }
 
 /* Media Queries small devices */
+@media only screen and (max-width: 375px) {
+  .mobile-menu {
+    font-size: 1.5em;
+  }
+  .long-title-now {
+    font-size: 1.5em;
+  }
+}
 @media only screen and (max-width: 360px) {
   #top-name {
     font-size: 1.75em;
@@ -1283,11 +1291,6 @@ footer {
   .open-links {
     margin-left: 7.5px;
     margin-right: 7.5px;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .mobile-menu {
-    font-size: 1.5em;
   }
 }
 

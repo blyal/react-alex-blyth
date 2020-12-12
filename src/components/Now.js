@@ -5,7 +5,7 @@ class Now extends React.Component {
   render() {
     return (
       <>
-        <h2 className="cyan">What am I up to now?</h2>
+        <h2 className="cyan long-title-now">What am I up to now?</h2>
         <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="70%" width="70%" className="now-pix" />
         <div className="home-style">
           <br />
