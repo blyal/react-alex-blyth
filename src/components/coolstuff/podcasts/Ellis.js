@@ -2,17 +2,10 @@ import React from 'react';
 
 function Ellis() {
     return (
-        <div className="ferriss-pocket">  
+        <div className="ellis-pocket">  
             <div>
-                <div className="ellis-header">
-                    <img src="images/Bret-Easton-Ellis.jpg" alt="Bret Easton Ellis" className="ellis-img" />
-                    <a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer">
-                        <div className="ellis-title">
-                            <div>
-                                <h2>The</h2><h2>Bret</h2><h2>Easton</h2><h2>Ellis</h2><h2>Podcast</h2>
-                            </div>
-                        </div>
-                    </a>
+                <div className="pocket-img-container">
+                    <img src="images/bee-podcast.png" alt="Bret Easton Ellis" className="ellis-img" />
                 </div>
                 <div className="pocket-blurb">
                     <p>
@@ -23,23 +16,26 @@ function Ellis() {
                     </p>
                 </div>
                 <div className="recommended-things ellis-recommendations">
-                    <p>Recommended Episodes</p>
+                    <p>Where to find it:</p>
                     <hr />
+                    <p className="ellis-span">Most of Bret's content is behind a (small) paywall. This is unfortunate, because talk of paywalls generally raises people's anxiety, but paywalls are also a reality I completely understand. You have to find a way to monetize content somehow.</p>
+                    <p className="ellis-span">Until mid-2017, the podcast was available from PodcastOne. Some episodes here are free, so you can get a taste of whether it is for you.</p>
+                    <p className="ellis-span">The last couple of years have seen the podcast move to Patreon, behind aforementioned paywall. There are different options and amounts, depending on how much you feel it's worth contributing.</p>
                     <table>
                         <tbody>
                             <tr>
-                                <td><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></td>
-                                <td><a href="https://tim.blog/2015/09/25/jocko-willink/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>The Scariest Navy SEAL Imaginable…And What He Taught Me (#107)</span></div></a></td>
+                                <td><a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>BEE Podcast on PodcastOne (until 2017)</span></div></a></td>
+                                <td><a href="https://www.patreon.com/breteastonellispodcast" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square-2.jpg" height="30%" width="30%"/><span>BEE Podcast on Patreon (post–2017)</span></div></a></td>
                             </tr>
                             <tr>
-                                <td><a href="https://tim.blog/2015/09/14/are-psychedelic-drugs-the-next-medical-breakthrough/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>Are Psychedelic Drugs the Next Medical Breakthrough? (#104)</span></div></a></td>
-                                <td><a href="https://tim.blog/2015/07/31/tara-brach/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>Tara Brach on Meditation and Overcoming FOMO (Fear Of Missing Out) (#94)</span></div></a></td>
+                                <td><a href="https://www.youtube.com/watch?v=a2clzi2zXrk" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-face-square.jpg" height="30%" width="30%"/><span>Bret Easton Ellis interview on Larry King</span></div></a></td>
+                                <td><a href="https://www.youtube.com/watch?v=oj3vRdHHdsw" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-face-square.jpg" height="30%" width="30%"/><span>Bret Easton Ellis interview on The Rubin Report</span></div></a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div className="ferriss-bar-right"></div>
+            <div className="ellis-bar-right"></div>
         </div>
     )
 }

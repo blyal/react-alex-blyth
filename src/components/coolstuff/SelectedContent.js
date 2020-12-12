@@ -20,10 +20,11 @@ class SelectedContent extends React.Component {
 
         let backBtn = classNames({
             'back-btn': true,
-            'ferriss-back-btn': this.props.content[0].type === 'podcast' && (content[0].selected || content[4].selected),
+            'ferriss-back-btn': content[0].type === 'podcast' && content[0].selected,
             'rogan-back-btn': content[1].selected && content[1].type === 'podcast',
             'happiness-back-btn': content[2].selected && content[2].type === 'podcast',
             'harris-back-btn': content[3].selected && content[3].type === 'podcast',
+            'ellis-back-btn': content[0].type === 'podcast' && content[4].selected,
             'dostoevsky-back-btn': content[0].selected && content[0].type === 'book',
             'ferrante-back-btn': content[1].selected && content[2].type === 'book',
             'american-psycho-back-btn': content[2].selected && content[1].type === 'book',

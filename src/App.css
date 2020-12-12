@@ -691,50 +691,46 @@ footer {
   z-index: 10;
 }
 /* The Bret Easton Ellis Podcast */
-.ellis-img {
-  position: absolute;
-  left: 7em;
-  top: -2em;
-  z-index: 30;
-  -webkit-transform: scale(0.9); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.9); /* FF3.5+ */
-      -ms-transform: scale(0.9); /* IE9 */
-       -o-transform: scale(0.9); /* Opera 10.5+ */
-          transform: scale(0.9);
-}
-.ellis-header {
-  position: relative;
-}
-.ellis-header a {
-  text-decoration: none;
-}
-.ellis-title {
-  position: relative;
-  /* opacity: 100%; */
-  background-color: black;
-  border-radius: 2%;
-  width: 20%;
-  height: 274px;
+.ellis-pocket {
+  background-color: #002933;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #691c26;
-  font-family: adelle, serif;
-  text-align: center;
-  margin-right: auto;
+}
+.ellis-img {
+  position: relative;
+  left: 0em;
+  top: 0em;
   z-index: 30;
-  /* margin: 1em; */
+  height: 100%;
+  width: 100%;
 }
-.ellis-title:hover {
-  color: #e0e0de;
-}
-.ellis-title h2 {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+.ellis-back-btn {
+  background-color: #002933;
 }
 .ellis-recommendations {
-  background-color: #691c26;
+  background-color: black;
+}
+.ellis-recommendations p {
+  color: #44d9e6;
+}
+.ellis-recommendations .ellis-span {
+  padding-left: 3em;
+  padding-right: 3em;
+  font-size: 0.75em;
+  line-height: 1.5;
+  text-align: left;
+}
+.ellis-recommendations td {
+  background-color: rgb(68, 217, 230, 0.6);
+  height: 8em;
+}
+.ellis-recommendations span {
+  color: black;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.ellis-bar-right {
+  background-color: #002933;
+  width: 10em;
 }
 
 /* Book pocket CSS */
