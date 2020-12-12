@@ -89,6 +89,11 @@ a {
   margin: 0;
 }
 
+figure {
+  margin: 0;
+  font-style: italic;
+}
+
 
 /* Header CSS  */
 
