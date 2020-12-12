@@ -1231,23 +1231,6 @@ footer {
   }
 }
 
-@media only screen and (max-width: 360px) {
-  #top-name {
-    font-size: 1.75em;
-  }
-
-  .open-links {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .mobile-menu {
-    font-size: 1.5em;
-  }
-}
-
 /* Mobile Devices smaller than iPad media query */
 @media only screen and (max-width: 765px) {
   /* This is for the film and cool stuff blurbs margins on mobile */
@@ -1283,6 +1266,32 @@ footer {
   }
 }
 
+/* Media Queries from Galaxy5/Pixel/Moto until below Surface Duo */
+@media only screen and (min-width: 360px) and (max-width: 500px) {
+  .long-title-blog {
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+  }
+}
+
+/* Media Queries small devices */
+@media only screen and (max-width: 360px) {
+  #top-name {
+    font-size: 1.75em;
+  }
+
+  .open-links {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .mobile-menu {
+    font-size: 1.5em;
+  }
+}
+
+/* Portrait media queries */
 @media only screen and (orientation: portrait) {
   .portrait-hide {
     display: none;

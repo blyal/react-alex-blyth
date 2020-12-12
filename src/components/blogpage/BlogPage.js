@@ -35,7 +35,7 @@ class BlogPage extends React.Component {
         return (
         <div>
             <div>
-                <h2 className="cyan">The Cool, Interesting Blog</h2>
+                <h2 className="cyan long-title-blog">The Cool, Interesting Blog</h2>
                 <hr />
                 <br />
                 {/* <h2>Alex Blyth</h2> */}
