@@ -44,6 +44,12 @@ class BlogPage extends React.Component {
         </div>
         )
     }
+    componentDidMount() {
+        this.props.toggle(true, 'blog');
+      }
+    componentWillUnmount() {
+        this.props.toggle(false, 'blog');
+      }
 }
 
 export default BlogPage;

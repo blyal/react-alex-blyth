@@ -26,6 +26,16 @@ const Header = (props) => {
         'bottom-bar-rotate': props.openMenu,
         'bottom-bar-return': props.closeMenu && !props.firstTime
     });
+    const mainTitle = classNames({
+        'mobile-header-main': true,
+        'cyan-mobile': props.cyanTitle
+    })
+
+    const closeMobileNav = () => {
+        if (props.openMenu) {
+            props.toggleOverlay();
+        }
+    }
 
     return (
         <header className="app-link-style" id="header">
@@ -37,7 +47,7 @@ const Header = (props) => {
                     <div className={bottomBar}></div>
                 </label>
 
-                <h1 id="top-name" className='mobile-header-main'><Link to="/">ALEX BLYTH</Link></h1>
+                <h1 id="top-name" className={mainTitle} onClick={() => closeMobileNav()}><Link to="/">ALEX BLYTH</Link></h1>
 
                 <nav id="navbar">
                     <AppLinks mobile={false} open={true} />

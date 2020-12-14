@@ -32,6 +32,12 @@ class Now extends React.Component {
       </>
     );
   }
+  componentDidMount() {
+    this.props.toggle(true, 'now');
+  }
+  componentWillUnmount() {
+    this.props.toggle(false, 'now');
+  }
 }
 
 export default Now;

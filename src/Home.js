@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-function Home() {
+const Home = (props) => {
+
+    useEffect(() => {
+        props.toggle(true, 'home');
+        return () => {
+            props.toggle(false, 'home');
+        }
+    }, []
+    );
+
     return (
         <>
         <img src={'/images/Hvar-sailing.JPG'} alt="Sailing in Hvar, Croatia" id="hvar-pic" height="33%" width="33%" />

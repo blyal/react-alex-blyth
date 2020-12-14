@@ -187,6 +187,12 @@ class CoolStuff extends React.Component {
             </>
         );
     }
+    componentDidMount() {
+        this.props.toggle(true, 'coolstuff');
+      }
+      componentWillUnmount() {
+        this.props.toggle(false, 'coolstuff');
+      }
 }
 
 export default CoolStuff;

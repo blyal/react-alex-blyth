@@ -60,6 +60,12 @@ class CodePage extends React.Component {
         </div>
         )
     }
+    componentDidMount() {
+        this.props.toggle(true, 'portfolio');
+      }
+    componentWillUnmount() {
+        this.props.toggle(false, 'portfolio');
+      }
 }
 
 export default CodePage;

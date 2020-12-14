@@ -16,13 +16,23 @@ import './App.css';
 function App() {
 
   const [openMobileMenu, toggleOpenMenu] = useState(false)
-  const [firstTimeMobileMenu, notFirstTime] = useState(true)
+  const [firstTimeLoad, notFirstLoad] = useState(true)
+  const [firstTimeMobileMenu, notFirstMob] = useState(true)
   const [closeMobileMenu, toggleCloseMenu] = useState(true)
+  const [openHome, toggleHome] = useState(false)
+  const [openNow, toggleNow] = useState(false)
+  const [openBlog, toggleBlog] = useState(false)
+  const [openCode, toggleCode] = useState(false)
+  const [openCoolStuff, toggleCoolStuff] = useState(false)
+  const [openFilmStuff, toggleFilmStuff] = useState(false)
 
   const toggleMobileMenu = () => {
     toggleOpenMenu(value => !value)
     toggleCloseMenu(value => !value)
-    notFirstTime(value => value = false)
+    if (!firstTimeLoad) {
+      notFirstMob(value => value = false)
+    }
+    notFirstLoad(value => value = false)
     if (document.body.style.overflow === 'hidden') {
         document.body.style.overflow = 'scroll';
       } else {
@@ -30,20 +40,47 @@ function App() {
       }
   }
 
+  const togglePage = (val, page) => {
+    switch (page) {
+      case 'home':
+        toggleHome(value => value = val)
+        break;
+      case 'now':
+        toggleNow(value => value = val)
+        break;
+      case 'blog':
+        toggleBlog(value => value = val)
+        break;
+      case 'portfolio':
+        toggleCode(value => value = val)
+        break;
+      case 'coolstuff':
+        toggleCoolStuff(value => value = val)
+        break;
+      case 'filmstuff':
+        toggleFilmStuff(value => value = val)
+        break;
+      default:
+        console.log("There is an error with the TogglePage function in the App Component");
+    }
+  }
+
   return (
     <Router>
       <div className="App">
-        <Header openMenu={openMobileMenu} firstTime={firstTimeMobileMenu} closeMenu={closeMobileMenu} toggleOverlay={toggleMobileMenu} />
+        <Header openMenu={openMobileMenu} firstTime={firstTimeMobileMenu} closeMenu={closeMobileMenu} toggleOverlay={toggleMobileMenu} cyanTitle={openHome} />
         <br />
         <div id="main">
             <Overlay open={openMobileMenu} type='mobile' />
-            <AppLinks className="test" mobile={true} open={openMobileMenu} toggleOff={toggleMobileMenu} />
-            <Route exact path="/" component={Home} />
-            <Route path="/now" component={Now} />
-            <Route path="/blog" component={BlogPage} />
-            <Route path="/portfolio" component={CodePage} />
-            <Route path="/stuff" component={CoolStuff} />
-            <Route path="/film" component={FilmStuff} />
+            <AppLinks 
+              className="test" mobile={true} open={openMobileMenu} toggleOff={toggleMobileMenu}
+              openNow={openNow} openBlog={openBlog} openCode={openCode} openCoolStuff={openCoolStuff} openFilmStuff={openFilmStuff} />
+            <Route exact path="/" render={(props) => <Home {...props} toggle={togglePage} />} />
+            <Route path="/now" render={(props) => <Now {...props} toggle={togglePage} />} />
+            <Route path="/blog" render={(props) => <BlogPage {...props} toggle={togglePage} />} />
+            <Route path="/portfolio" render={(props) => <CodePage {...props} toggle={togglePage} />} />
+            <Route path="/stuff" render={(props) => <CoolStuff {...props} toggle={togglePage} />} />
+            <Route path="/film" render={(props) => <FilmStuff {...props} toggle={togglePage} />} />
             <Footer />
         </div>
       </div>

@@ -11,11 +11,11 @@ const AppLinks = (props) => {
 
     return (
         <ul className={`app-link-style ${props.mobile ? "mobile-menu" : ""} ${props.open ? "" : "display-none"}`}>
-            <li><Link to="/now" onClick={() => toggle()}>NOW</Link></li>
-            <li><Link to="/blog" onClick={() => toggle()}>BLOG</Link></li>
-            <li><Link to="/portfolio" onClick={() => toggle()}>CODE</Link></li>
-            <li><Link to="/stuff" onClick={() => toggle()}>COOL STUFF</Link></li>
-            <li><Link to="/film" onClick={() => toggle()}>FILM</Link></li>
+            <li className={`${props.openNow ? "cyan-mobile" : ""}`}><Link to="/now" onClick={() => toggle()}>NOW</Link></li>
+            <li className={`${props.openBlog ? "cyan-mobile" : ""}`}><Link to="/blog" onClick={() => toggle()}>BLOG</Link></li>
+            <li className={`${props.openCode ? "cyan-mobile" : ""}`}><Link to="/portfolio" onClick={() => toggle()}>CODE</Link></li>
+            <li className={`${props.openCoolStuff ? "cyan-mobile" : ""}`}><Link to="/stuff" onClick={() => toggle()}>COOL STUFF</Link></li>
+            <li className={`${props.openFilmStuff ? "cyan-mobile" : ""}`}><Link to="/film" onClick={() => toggle()}>FILM</Link></li>
         </ul>
     )
 }

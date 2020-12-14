@@ -588,14 +588,6 @@ class FilmStuff extends React.Component {
         });
     };
 
-    componentDidUpdate(){
-        if (this.state.popOut){
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = 'scroll';
-        }
-    }
-
     render() {
         return (
             <>
@@ -651,6 +643,19 @@ class FilmStuff extends React.Component {
             </>
         );
     }
+    componentDidMount() {
+        this.props.toggle(true, 'filmstuff');
+      }
+    componentDidUpdate(){
+        if (this.state.popOut){
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'scroll';
+        }
+    }
+      componentWillUnmount() {
+        this.props.toggle(false, 'filmstuff');
+      }
 }
 
 export default FilmStuff;

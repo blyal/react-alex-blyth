@@ -1232,6 +1232,11 @@ footer {
   .header-main {
     display: flex;
   }
+
+  /* To give the title on the homepage a cyan color */
+  .cyan-mobile {
+    color: cyan;
+  }
 }
 
 /* Mobile Devices smaller than iPad media query */
