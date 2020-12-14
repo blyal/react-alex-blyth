@@ -127,8 +127,8 @@ class CoolStuff extends React.Component {
             <>
             <h2 className="cyan">Cool Stuff</h2>
                 <hr />
-            
-            <div className="page-flow">
+            <p className="display-none unavailable-cool">This content is unavailable Please switch to a larger screen!</p>
+            <div className="page-flow cool-content">
 
                 <div className="center-content cs-film-blurb">
                     <p>
@@ -149,14 +149,16 @@ class CoolStuff extends React.Component {
             
                 <div className={podcastView}>
                     <div className="content-pocket flex-50">
-                        <h3>Podcasts I Like</h3>
-                        <ul className="cool-list cyan">
+                        <div className="content-pocket-mob">
+                            <h3>Podcasts I Like</h3>
+                            <ul className="cool-list cyan">
                             {
                                 this.state.podcasts.map((podcast) => (
                                     <li key={podcast.id} onClick={() => this.togglePodcast(podcast.id)}>{podcast.title}</li>
                                 ))
                             }
-                        </ul>
+                            </ul>  
+                        </div> 
                     </div>  
                     
                     <SelectedContent content={this.state.podcasts} backButton={this.togglePodcast} />
@@ -165,14 +167,16 @@ class CoolStuff extends React.Component {
 
                 <div className={bookView}>
                     <div className="content-pocket flex-50">
-                        <h3>Books I Like</h3>
-                        <ul className="cool-list cyan">
-                            {
-                                this.state.books.map((book) => (
-                                    <li key={book.id} onClick={() => this.toggleBook(book.id)}>{book.title}</li>
-                                ))
-                            }
-                        </ul>
+                        <div className="content-pocket-mob">
+                            <h3>Books I Like</h3>
+                            <ul className="cool-list cyan">
+                                {
+                                   this.state.books.map((book) => (
+                                        <li key={book.id} onClick={() => this.toggleBook(book.id)}>{book.title}</li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </div>
 
                     <SelectedContent content={this.state.books} backButton={this.toggleBook} />

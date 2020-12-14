@@ -432,6 +432,9 @@ footer {
 }
 
 /* Pocket Recommendations General CSS */
+.mobile-recommendations {
+  display: none;
+}
 .recommended-things {
   z-index: 40;
   position: relative;
@@ -1321,7 +1324,26 @@ footer {
   }
 }
 
-/* Portrait Media Query iPad until iPad Pro */
+/* Portrait Media Query before iPad Pro and above */
+@media only screen and (min-width: 1000px) and (max-width: 1024px) and (orientation: portrait) {
+  .cover-middle {
+    width: 800px;
+  }
+  .cover-main {
+    width: 112px;
+  }
+  .pocket-view {
+    left: 112px;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -688px;
+  }
+  .content-pocket-mob {
+    padding-left: 6em;
+  }
+}
+
+/* Portrait Media Query iPad and iPad Pro */
 @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
   .w-anderson {
     width: 85%;
@@ -1333,8 +1355,99 @@ footer {
   }
 }
 
+/* Portrait Media Query iPad but not iPad pro  */
+@media only screen and (min-width: 768px) and (max-width: 1000px) and (orientation: portrait) {
+  .cover-container {
+    display: none;
+  }
+  .pocket-view {
+    left: 0;
+    min-width: 1536px;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -48em;
+  }
+  .content-pocket-mob {
+    padding-left: 8em;
+  }
+}
+
+/* Portrait Media Query iPad and below */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .cover-container {
+    display: none;
+  }
+}
+
 /* Portrait Media Query Surface Duo to below iPad */
 @media only screen and (min-width: 531px) and (max-width: 767px) and (orientation: portrait) {
+  .pocket-view {
+    min-width: 1080px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -33.75em;
+  }
+  .content-pocket-mob {
+    padding-left: 3em;
+  }
+  .ferriss-img {
+    left: -30.5em;
+    top: -21em;
+    -webkit-transform: scale(0.35); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.35); /* FF3.5+ */
+     -ms-transform: scale(0.35); /* IE9 */
+      -o-transform: scale(0.35); /* Opera 10.5+ */
+         transform: scale(0.35);
+  }
+  .ferriss-recommendations td {
+    font-size: 0.7em;
+    line-height: 1.5;
+
+  }
+  .rogan-img {
+    -webkit-transform: scale(1); /* Saf3.1+, Chrome */
+    -moz-transform: scale(1); /* FF3.5+ */
+     -ms-transform: scale(1); /* IE9 */
+      -o-transform: scale(1); /* Opera 10.5+ */
+         transform: scale(1);
+    height: 90%;
+    width: 90%;
+    left: 1.5em;
+    top: 0;
+  }
+  .rogan-recommendations td {
+    height: 6em;
+    line-height: 1.5em;
+  }
+  .happiness-img {
+    left: -16em;
+    top: -10.5em;
+    -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.5); /* FF3.5+ */
+     -ms-transform: scale(0.5); /* IE9 */
+      -o-transform: scale(0.5); /* Opera 10.5+ */
+         transform: scale(0.5);
+  }
+  .happiness-recommendations td {
+    height: 5em;
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  .harris-img {
+    left: -25.5em;
+    top: -17em;
+    -webkit-transform: scale(0.4); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.4); /* FF3.5+ */
+     -ms-transform: scale(0.4); /* IE9 */
+      -o-transform: scale(0.4); /* Opera 10.5+ */
+         transform: scale(0.4);
+  }
+  .harris-recommendations td {
+    font-size: 0.75em;
+    line-height: 1.5;
+    height: 13em;
+  }
   .w-anderson {
     width: 85%;
   }
@@ -1346,6 +1459,309 @@ footer {
     font-size: 1em;
   }
 }
+
+/* Portrait Media Query below Surface Duo  */
+@media only screen and (max-width: 530px) and (orientation: portrait) {
+  .content-pocket-mob {
+    padding-left: 2em;
+  }
+  .content-pocket-mob ul {
+    padding-left: 0;
+  }
+  .content-pocket-mob li {
+    font-size: 0.9em;
+  }
+  .standard-recommendations {
+    display: none;
+  }
+  .mobile-recommendations {
+    display: block;
+    padding-bottom: 1em;
+  }
+  .mob-rec {
+    height: 10em;
+    width: 80%;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    border-radius: 1em;
+    margin: 1em auto;
+    text-align: center;
+  }
+  .ferriss-recommendations img {
+    height: 35%;
+    width: 35%;
+  }
+  .ferriss-recommendations span {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .ferriss-wheel {
+    height: 10em;
+    width: 10em;
+  }
+  .ferriss-wheel h2 {
+    font-size: 1.25em;
+  }
+  .ferriss-wheel a {
+    font-size: 0.8em;
+  }
+  .ferriss-img {
+    left: -30.5em;
+    top: -21em;
+    -webkit-transform: scale(0.35); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.35); /* FF3.5+ */
+     -ms-transform: scale(0.35); /* IE9 */
+      -o-transform: scale(0.35); /* Opera 10.5+ */
+         transform: scale(0.35);
+  }
+  .rogan-img {
+    -webkit-transform: scale(1); /* Saf3.1+, Chrome */
+    -moz-transform: scale(1); /* FF3.5+ */
+     -ms-transform: scale(1); /* IE9 */
+      -o-transform: scale(1); /* Opera 10.5+ */
+         transform: scale(1);
+    height: 90%;
+    width: 90%;
+    left: 1.5em;
+    top: 0;
+  }
+  .rogan-recommendations .mob-rec {
+    height: 6em;
+  }
+  .happiness-img {
+    left: -19em;
+    top: -10.5em;
+    -webkit-transform: scale(0.4); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.4); /* FF3.5+ */
+     -ms-transform: scale(0.4); /* IE9 */
+      -o-transform: scale(0.4); /* Opera 10.5+ */
+         transform: scale(0.4);
+  }
+  .happiness-img-container {
+    margin-bottom: -3em;
+  }
+  .happiness-recommendations .mob-rec {
+    height: 5em;
+    line-height: 1.5;
+  }
+  .harris-wheel {
+    height: 8em;
+    width: 8em;
+    margin: 6em 1.5em 1.5em 1.5em;
+  }
+  .harris-wheel h2 {
+    font-size: 1.2em;
+  }
+  .harris-wheel hr {
+    margin: 0;
+  }
+  .harris-wheel h4 {
+    font-size: 0.9em;
+  }
+  .harris-img {
+    left: -30.5em;
+    top: -19em;
+    -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.3); /* FF3.5+ */
+     -ms-transform: scale(0.3); /* IE9 */
+      -o-transform: scale(0.3); /* Opera 10.5+ */
+         transform: scale(0.3);
+  }
+  .harris-img-container {
+    margin-bottom: -1.5em;
+  }
+  .harris-recommendations .mob-rec {
+    height: 7em;
+    line-height: 1.5;
+  }
+  .harris-recommendations span {
+    font-size: 0.9em;
+  }
+  .ellis-recommendations .mob-rec {
+    background-color: rgb(68, 217, 230, 0.6);
+    height: 6.5em;
+  }
+  .book-recommendations img {
+    height: 80%;
+    width: 80%;
+  }
+  .book-recommendations .book-ltz {
+    height: 85%;
+    width: 85%;
+  }
+  .book-recommendations .book-devils {
+    height: 75%;
+    width: 75%;
+  }
+  .book-recommendations .book-sh {
+    height: 85%;
+    width: 85%;
+  }
+  .book-recommendations .book-nfu {
+    height: 70%;
+    width: 70%;
+  }
+  .book-recommendations .burning-film {
+    height: 85%;
+    width: 85%;
+  }
+  .pocket-blurb {
+    padding-left: 0.5em;
+  }
+  .book-pocket {
+    padding-right: 0.9em;
+  }
+}
+
+/* Portrait Media Query Pixel2 to below Surface Duo */
+@media only screen and (min-width: 400px) and (max-width: 530px) and (orientation: portrait)  {
+  .pocket-view {
+    min-width: 828px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -25.85em;
+  }
+}
+
+/* Portrait Media Query iPhoneX to below Pixel2 */
+@media only screen and (min-width: 370px) and (max-width: 399px) and (orientation: portrait) {
+  .pocket-view {
+    min-width: 750px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -23.45em;
+  }
+  .ferriss-img {
+    left: -33em;
+    top: -22em;
+    -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.3); /* FF3.5+ */
+     -ms-transform: scale(0.3); /* IE9 */
+      -o-transform: scale(0.3); /* Opera 10.5+ */
+         transform: scale(0.3);
+  }
+  .happiness-img {
+    left: -21em;
+    top: -10.5em;
+    -webkit-transform: scale(0.375); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.375); /* FF3.5+ */
+     -ms-transform: scale(0.375); /* IE9 */
+      -o-transform: scale(0.375); /* Opera 10.5+ */
+         transform: scale(0.375);
+  }
+  .book-title {
+    width: 20em;
+  }
+}
+
+/* Portrait Media Query Galaxy5/Moto to below iPhoneX */
+@media only screen and (min-width: 350px) and (max-width: 369px) and (orientation: portrait) {
+  .pocket-view {
+    min-width: 720px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -22.5em;
+  }
+  .ferriss-img {
+    left: -33em;
+    top: -22em;
+    -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.3); /* FF3.5+ */
+     -ms-transform: scale(0.3); /* IE9 */
+      -o-transform: scale(0.3); /* Opera 10.5+ */
+         transform: scale(0.3);
+  }
+  .happiness-img {
+    left: -21em;
+    top: -10.5em;
+    -webkit-transform: scale(0.35); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.35); /* FF3.5+ */
+     -ms-transform: scale(0.35); /* IE9 */
+      -o-transform: scale(0.35); /* Opera 10.5+ */
+         transform: scale(0.35);
+  }
+  .harris-recommendations span {
+    font-size: 0.8em;
+  }
+  .book-title {
+    width: 19em;
+  }
+}
+
+/* Portrait Media Query iPhone 5 to below Galaxy5 */
+@media only screen and (min-width: 310px) and (max-width: 349px) and (orientation: portrait) {
+  .pocket-view {
+    min-width: 640px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -20em;
+  }
+  .ferriss-wheel {
+    width: 8em;
+    height: 8em;
+  }
+  .ferriss-wheel h2 {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  .ferriss-wheel hr {
+    margin: 0.1em;
+  }
+  .ferriss-wheel a {
+    margin-top: 0.3em;
+    padding: 0.05em;
+  }
+  .ferriss-img {
+    left: -36em;
+    top: -23.5em;
+    -webkit-transform: scale(0.25); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.25); /* FF3.5+ */
+     -ms-transform: scale(0.25); /* IE9 */
+      -o-transform: scale(0.25); /* Opera 10.5+ */
+         transform: scale(0.25);
+  }
+  .happiness-img {
+    left: -22em;
+    top: -11em;
+    -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+    -moz-transform: scale(0.3); /* FF3.5+ */
+     -ms-transform: scale(0.3); /* IE9 */
+      -o-transform: scale(0.3); /* Opera 10.5+ */
+         transform: scale(0.3);
+  }
+  .happiness-pocket .pocket-blurb {
+    padding-top: 0;
+    margin-top: -2em;
+  }
+  .harris-wheel {
+    height: 6em;
+    width: 6em;
+    margin-top: 2em;
+  }
+  .harris-wheel h2 {
+    font-size: 1em;
+    line-height: 1.3;
+  }
+  .harris-recommendations span {
+    font-size: 0.7em;
+  }
+  .book-title {
+    width: 17em;
+  }
+  .book-recommendations .book-devils {
+    height: 70%;
+    width: 70%;
+  }
+  .book-recommendations .book-sh {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 
 /* Portrait Media Query iPhone 5 to below Surface Duo */
 @media only screen and (min-width: 320px) and (max-width: 530px) and (orientation: portrait) {
@@ -1384,4 +1800,16 @@ footer {
   .fpo-bottom-director {
     font-size: 12px;
   }
+}
+
+  /* Media Query below iPhone 5 */
+  @media only screen and (max-width: 309px), only screen and (max-height: 309px) {
+    .cool-content {
+      display: none;
+    }
+    .unavailable-cool {
+      display: block;
+      margin: 0 2em;
+      font-size: 0.7em;
+    };
 }

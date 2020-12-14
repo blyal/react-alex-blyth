@@ -20,17 +20,17 @@ class Book extends React.Component {
                             {
                                 title: 'Less Than Zero',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" className="book-ltz" height="30%" width="30%"/>
                             },
                             {
                                 title: 'American Psycho',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="American Psycho" src="images/american-psycho.jpg" height="30%" width="30%"/>
+                                image: <img alt="American Psycho" src="images/american-psycho.jpg" className="book-ap" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Devils',
                                 author: 'Dostoevsky',
-                                image: <img alt="Devils" src="images/devils.jpg" height="30%" width="30%"/>
+                                image: <img alt="Devils" src="images/devils.jpg" height="30%" className="book-devils" width="30%"/>
                             }
                         ]
                     },
@@ -49,18 +49,18 @@ class Book extends React.Component {
                             {
                                 title: 'The Secret History',
                                 author: 'Donna Tartt',
-                                image: <img alt="The Secret History" src="images/the-secret-history.jpg" height="30%" width="30%"/>
+                                image: <img alt="The Secret History" src="images/the-secret-history.jpg" className="book-sh" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Persuasion',
                                 author: 'Jane Austen',
-                                image: <img alt="Persuasion" src="images/persuasion.jpg" height="30%" width="30%"/>
+                                image: <img alt="Persuasion" src="images/persuasion.jpg" className="book-pers" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Boyhood',
                                 year: '(2014)',
                                 author: 'directed by Richard Linklater',
-                                image: <img alt="Boyhood" src="images/boyhood.jpg" height="32.5%" width="32.5%"/>
+                                image: <img alt="Boyhood" src="images/boyhood.jpg" className="boyhood-pic" height="32.5%" width="32.5%"/>
                             }
                         ]
                     },
@@ -78,18 +78,18 @@ class Book extends React.Component {
                             {
                                 title: 'Less Than Zero',
                                 author: 'Bret Easton Ellis',
-                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" height="30%" width="30%"/>
+                                image: <img alt="Less Than Zero" src="images/less-than-zero.jpg" className="book-ltz" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Notes from Underground',
                                 author: 'Dostoevsky',
-                                image: <img alt="Notes from Underground" src="images/notes-from-underground.jpg" height="30%" width="30%"/>
+                                image: <img alt="Notes from Underground" src="images/notes-from-underground.jpg" className="book-nfu" height="30%" width="30%"/>
                             },
                             {
                                 title: 'American Psycho',
                                 year: '(2000)',
                                 author: 'directed by Mary Harron',
-                                image: <img alt="American Psycho film" src="images/american-psycho-2000.jpg" height="30%" width="30%"/>
+                                image: <img alt="American Psycho film" src="images/american-psycho-2000.jpg" className="book-ap" height="30%" width="30%"/>
                             }
                         ]
                     },
@@ -105,18 +105,18 @@ class Book extends React.Component {
                             {
                                 title: 'The Wind–Up Bird Chronicle',
                                 author: 'Haruki Murakami',
-                                image: <img alt="The Wind-Up Bird Chronicle" src="images/wind-up-bird.jpg" height="30%" width="30%"/>
+                                image: <img alt="The Wind-Up Bird Chronicle" src="images/wind-up-bird.jpg" className="book-wubc" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Lost in the Spanish Quarter',
                                 author: 'Heddi Goodrich',
-                                image: <img alt="Lost in the Spanish Quarter" src="images/spanish-quarter.jpg" height="30%" width="30%"/>
+                                image: <img alt="Lost in the Spanish Quarter" src="images/spanish-quarter.jpg" className="book-lisq" height="30%" width="30%"/>
                             },
                             {
                                 title: 'Burning',
                                 year: '(2018)',
                                 author: 'directed by Lee Chang-dong',
-                                image: <img alt="Burning" src="images/burning.jpg" height="35%" width="35%"/>
+                                image: <img alt="Burning" src="images/burning.jpg" className="burning-film" height="35%" width="35%"/>
                             }
                         ]
                     }

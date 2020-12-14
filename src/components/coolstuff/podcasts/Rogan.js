@@ -22,7 +22,7 @@ function Rogan() {
                 <div className="recommended-things rogan-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table>
+                    <table className="standard-recommendations">
                         <tbody>
                             <tr>
                                 <td><a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a></td>
@@ -34,6 +34,20 @@ function Rogan() {
                             </tr>
                         </tbody>
                     </table>
+                    <div className="mobile-recommendations">
+                            <div className="mob-rec">
+                                <a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a>
+                            </div>
+                            <div className="mob-rec">
+                                <a href="http://podcasts.joerogan.net/podcasts/bernie-sanders" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1330 - Bernie Sanders</span></div></a>
+                            </div>
+                            <div className="mob-rec">
+                                <a href="http://podcasts.joerogan.net/podcasts/naval-ravikant" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1309 - Naval Ravikant</span></div></a>
+                            </div>
+                            <div className="mob-rec">
+                                <a href="http://podcasts.joerogan.net/podcasts/jordan-peterson-2" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#958 - Jordan Peterson</span></div></a>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div className="rogan-bar-right"></div>

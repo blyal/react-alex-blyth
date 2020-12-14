@@ -27,7 +27,7 @@ function Harris() {
                     <p>Recommended Episodes</p>
                     <hr />
                     <table>
-                        <tbody>
+                        <tbody className="standard-recommendations">
                             <tr>
                                 <td><a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a></td>
                                 <td><a href="https://samharris.org/podcasts/111-science-meditation/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#111 - THE SCIENCE OF MEDITATION: A Conversation with Daniel Goleman and Richard J. Davidson</span></div></a></td>
@@ -38,6 +38,20 @@ function Harris() {
                             </tr>
                         </tbody>
                     </table>
+                    <div className="mobile-recommendations">
+                        <div className="mob-rec">
+                            <a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a>
+                        </div>
+                        <div className="mob-rec">
+                            <a href="https://samharris.org/podcasts/111-science-meditation/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#111 - THE SCIENCE OF MEDITATION: A Conversation with Daniel Goleman and Richard J. Davidson</span></div></a>
+                        </div>
+                        <div className="mob-rec">
+                            <a href="https://samharris.org/podcasts/137-safe-space/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#137 - SAFE SPACE: A Conversation with Jonathan Haidt</span></div></a>
+                        </div>
+                        <div className="mob-rec">
+                            <a href="https://samharris.org/podcasts/127-freedom-known/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#127 - FREEDOM FROM THE KNOWN: A Conversation with Michael Pollan</span></div></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="harris-bar-right"></div>
