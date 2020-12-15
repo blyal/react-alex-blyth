@@ -21,7 +21,7 @@ function Ellis() {
                     <p className="ellis-span">Most of Bret's content is behind a (small) paywall. This is unfortunate, because talk of paywalls generally raises people's anxiety, but paywalls are also a reality I completely understand. You have to find a way to monetize content somehow.</p>
                     <p className="ellis-span">Until mid-2017, the podcast was available from PodcastOne. Some episodes here are free, so you can get a taste of whether it is for you.</p>
                     <p className="ellis-span">The last couple of years have seen the podcast move to Patreon, behind aforementioned paywall. There are different options and amounts, depending on how much you feel it's worth contributing.</p>
-                    <table className="standard-recommendations">
+                    <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>BEE Podcast on PodcastOne (until 2017)</span></div></a></td>
@@ -33,7 +33,7 @@ function Ellis() {
                             </tr>
                         </tbody>
                     </table>
-                    <div className="mobile-recommendations">
+                    <div className="mobile-recommendations-podcast">
                         <div className="mob-rec">
                             <a href="https://www.podcastone.com/Bret-Easton-Ellis-Podcast" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/bee-square.jpg" height="30%" width="30%"/><span>BEE Podcast on PodcastOne (until 2017)</span></div></a>
                         </div>

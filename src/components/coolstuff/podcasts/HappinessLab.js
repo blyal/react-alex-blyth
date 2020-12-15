@@ -19,7 +19,7 @@ function HappinessLab() {
                 <div className="recommended-things happiness-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table className="standard-recommendations">
+                    <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="https://www.happinesslab.fm/season-1-episodes/you-can-change-w6YOz" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>You Can Change</span></div></a></td>
@@ -31,7 +31,7 @@ function HappinessLab() {
                             </tr>
                         </tbody>
                     </table>
-                    <div className="mobile-recommendations">
+                    <div className="mobile-recommendations-podcast">
                         <div className="mob-rec">
                             <a href="https://www.happinesslab.fm/season-1-episodes/you-can-change-w6YOz" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/happiness-lab.jpg" height="20%" width="20%"/><span>You Can Change</span></div></a>
                         </div>

@@ -22,7 +22,7 @@ function Rogan() {
                 <div className="recommended-things rogan-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table className="standard-recommendations">
+                    <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a></td>
@@ -34,7 +34,7 @@ function Rogan() {
                             </tr>
                         </tbody>
                     </table>
-                    <div className="mobile-recommendations">
+                    <div className="mobile-recommendations-podcast">
                             <div className="mob-rec">
                                 <a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a>
                             </div>

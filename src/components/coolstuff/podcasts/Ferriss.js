@@ -31,7 +31,7 @@ function Ferriss() {
                 <div className="recommended-things ferriss-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table className="standard-recommendations">
+                    <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></td>
@@ -43,7 +43,7 @@ function Ferriss() {
                             </tr>
                         </tbody>
                     </table>
-                    <div className="mobile-recommendations">
+                    <div className="mobile-recommendations-podcast">
                             
                                 <div className="mob-rec"><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></div>
                             

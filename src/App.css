@@ -432,7 +432,7 @@ footer {
 }
 
 /* Pocket Recommendations General CSS */
-.mobile-recommendations {
+.mobile-recommendations-podcast {
   display: none;
 }
 .recommended-things {
@@ -954,9 +954,6 @@ footer {
 }
 .fpo-words p {
   margin: 0;
-}
-.fpo-director {
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .boogie-nights {
   background-image: linear-gradient(#e80011,#000400)
@@ -1511,10 +1508,10 @@ footer {
   .content-pocket-mob li {
     font-size: 0.9em;
   }
-  .standard-recommendations {
+  .standard-recommendations-podcast {
     display: none;
   }
-  .mobile-recommendations {
+  .mobile-recommendations-podcast {
     display: block;
     padding-bottom: 1em;
   }
@@ -1843,6 +1840,17 @@ footer {
 }
 
 /* Landscape Media Queries */
+@media only screen and (orientation: landscape) {
+  .film-table {
+    display: block;
+  }
+  .director-table {
+    display: block;
+  }
+  .recommendations-mobile {
+    display: none;
+  }
+}
 
 /* Landscape Media Query until iPad */
 @media only screen and (max-height: 768px) and (orientation: landscape) {
@@ -1868,6 +1876,47 @@ footer {
     font-size: 1.5em;
     margin-top: 1em;
   }
+  #director-list {
+    margin-left: 30%;
+  }
+  .film-table td {
+    font-size: 1.1em;
+  }
+  .film-table td span {
+    font-size: 0.85em;
+  }
+  .director-table td {
+    line-height: 1;
+  }
+  .director-table td span {
+    display: block;
+  }
+  .w-anderson h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+  .w-anderson h4 {
+    font-size: 1em;
+  }
+}
+
+/* Landscape Media Query until iPhone 6/7/8 plus  */
+@media only screen and (max-height: 414px) and (orientation: landscape) {
+  .fpo-words {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  .w-anderson h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  #director-list {
+    padding-left: 0;
+  }
+  .film-popout {
+    height: 85%;
+    top: 5%;
+  }
 }
 
 /* Landscape Media Query until iPhone X */
@@ -1878,6 +1927,14 @@ footer {
   }
   .mobile-menu a {
     padding: 0.4em 0;
+  }
+  .w-anderson h3 {
+    /* margin-top: 1em;
+    margin-bottom: 0.5em; */
+    font-size: 1.3em;
+  }
+  .w-anderson h4 {
+    font-size: 0.9em;
   }
 }
 
@@ -1901,6 +1958,13 @@ footer {
     font-size: 1.2em;
     margin-top: 1.5em;
   }
+  .w-anderson h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+  .w-anderson h4 {
+    font-size: 0.8em;
+  }
 }
 
 /* Landscape Media Query below iPhone 5 */
@@ -1911,5 +1975,12 @@ footer {
   }
   .mobile-menu a {
     padding: 0.3em 0;
+  }
+}
+
+/* Landscape Media Query for small devices with a high width */
+@media only screen and (max-height: 500px) and (min-width: 800px) and (orientation: landscape) {
+  #director-list {
+    margin-left: 22%;
   }
 }

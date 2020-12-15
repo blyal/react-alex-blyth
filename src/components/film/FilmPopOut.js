@@ -102,7 +102,7 @@ const FilmPopOut = (props) => {
                             <p className="fpo-words" key={id}>{item}</p>
                         ))}
                     </div>
-                </div><br />
+                </div>
                 <div>
                     <p className="fpo-words fpo-bottom fpo-bottom-director">Recommended Movies</p>
                     <table className="director-table">
