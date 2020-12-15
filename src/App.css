@@ -1325,6 +1325,17 @@ footer {
     font-size: 0.75em;
   }
 }
+  /* Media Query below iPhone 5 */
+  @media only screen and (max-width: 309px), only screen and (max-height: 309px) {
+    .cool-content {
+      display: none;
+    }
+    .unavailable-cool {
+      display: block;
+      margin: 0 2em;
+      font-size: 0.7em;
+    };
+}
 
 /* Portrait media queries */
 @media only screen and (orientation: portrait) {
@@ -1831,14 +1842,36 @@ footer {
   }
 }
 
-  /* Media Query below iPhone 5 */
-  @media only screen and (max-width: 309px), only screen and (max-height: 309px) {
-    .cool-content {
-      display: none;
-    }
-    .unavailable-cool {
-      display: block;
-      margin: 0 2em;
-      font-size: 0.7em;
-    };
+/* Landscape Media Queries */
+
+/* Landscape Media Query until iPad */
+@media only screen and (max-height: 768px) and (orientation: landscape) {
+  #hvar-pic {
+    height: 50%;
+    width: 50%;
+  }
+  .home-style h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* Landscape Media Query until Surface Duo */
+@media only screen and (max-height: 540px) and (orientation: landscape) {
+  #hvar-pic {
+    height: 45%;
+    width: 45%;
+  }
+  .home-style h3 {
+    font-size: 1.17em;
+  }
+}
+
+/* Landscape Media Query until Galaxy 5 */
+@media only screen and (max-height: 360px) and (orientation: landscape) {
+  .home-style h3 {
+    font-size: 1em;
+  }
+  .home-style p {
+    font-size: 0.9em;
+  }
 }
