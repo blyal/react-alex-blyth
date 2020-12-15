@@ -1864,6 +1864,21 @@ footer {
   .home-style h3 {
     font-size: 1.17em;
   }
+  .mobile-menu {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+}
+
+/* Landscape Media Query until iPhone X */
+@media only screen and (max-height: 375px) and (orientation: landscape) {
+  .mobile-menu {
+    margin-top: 1.2em;
+    font-size: 1.4em;
+  }
+  .mobile-menu a {
+    padding: 0.4em 0;
+  }
 }
 
 /* Landscape Media Query until Galaxy 5 */
@@ -1873,5 +1888,28 @@ footer {
   }
   .home-style p {
     font-size: 0.9em;
+  }
+  .mobile-menu {
+    font-size: 1.3em;
+    margin-top: 1.4em;
+  }
+}
+
+/* Landscape Media Query until iPhone 5 */
+@media only screen and (max-height: 320px) and (orientation: landscape) {
+  .mobile-menu {
+    font-size: 1.2em;
+    margin-top: 1.5em;
+  }
+}
+
+/* Landscape Media Query below iPhone 5 */
+@media only screen and (max-height: 300px) and (orientation: landscape) {
+  .mobile-menu {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+  }
+  .mobile-menu a {
+    padding: 0.3em 0;
   }
 }
