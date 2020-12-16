@@ -141,9 +141,9 @@ class CoolStuff extends React.Component {
                 <br />
 
                 <div className="cover-container">
-                    <div className="cover-main"></div>
+                    <div className="cover-left"></div>
                     <div className="cover-middle"></div>
-                    <div className="cover-main cover-shadow"></div>
+                    <div className="cover-right"></div>
                 </div>
         
             

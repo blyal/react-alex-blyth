@@ -418,7 +418,7 @@ footer {
   height: 100%;
   position: absolute;
 }
-.cover-main {
+.cover-left {
   background-color: black;
   width: 20em;
   z-index: 60;
@@ -427,8 +427,11 @@ footer {
   background-color: transparent;
   width: 50em;
 }
-.cover-shadow {
+.cover-right {
+  background-color: black;
   box-shadow: 7px -7px 8px -1px black;
+  width: 150em;
+  z-index: 60;
 }
 
 /* Pocket Recommendations General CSS */
@@ -1323,7 +1326,8 @@ footer {
   }
 }
   /* Media Query below iPhone 5 */
-  @media only screen and (max-width: 309px), only screen and (max-height: 309px) {
+  @media only screen and (max-width: 309px), only screen and (max-height: 309px), only screen and (max-width: 530px) and (orientation: landscape) {
+    /* Hides Cool Stuff on tiny devices */
     .cool-content {
       display: none;
     }
@@ -1361,12 +1365,12 @@ footer {
   }
 }
 
-/* Portrait Media Query before iPad Pro and above */
+/* Portrait Media Query before and until iPad Pro */
 @media only screen and (min-width: 1000px) and (max-width: 1024px) and (orientation: portrait) {
   .cover-middle {
     width: 800px;
   }
-  .cover-main {
+  .cover-left {
     width: 112px;
   }
   .pocket-view {
@@ -1394,8 +1398,12 @@ footer {
 
 /* Portrait Media Query iPad but not iPad pro  */
 @media only screen and (min-width: 768px) and (max-width: 1000px) and (orientation: portrait) {
-  .cover-container {
+  .cover-left {
     display: none;
+  }
+  .cover-middle {
+    left: 0;
+    width: 768px;
   }
   .pocket-view {
     left: 0;
@@ -1411,13 +1419,19 @@ footer {
 
 /* Portrait Media Query iPad and below */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-  .cover-container {
+  .cover-left {
     display: none;
+  }
+  .cover-middle {
+    left: 0;
   }
 }
 
 /* Portrait Media Query Surface Duo to below iPad */
 @media only screen and (min-width: 531px) and (max-width: 767px) and (orientation: portrait) {
+  .cover-middle {
+    width: 540px;
+  }
   .pocket-view {
     min-width: 1080px;
     left: 0;
@@ -1652,6 +1666,9 @@ footer {
 
 /* Portrait Media Query Pixel2 to below Surface Duo */
 @media only screen and (min-width: 400px) and (max-width: 530px) and (orientation: portrait)  {
+  .cover-middle {
+    width: 414px;
+  }
   .pocket-view {
     min-width: 828px;
     left: 0;
@@ -1663,6 +1680,9 @@ footer {
 
 /* Portrait Media Query iPhoneX to below Pixel2 */
 @media only screen and (min-width: 370px) and (max-width: 399px) and (orientation: portrait) {
+  .cover-middle {
+    width: 375px;
+  }
   .pocket-view {
     min-width: 750px;
     left: 0;
@@ -1695,6 +1715,9 @@ footer {
 
 /* Portrait Media Query Galaxy5/Moto to below iPhoneX */
 @media only screen and (min-width: 350px) and (max-width: 369px) and (orientation: portrait) {
+  .cover-middle {
+    width: 360px;
+  }
   .pocket-view {
     min-width: 720px;
     left: 0;
@@ -1730,6 +1753,9 @@ footer {
 
 /* Portrait Media Query iPhone 5 to below Galaxy5 */
 @media only screen and (min-width: 310px) and (max-width: 349px) and (orientation: portrait) {
+  .cover-middle {
+    width: 320px;
+  }
   .pocket-view {
     min-width: 640px;
     left: 0;
@@ -1982,5 +2008,295 @@ footer {
 @media only screen and (max-height: 500px) and (min-width: 800px) and (orientation: landscape) {
   #director-list {
     margin-left: 22%;
+  }
+}
+
+/* Landscape Media Query below iPad pro by width */
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+  .cover-left {
+    width: 10em;
+  }
+  .pocket-view {
+    left: 10em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -40em;
+  }
+}
+
+/* Landscape Media Query below iPad by width */
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .cover-left {
+    width: 5em;
+  }
+  .pocket-view {
+    left: 5em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -45em;
+  }
+}
+
+/* Landscape Media Query above Pixel 2XL (1) by width */
+@media only screen and (max-width: 920px) and (orientation: landscape) {
+  .cover-left {
+    width: 4em;
+  }
+  .pocket-view {
+    left: 4em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -46em;
+  }
+}
+
+/* Landscape Media Query above Pixel 2XL (2) by width */
+@media only screen and (max-width: 875px) and (orientation: landscape) {
+  .cover-left {
+    width: 2em;
+  }
+  .pocket-view {
+    left: 2em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -48em;
+  }
+  .content-pocket-mob {
+    padding-left: 5em;
+  }
+}
+
+/* Landscape Media Query just above Pixel 2XL by width */
+@media only screen and (max-width: 835px) and (orientation: landscape) {
+  .cover-left {
+    width: 0.75em;
+  }
+  .pocket-view {
+    left: 0.75em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -49.25em;
+  }
+}
+
+/* Landscape Media Query just above iPhone X by width */
+@media only screen and (max-width: 817px) and (orientation: landscape) {
+  .cover-left {
+    width: 0.5em;
+  }
+  .pocket-view {
+    left: 0.5em;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -49.5em;
+  }
+}
+
+/* Landscape Media Query just below iPhone X by width */
+@media only screen and (max-width: 807px) and (orientation: landscape) {
+  .cover-left {
+    display: none;
+  }
+  .pocket-view {
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -50em;
+  }
+}
+
+/* Landscape Media Query a bit below iPhone X by width */
+@media only screen and (max-width: 780px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    /* width corresponds to next Media break */
+    width: 750px
+  }
+  .pocket-view {
+    min-width: 1500px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -750px;
+  }
+}
+
+/* Landscape Media Query iPhone 6/7/8plus and below by width */
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 736px
+  }
+  .pocket-view {
+    min-width: 1472px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -736px;
+  }
+}
+
+/* Landscape Media Query Surface Duo and below by width */
+@media only screen and (max-width: 720px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 720px
+  }
+  .pocket-view {
+    min-width: 1440px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -720px;
+  }
+  .ferriss-recommendations span {
+    line-height: 1.2;
+  }
+  .rogan-img {
+    left: 5em;
+  }
+  .rogan-recommendations td {
+    height: 7em;
+    line-height: 1.5;
+  }
+  .happiness-recommendations span {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .harris-recommendations span {
+    line-height: 1.2;
+  }
+}
+
+/* Landscape Media Query below Surface Duo by width */
+@media only screen and (max-width: 710px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 680px
+  }
+  .pocket-view {
+    min-width: 1360px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -680px;
+  }
+  .ferriss-recommendations span {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .rogan-img {
+    left: 3em;
+  }
+  .happiness-recommendations span {
+    font-size: 0.8em;
+  }
+  .harris-recommendations span {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+/* Landscape Media Query up to iPhone 6/7/8 by width */
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 667px
+  }
+  .pocket-view {
+    min-width: 1334px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -667px;
+  }
+  .rogan-img {
+    left: 4em;
+    top: 1em;
+    -webkit-transform: scale(1.25); /* Saf3.1+, Chrome */
+    -moz-transform: scale(1.25); /* FF3.5+ */
+     -ms-transform: scale(1.25); /* IE9 */
+      -o-transform: scale(1.25); /* Opera 10.5+ */
+         transform: scale(1.25);
+    height: 80%;
+    width: 80%;
+  }
+}
+
+/* Landscape Media Query below iPhone 6/7/8 by width */
+@media only screen and (max-width: 660px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 650px
+  }
+  .pocket-view {
+    min-width: 1300px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -650px;
+  }
+  .ferriss-recommendations span {
+    font-size: 0.8em;
+  }
+  .rogan-recommendations span {
+    line-height: 1.5;
+  }
+  .harris-recommendations span {
+    font-size: 0.8em;
+  }
+}
+
+/* Landscape Media Query up to Galaxy S5 by width */
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 640px
+  }
+  .pocket-view {
+    min-width: 1280px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -640px;
+  }
+}
+
+/* Landscape Media Query below Galaxy S5 by width */
+@media only screen and (max-width: 625px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 600px
+  }
+  .pocket-view {
+    min-width: 1200px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -600px;
+  }
+  .happiness-img {
+    left: -15em;
+  }
+  .happiness-recommendations span {
+    line-height: 1.4;
+  }
+}
+
+/* Landscape Media Query a bit above iPhone 5 by width */
+@media only screen and (max-width: 588px) and (orientation: landscape) {
+  .cover-middle {
+    left: 0;
+    width: 568px
+  }
+  .pocket-view {
+    min-width: 1136px;
+    left: 0;
+  }
+  .pocket-view-podcast, .pocket-view-book {
+    left: -568px;
+  }
+  .happiness-img {
+    left: -17em;
   }
 }
