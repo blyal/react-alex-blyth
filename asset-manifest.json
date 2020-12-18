@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a9310425.chunk.css",
+    "main.js": "/static/js/main.fb20dd8e.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
+    "static/js/2.93a57ad2.chunk.js": "/static/js/2.93a57ad2.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.66e4e6f5ca0e7bee74f7e27a072209e1.js": "/precache-manifest.66e4e6f5ca0e7bee74f7e27a072209e1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.93a57ad2.chunk.js.LICENSE.txt": "/static/js/2.93a57ad2.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/smoke.315a6d79.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83c3e0c4.js",
+    "static/js/2.93a57ad2.chunk.js",
+    "static/css/main.a9310425.chunk.css",
+    "static/js/main.fb20dd8e.chunk.js"
+  ]
+}
