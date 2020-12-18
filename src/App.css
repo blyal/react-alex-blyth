@@ -1194,7 +1194,7 @@ footer {
   }
   .back-to-top a {
     text-decoration-line: none;
-    opacity: 51%;
+    color: grey;
   }
   .App {
     padding-bottom: 4em;
