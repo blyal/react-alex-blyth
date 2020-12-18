@@ -7,7 +7,7 @@ const Home = (props) => {
         return () => {
             props.toggle(false, 'home');
         }
-    }, []
+    }, [props]
     );
 
     return (
