@@ -31,7 +31,7 @@ h2 {
  
 hr {
    width: 60%;
-   opacity: 90%;
+   border-color: grey;
  }
  
 .centered {
