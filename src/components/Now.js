@@ -6,7 +6,7 @@ class Now extends React.Component {
     return (
       <>
         <h2 className="cyan long-title-now">What am I up to now?</h2>
-        <img src={'/images/Split-up-in-Split.JPG'} alt="The boys in Split, before we Split" height="70%" width="70%" className="now-pix" />
+        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" className="now-pix" />
         <div className="home-style">
           <br />
           <h3 className="cyan">In 10 Seconds</h3>
@@ -15,7 +15,7 @@ class Now extends React.Component {
           <p>Creating awesome memories with people I love.</p>
           <br />
         </div>
-        <img src={'/images/Lannisters-in-Dubrovnik.jpg'} alt="A bunch of Baratheons (not Lannisters!) at the Red Keep" height="55%" width="55%" className="now-pix" />
+        <img src={'/images/Ardeche-2020.jpg'} alt="Cousin time in France" height="55%" width="55%" className="now-pix" />
         <div className="home-style">
           <br />
           <h3 className="cyan">In 10x10 Seconds</h3>

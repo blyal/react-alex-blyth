@@ -1881,8 +1881,8 @@ footer {
 /* Landscape Media Query until iPad */
 @media only screen and (max-height: 768px) and (orientation: landscape) {
   #hvar-pic {
-    height: 50%;
-    width: 50%;
+    height: 33%;
+    width: 33%;
   }
   .home-style h3 {
     font-size: 1.2em;
