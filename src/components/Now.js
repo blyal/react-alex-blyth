@@ -20,7 +20,7 @@ class Now extends React.Component {
           <br />
           <h3 className="cyan">In 10x10 Seconds</h3>
           <p>At the start of 2020, after more than 12 months of planning, I moved to Europe to complete my degree on exchange in The Netherlands and to get a new job in Spain.
-              I arrived here precisely just before CoVid-19 struck, so feel extra lucky to be here at all... it feels like I arrived just in time!
+              I arrived here precisely just before CoVid-19 struck, so feel extra lucky to be here at all — it feels like I arrived just in time!
               My exchange semester, the second I have done, was one of the most awesome times of my life, in spite of CoVid. I was living in a hall of residence for international students during the lockdown, so consider myself to have had one of the least boring lockdown experiences in the world.</p>
           <p>After the exchange semester finished, I went travelling to some very empty tourist destinations with a few friends from the residence, and also visited other friends from this and my previous time spent in Europe.
               Now my travel is winding down, and I'm beginning to focus on finding employment and settling in a new city. My goal for a long time has been to move to Spain, as I'm a fan of the spanish culture and want to become fluent in the language.
