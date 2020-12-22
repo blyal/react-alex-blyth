@@ -6,8 +6,9 @@ import HappinessLab from './podcasts/HappinessLab';
 import Harris from './podcasts/Harris';
 import Ellis from './podcasts/Ellis';
 import Book from './books/Book';
+import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
-var classNames = require('classnames');
+import classNames from 'classnames';
 
 class CoolStuff extends React.Component {
     
@@ -193,6 +194,10 @@ class CoolStuff extends React.Component {
       componentWillUnmount() {
         this.props.toggle(false, 'coolstuff');
       }
+}
+
+CoolStuff.propTypes = {
+    toggle: PropTypes.func.isRequired
 }
 
 export default CoolStuff;

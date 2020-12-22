@@ -2,6 +2,7 @@ import React from 'react';
 import Blog from './Blog';
 import MentalistReview from './blogs/MentalistReview';
 import { v4 as uuid } from 'uuid';
+import PropTypes from 'prop-types';
 
 class BlogPage extends React.Component {
     state = {
@@ -50,6 +51,10 @@ class BlogPage extends React.Component {
     componentWillUnmount() {
         this.props.toggle(false, 'blog');
       }
+}
+
+BlogPage.propTypes = {
+    toggle: PropTypes.func.isRequired
 }
 
 export default BlogPage;

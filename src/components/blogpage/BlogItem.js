@@ -39,7 +39,8 @@ const BlogItem = (props) => {
 
 // Prop-Types
 BlogItem.propTypes = {
-    entry: PropTypes.object.isRequired
+    entry: PropTypes.object.isRequired,
+    toggleBlog: PropTypes.func.isRequired
 }
 
 export default BlogItem;

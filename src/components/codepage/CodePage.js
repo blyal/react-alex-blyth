@@ -4,6 +4,7 @@ import LearningReact from './codingprojects/LearningReact';
 import EssayMateApp from './codingprojects/EssayMateApp';
 import TrackApplication from './codingprojects/TrackApplication';
 import { v4 as uuid } from 'uuid';
+import PropTypes from 'prop-types';
 
 class CodePage extends React.Component {
     state = {
@@ -66,6 +67,10 @@ class CodePage extends React.Component {
     componentWillUnmount() {
         this.props.toggle(false, 'portfolio');
       }
+}
+
+CodePage.propTypes = {
+    toggle: PropTypes.func.isRequired
 }
 
 export default CodePage;

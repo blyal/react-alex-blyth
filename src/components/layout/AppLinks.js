@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const AppLinks = (props) => {
 
@@ -18,6 +19,17 @@ const AppLinks = (props) => {
             <li className={`${props.openFilmStuff ? "cyan-mobile" : ""}`}><Link to="/film" onClick={() => toggle()}>FILM</Link></li>
         </ul>
     )
+}
+
+AppLinks.propTypes = {
+    mobile: PropTypes.bool.isRequired,
+    open: PropTypes.bool.isRequired,
+    toggleOff: PropTypes.func,
+    openNow: PropTypes.bool,
+    openBlog: PropTypes.bool,
+    openCode: PropTypes.bool,
+    openCoolStuff: PropTypes.bool,
+    openFilmStuff: PropTypes.bool
 }
 
 export default AppLinks;

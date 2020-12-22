@@ -2,6 +2,7 @@ import React from 'react';
 import FilmPopOut from './FilmPopOut';
 import Overlay from '../layout/Overlay';
 import { v4 as uuid } from 'uuid';
+import PropTypes from 'prop-types';
 
 class FilmStuff extends React.Component {
 
@@ -656,6 +657,10 @@ class FilmStuff extends React.Component {
       componentWillUnmount() {
         this.props.toggle(false, 'filmstuff');
       }
+}
+
+FilmStuff.propTypes = {
+    toggle: PropTypes.func.isRequired
 }
 
 export default FilmStuff;

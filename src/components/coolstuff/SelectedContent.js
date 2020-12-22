@@ -47,7 +47,8 @@ class SelectedContent extends React.Component {
 }
 
 SelectedContent.propTypes = {
-    content: PropTypes.array.isRequired
+    content: PropTypes.array.isRequired,
+    backButton: PropTypes.func.isRequired
 }
 
 export default SelectedContent;

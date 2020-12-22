@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import { CSSTransition } from 'react-transition-group';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const FilmPopOut = (props) => {
 
@@ -127,6 +127,13 @@ const FilmPopOut = (props) => {
             </div>
             </CSSTransition>
         )
+}
+
+FilmPopOut.propTypes = {
+    popOut: PropTypes.bool.isRequired,
+    type: PropTypes.string.isRequired,
+    selected: PropTypes.object.isRequired,
+    close: PropTypes.func.isRequired
 }
 
 export default FilmPopOut;

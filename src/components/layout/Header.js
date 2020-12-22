@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import AppLinks from './AppLinks';
 import PicLinks from './PicLinks';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
 
@@ -60,6 +61,14 @@ const Header = (props) => {
 
         </header>
     )
+}
+
+Header.propTypes = {
+    openMenu: PropTypes.bool.isRequired,
+    firstTime: PropTypes.bool.isRequired,
+    closeMenu: PropTypes.bool.isRequired,
+    toggleOverlay: PropTypes.func.isRequired,
+    cyanTitle: PropTypes.bool.isRequired
 }
 
 export default Header;

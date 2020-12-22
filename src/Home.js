@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const Home = (props) => {
 
@@ -21,6 +22,10 @@ const Home = (props) => {
         </div>
         </>
     )
+}
+
+Home.propTypes = {
+    toggle: PropTypes.func.isRequired
 }
 
 export default Home;

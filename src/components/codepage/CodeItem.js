@@ -41,7 +41,8 @@ class CodeItem extends React.Component {
 
 // Prop-Types
 CodeItem.propTypes = {
-    project: PropTypes.object.isRequired
+    project: PropTypes.object.isRequired,
+    toggleProjects: PropTypes.func.isRequired
 }
 
 export default CodeItem;

@@ -12,7 +12,8 @@ class Code extends React.Component {
 
 // Prop-Types
 Code.propTypes = {
-    projects: PropTypes.array.isRequired
+    projects: PropTypes.array.isRequired,
+    toggleProjects: PropTypes.func.isRequired
 }
 
 export default Code;

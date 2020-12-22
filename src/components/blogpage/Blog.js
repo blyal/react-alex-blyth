@@ -12,7 +12,8 @@ class Blog extends React.Component {
 
 // Prop-Types
 Blog.propTypes = {
-    entries: PropTypes.array.isRequired
+    entries: PropTypes.array.isRequired,
+    toggleBlog: PropTypes.func.isRequired
 }
 
 export default Blog;

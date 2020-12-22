@@ -1,5 +1,5 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class Now extends React.Component {
   render() {
@@ -38,6 +38,10 @@ class Now extends React.Component {
   componentWillUnmount() {
     this.props.toggle(false, 'now');
   }
+}
+
+Now.propTypes = {
+  toggle: PropTypes.func.isRequired
 }
 
 export default Now;

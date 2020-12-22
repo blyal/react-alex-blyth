@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { v4 as uuid } from 'uuid';
+import PropTypes from 'prop-types';
 
 class Book extends React.Component {
 
@@ -188,6 +189,10 @@ class Book extends React.Component {
             : null
         ))   
     }
+}
+
+Book.propTypes = {
+    title: PropTypes.string.isRequired
 }
 
 export default Book;
