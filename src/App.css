@@ -501,7 +501,6 @@ footer {
 }
 .ferriss-wheel {
   position: relative;
-  opacity: 100%;
   background-color: rgba(1,98,131,.8);
   border-radius: 50%;
   width: 13em;
@@ -665,7 +664,6 @@ footer {
 }
 .harris-wheel {
   position: relative;
-  opacity: 100%;
   background-color: rgba(206, 206, 206, 0.4);
   border-radius: 50%;
   width: 11em;
