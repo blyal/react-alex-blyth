@@ -1029,6 +1029,13 @@ footer {
   background-repeat: no-repeat;
   width: 50%;
 }
+.linklater hr {
+  border-color: white;
+  width: 40%;
+}
+.tarantino hr {
+  width: 40%;
+}
 .scorsese {
   display: inline-block;
   color: black;
@@ -1047,6 +1054,9 @@ footer {
   border-radius: 0 0 1em 1em;
   margin-top: -1em;
   margin-bottom: 2em;
+}
+.miyazaki hr {
+  border-color: white;
 }
 .w-anderson {
   display: inline-block;

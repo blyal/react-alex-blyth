@@ -28,6 +28,7 @@ const FilmPopOut = (props) => {
             'pta': name === 'Paul Thomas Anderson',
             'coen-bros': name === 'Joel and Ethan Coen',
             'linklater': name === 'Richard Linklater',
+            'tarantino': name === 'Quentin Tarantino',
             'scorsese': name === 'Martin Scorsese',
             'miyazaki': name === 'Hayao Miyazaki',
             'w-anderson': name === 'Wes Anderson',
