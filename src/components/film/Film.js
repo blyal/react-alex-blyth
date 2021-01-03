@@ -653,6 +653,7 @@ class FilmStuff extends React.Component {
     }
       componentWillUnmount() {
         this.props.toggle(false, 'filmstuff');
+        document.body.style.overflow = 'scroll';
       }
 }
 
