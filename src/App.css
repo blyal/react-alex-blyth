@@ -33,6 +33,10 @@ hr {
    width: 60%;
    border-color: grey;
  }
+
+ p {
+   font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+ }
  
 .centered {
    text-align: center;
@@ -310,7 +314,7 @@ footer {
 
 /* Blog/Code page CSS */
 .code-blog-entry {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   margin: 0 auto;
   padding: 1em 1em 0.1em 1em;
@@ -475,7 +479,7 @@ footer {
   margin: 0 0 0 1em;
   width: 50%;
   font-size: 1em;
-  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  /* font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
   color: white;
 }
 .recommended-things table {
@@ -868,7 +872,7 @@ footer {
   border: 1px solid beige;
   box-shadow: 0 0 15px beige;
   overflow: scroll;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   line-height: 2em;
   text-align: center;
   padding-bottom: 1em;
@@ -923,7 +927,7 @@ footer {
   font-size: 20px;
   letter-spacing: 0.05em;
   line-height: 1em;
-  font-family: adelle, serif;
+  font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 .film-table span {
   font-size: 17.5px;
@@ -946,7 +950,7 @@ footer {
   text-align: left;
   border-radius: 1em;
   padding: 0 1em 1em 1em;
-  font-family: adelle, serif;
+  /* font-family: 'Apercu', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
 }
 .fpo-words {
   margin-top: 0;
@@ -2350,3 +2354,5 @@ footer {
     left: 23em;
   }
 }
+
+/* din-round,sans-serif */
