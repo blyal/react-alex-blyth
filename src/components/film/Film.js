@@ -596,20 +596,17 @@ class FilmStuff extends React.Component {
                 <hr />
             <div className="page-flow">
                 <div className="center-content cs-film-blurb">
-                    <p>I really like cinema. I did my first degree in Film, have written and directed several short films, and enjoy talking and writing about films.
-                    So although maybe this page could have been incorporated into the 'Cool Stuff' page, I have too much to say about film for that, and lets be honest, film deserves a page of its own.
-                    </p>
                     <p>
-                        More content to come.
+                    Film is both 'cool' and 'stuff', but let's be honest, it deserves a page of its own. More content to come.
                     </p>
-                    <p>Please click the name of a movie or director for further information.</p>
+                    <p>Click on the <span className="cyan">colored</span> items for more information.</p>
                 </div>
                 <br />
 
                 <div className="flex-center-content">
                     <div className="film-list">
-                        <h3 className="cyan centered">My Top Ten Films of All Time</h3>
-                        <ol className="cool-list">
+                        <h3 className="centered">My Top Ten Films of All Time</h3>
+                        <ol className="cool-list cyan">
                             {
                                 this.state.favFilms.map((film) => (
                                     <li key={film.id} onClick={() => this.selectItem(film, 'film')}>{film.title}</li>
@@ -622,9 +619,9 @@ class FilmStuff extends React.Component {
 
                 <div className="flex-center-content">
                     <div className="film-list">
-                        <h3 className="cyan centered">Best Directors in the World*</h3>
-                        <p className='disclaimer'>*as far as I know. There are lots of amazing directors I am yet to discover.</p>
-                        <ol className="cool-list" id="director-list">
+                        <h3 className="centered">Best Directors in the World*</h3>
+                        <p className='disclaimer'>*as far as I know. There are lots of awesome directors I am yet to discover.</p>
+                        <ol className="cool-list cyan" id="director-list">
                             {
                                 this.state.favDirectors.map((director) => (
                                     <li key={director.id} onClick={() => this.selectItem(director, 'director')}>{director.name}</li>
