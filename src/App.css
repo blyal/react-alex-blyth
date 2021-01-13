@@ -1112,7 +1112,7 @@ footer {
 
 /* All Mobile Devices media query */
 @media only screen and (max-width: 1024px) {
-  #hvar-pic {
+  .hvar-pic {
     height: 100%;
     width: 100%;
   }
@@ -1917,7 +1917,7 @@ footer {
 
 /* Landscape Media Query until iPad */
 @media only screen and (max-height: 768px) and (orientation: landscape) {
-  #hvar-pic {
+  .hvar-pic {
     height: 33%;
     width: 33%;
   }
@@ -1928,7 +1928,7 @@ footer {
 
 /* Landscape Media Query until Surface Duo */
 @media only screen and (max-height: 540px) and (orientation: landscape) {
-  #hvar-pic {
+  .hvar-pic {
     height: 45%;
     width: 45%;
   }
