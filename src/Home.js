@@ -20,7 +20,7 @@ const Home = (props) => {
             <p>I've worked as a front-end web developer, a bartender, in early childcare (less different from bartending than you might expect), and on an orchard.</p>
             <p>I believe in taking care of my mind, body, and loved ones; in continuous learning; in building relationships; and in striving to be the best version of myself that I can.</p>
         </div>
-        <img src={'/images/Bike-Line-Brothers.JPG'} alt="A very symmetrical group of international brothers" className="now-pix" height="35%" width="35%" />
+        <img src={'/images/Bike-Line-Brothers.JPG'} alt="A very symmetrical group of international brothers" className="now-pix" height="50%" width="50%" />
         <div className="home-style">
             <h3 className="cyan">This website</h3>
             <p>I’m still experimenting with a lot of aspects of this website, and it will no doubt change over time as I add more content. Overall though, this website is meant to be a place where I can express my personal and professional interests, write about things I find fascinating and share work I’ve done for anyone who is interested to see.</p>
