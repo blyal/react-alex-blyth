@@ -1,12 +1,21 @@
 import React from 'react';
 import Blog from './Blog';
 import MentalistReview from './blogs/MentalistReview';
+import HowToEmployment from './blogs/HowToEmployment';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 
 class BlogPage extends React.Component {
     state = {
         blogEntries: [
+            {
+                id: uuid(),
+                title: 'How to Get a Job during a Pandemic',
+                date: '13th January 2021',
+                open: true,
+                content: <HowToEmployment />,
+                img: <img src={'images/Alex-Empadronado-Spain.jpg'} alt="Getting a Job in Spain" height='95%' width='95%' className='code-blog-img'/>
+            },
             {
                 id: uuid(),
                 //apparently the italics tag below needs a key, because it's part of a list. Doesn't make any difference

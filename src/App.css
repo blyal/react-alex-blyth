@@ -57,6 +57,10 @@ hr {
    /* text-decoration: underline; */
  }
 
+ .extra-top-padding {
+   padding-top: 1em;
+ }
+
 ul.cool-list {
    list-style: none;
  }
