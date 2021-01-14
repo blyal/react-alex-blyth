@@ -883,12 +883,27 @@ footer {
   z-index: 120;
   /* z-index: 120, above footer 100 and overlay 110 */
 }
+.film-popout-frame-for-close {
+  width: 75%;
+  height: 6%;
+  position: fixed;
+  top: 12.5%;
+  left: 12.5%;
+  z-index: 130;
+  /* z-index: 130, above film-popout */
+}
+.close-fpo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  transform: scale(1.25);
+}
 .open-fpo-enter {
   transform: scale(0);
   opacity: 0;
 }
 .open-fpo-enter-active {
-
   transform: scale(1);
   opacity: 1;
   transition: all 800ms ease-in-out;
@@ -901,13 +916,20 @@ footer {
   opacity: 0;
   transition: all 800ms ease-in-out;
 }
-.close-fpo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  transform: scale(1.25);
-  z-index: 50;
+.open-fpo-frame-enter {
+  opacity: 0;
+}
+.open-fpo-frame-enter-active {
+  opacity: 1;
+  transition: all 2000ms ease-in-out;
+  transition-delay: 800ms;
+}
+.open-fpo-frame-exit {
+  opacity: 1;
+}
+.open-fpo-frame-exit-active {
+  opacity: 0;
+  transition: all 100ms ease-in-out;
 }
 #director-list {
   padding-left: 8em;
@@ -1155,6 +1177,10 @@ footer {
     margin-top: -1em;
   }
   .film-popout {
+    width: 90%;
+    left: 5%;
+  }
+  .film-popout-frame-for-close {
     width: 90%;
     left: 5%;
   }
@@ -1982,6 +2008,9 @@ footer {
   }
   .film-popout {
     height: 85%;
+    top: 5%;
+  }
+  .film-popout-frame-for-close {
     top: 5%;
   }
 }

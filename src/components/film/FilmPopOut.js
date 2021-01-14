@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import { CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
@@ -44,7 +42,6 @@ const FilmPopOut = (props) => {
             unmountOnExit
                 >
             <div className="film-popout">
-                <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={props.close} />
                 {
                     props.type === 'film' ? <>
                     <div className="fpo-img portrait-hide">

@@ -2,6 +2,9 @@ import React from 'react';
 import FilmPopOut from './FilmPopOut';
 import Overlay from '../layout/Overlay';
 import { v4 as uuid } from 'uuid';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { CSSTransition } from 'react-transition-group';
 import PropTypes from 'prop-types';
 
 class FilmStuff extends React.Component {
@@ -636,8 +639,21 @@ class FilmStuff extends React.Component {
 
             </div>
 
-            <FilmPopOut popOut={this.state.popOut} type={this.state.selectedType} selected={this.state.selected} close={this.togglePopOut} />
+            <FilmPopOut popOut={this.state.popOut} type={this.state.selectedType} selected={this.state.selected} />
+
+            <CSSTransition
+                in={this.state.popOut}
+                timeout={2800}
+                classNames='open-fpo-frame'
+                unmountOnExit
+                >
+                <div className="film-popout-frame-for-close">
+                    <FontAwesomeIcon icon={faTimesCircle} className="close-fpo" onClick={this.togglePopOut} />
+                </div>
+            </CSSTransition>
+
             <Overlay open={this.state.popOut} type="filmPopOut" close={this.togglePopOut} />
+
             </>
         );
     }
