@@ -902,39 +902,7 @@ footer {
   cursor: pointer;
   transform: scale(1.25);
 }
-.open-fpo-enter {
-  transform: scale(0);
-  opacity: 0;
-}
-.open-fpo-enter-active {
-  transform: scale(1);
-  opacity: 1;
-  transition: all 800ms ease-in-out;
-}
-.open-fpo-exit {
-  opacity: 1;
-}
-.open-fpo-exit-active {
-  transform: scale(0);
-  opacity: 0;
-  transition: all 800ms ease-in-out;
-}
-.open-fpo-frame-enter {
-  opacity: 0;
-}
-.open-fpo-frame-enter-active {
-  opacity: 1;
-  transition: all 2000ms ease-in-out;
-  transition-delay: 800ms;
-}
-.open-fpo-frame-exit {
-  opacity: 1;
-}
-.open-fpo-frame-exit-active {
-  opacity: 0;
-  transition: all 100ms ease-in-out;
-}
-#director-list {
+.director-list {
   padding-left: 8em;
 }
 .labyrinth-img {
@@ -989,6 +957,45 @@ footer {
 .fpo-words p {
   margin: 0;
 }
+.fpo-bottom {
+  letter-spacing: 1em;
+}
+
+/* Film Popout Transitions */
+.open-fpo-enter {
+  transform: scale(0);
+  opacity: 0;
+}
+.open-fpo-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 800ms ease-in-out;
+}
+.open-fpo-exit {
+  opacity: 1;
+}
+.open-fpo-exit-active {
+  transform: scale(0);
+  opacity: 0;
+  transition: all 800ms ease-in-out;
+}
+.open-fpo-frame-enter {
+  opacity: 0;
+}
+.open-fpo-frame-enter-active {
+  opacity: 1;
+  transition: all 2000ms ease-in-out;
+  transition-delay: 800ms;
+}
+.open-fpo-frame-exit {
+  opacity: 1;
+}
+.open-fpo-frame-exit-active {
+  opacity: 0;
+  transition: all 100ms ease-in-out;
+}
+
+/* Specific Film Popout Content CSS */
 .boogie-nights {
   background-image: linear-gradient(#e80011,#000400)
 }
@@ -1133,9 +1140,6 @@ footer {
 .lynch h4 {
   font-size: 1em;
   font-family: 'Bradley Hand', 'Times New Roman', serif;
-}
-.fpo-bottom {
-  letter-spacing: 1em;
 }
 
 
@@ -1296,7 +1300,7 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
   }
-  #director-list {
+  .director-list {
     padding: 0;
     margin-left: 20%;
   }
@@ -1972,7 +1976,7 @@ footer {
     font-size: 1.5em;
     margin-top: 1em;
   }
-  #director-list {
+  .director-list {
     margin-left: 30%;
   }
   .film-table td {
@@ -2006,7 +2010,7 @@ footer {
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
-  #director-list {
+  .director-list {
     padding-left: 0;
   }
   .film-popout {
@@ -2079,7 +2083,7 @@ footer {
 
 /* Landscape Media Query for small devices with a high width */
 @media only screen and (max-height: 500px) and (min-width: 800px) and (orientation: landscape) {
-  #director-list {
+  .director-list {
     margin-left: 22%;
   }
 }

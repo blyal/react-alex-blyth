@@ -624,7 +624,7 @@ class FilmStuff extends React.Component {
                     <div className="film-list">
                         <h3 className="centered">Best Directors in the World*</h3>
                         <p className='disclaimer'>*as far as I know. There are lots of awesome directors I am yet to discover.</p>
-                        <ol className="cool-list cyan" id="director-list">
+                        <ol className="cool-list cyan director-list">
                             {
                                 this.state.favDirectors.map((director) => (
                                     <li key={director.id} onClick={() => this.selectItem(director, 'director')}>{director.name}</li>
