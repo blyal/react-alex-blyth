@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 var classNames = require('classnames');
 
 class SelectedContent extends React.Component {
 
     state = {
         backInBlack: [
-            "The Tim Ferriss Show",
             "The Happiness Lab with Dr Laurie Santos",
-            "Making Sense with Sam Harris",
             "Notes from Underground by Fyodor Dostoevsky",
             "Norwegian Wood by Haruki Murakami"
         ]
@@ -36,8 +36,8 @@ class SelectedContent extends React.Component {
                 <div key={selected.id} className="flex flex-50">
                     {
                         this.state.backInBlack.includes(selected.title) ?
-                            <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-black.png" height="12.5%" width="50%"/></div>
-                        :   <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><img alt="Back Button" src="images/back-in-white.png" height="12.5%" width="50%"/></div>
+                            <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><FontAwesomeIcon icon={faChevronLeft} className="back-icon back-in-black" /></div>
+                        :   <div className={backBtn} onClick={this.props.backButton.bind(this, selected.id)}><FontAwesomeIcon icon={faChevronLeft} className="back-icon" /></div>
                         }
                     <div className="selected-content content-pocket flex-95">{selected.content}</div>
                 </div> 
