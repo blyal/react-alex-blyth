@@ -347,6 +347,9 @@ footer {
 .code-blog-closed p {
   margin: 0;
 }
+.employment-blog li {
+  padding-bottom: 1em;
+}
 
 /* Blog/Code page transitions  */
 .expand-enter {
