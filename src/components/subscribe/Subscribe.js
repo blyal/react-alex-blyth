@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 function Subscribe(props) {
 
     const [isVerified, verifyForm] = useState(false);
+    const [isSubmitted, confirmSubmission] = useState(false);
 
     useEffect(() => {
         props.toggle(true, 'subscribe');
-        return () => {
-            props.toggle(false, 'subscribe');
-        }
-    }, [props]
+            return () => {
+                props.toggle(false, 'subscribe');
+            }
+        }, [props]
     );
 
     const validateCaptcha = () => {
@@ -20,7 +21,8 @@ function Subscribe(props) {
 
     const validateForm = (e) => {
         if (isVerified) {
-            alert("Confirmed");
+            e.preventDefault();
+            confirmSubmission(val => val = true);
         } else {
             alert("Please verify that you are human!");
             e.preventDefault();
@@ -37,43 +39,52 @@ function Subscribe(props) {
             </div>
             <hr />
             <div className="subscribe-container">
-                <h3 className="cyan">Join the Leshgo Email Subscriber List</h3><br />
-                <form name="subscribeForm" onSubmit={validateForm}>
-                    <div className="subscribe-section">
-                        <div className="test">
-                            <div className="test2">
-                                <label htmlFor="subscribe-name">Name: </label> <br />
-                                <input type="text" id="subscribe-name" className="input-box" required /> <br />
-                                <label htmlFor="subscribe-email">Email Address: </label> <br />
-                                <input type="email" id="subscribe-email" className="input-box" required />
+                <h3 className="cyan subscribe-title">Join the Leshgo Email Subscriber List</h3><br />
+                
+                {isSubmitted ?
+                    <div className="subscribe-confirmation">
+                        <p>You've just joined a very elite crew ;) welcome.</p>
+                    </div>
+                    :
+                    <form name="subscribeForm" onSubmit={validateForm}>
+                        <div className="subscribe-section">
+                            <div className="centered">
+                                <div className="centered-outer-left-inner">
+                                    <label htmlFor="subscribe-name">Name: </label> <br />
+                                    <input type="text" id="subscribe-name" className="input-box" required /> <br />
+                                    <label htmlFor="subscribe-email">Email Address: </label> <br />
+                                    <input type="email" id="subscribe-email" className="input-box" required />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <p>What would would you like to receive updates about?</p>
+                        
+                        <p>What would would you like to receive updates about?</p>
 
-                    <div className="subscribe-section">
-                        <input type="checkbox" id="blogUpdates" name="blogUpdates" value="Blog Posts" />
-                        <label htmlFor="blogUpdates" className="checkbox-label">Blog Posts</label> <br />
-                        <input type="checkbox" id="codeUpdates" name="codeUpdates" value="Code Posts" />
-                        <label htmlFor="codeUpdates" className="checkbox-label">Coding Projects and Posts</label> <br />
-                        <input type="checkbox" id="filmUpdates" name="filmUpdates" value="Film Content" />
-                        <label htmlFor="filmUpdates" className="checkbox-label">Film Content</label> <br />
-                        <input type="checkbox" id="randomUpdates" name="randomUpdates" value="Cool Stuff" />
-                        <label htmlFor="randomUpdates" className="checkbox-label">Other Cool Stuff</label> <br />
-                        <div className="test">
-                            <input type="submit" value="Leshgo!" className="button" />
+                        <div className="subscribe-section">
+                            <input type="checkbox" id="blogUpdates" name="blogUpdates" value="Blog Posts" />
+                            <label htmlFor="blogUpdates" className="checkbox-label">Blog Posts</label> <br />
+                            <input type="checkbox" id="codeUpdates" name="codeUpdates" value="Code Posts" />
+                            <label htmlFor="codeUpdates" className="checkbox-label">Coding Projects and Posts</label> <br />
+                            <input type="checkbox" id="filmUpdates" name="filmUpdates" value="Film Content" />
+                            <label htmlFor="filmUpdates" className="checkbox-label">Film Content</label> <br />
+                            <input type="checkbox" id="randomUpdates" name="randomUpdates" value="Cool Stuff" />
+                            <label htmlFor="randomUpdates" className="checkbox-label">Other Cool Stuff</label> <br />
+                            <div className="centered">
+                                <input type="submit" value="Leshgo!" className="button" />
+                            </div>
                         </div>
-                        <ReCAPTCHA
-                            sitekey="6LeB0jIaAAAAAFmLd8FyF8ABLJQ2BZ-bdfMmh0K7"
-                            onChange={validateCaptcha}
-                            theme="dark"
-                        />
-                    </div>
+                        <div className="centered">
+                            <div className="captcha-container">
+                                <ReCAPTCHA
+                                    sitekey="6LeB0jIaAAAAAFmLd8FyF8ABLJQ2BZ-bdfMmh0K7"
+                                    onChange={validateCaptcha}
+                                    theme="dark"
+                                />
+                            </div>
+                        </div>
 
-                </form>
+                    </form> }
             </div>
-
         </>
     );
 }

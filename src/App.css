@@ -1152,9 +1152,14 @@ footer {
 .subscribe-link a {
   text-decoration: none;
 }
+.subscribe-title {
+  padding-top: 1em;
+}
 .subscribe-blurb {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 .subscribe-container {
   text-align: center;
@@ -1198,17 +1203,20 @@ input {
 .button:focus {
   outline: none;
 }
+.button:hover {
+  background-color: #282828;
+}
 .button:active {
   border-width: 0 0 0.125em;
   transform: translateY(0.125em);
 }
-.test {
-  width: 100%;
-  text-align: center;
-}
-.test2 {
+.centered-outer-left-inner {
   display: inline-block;
   text-align: left;
+}
+.captcha-container {
+  margin-top: 1.5em;
+  display: inline-block;
 }
 
 
