@@ -130,8 +130,7 @@ const FilmPopOut = (props) => {
 FilmPopOut.propTypes = {
     popOut: PropTypes.bool.isRequired,
     type: PropTypes.string.isRequired,
-    selected: PropTypes.object.isRequired,
-    close: PropTypes.func.isRequired
+    selected: PropTypes.object.isRequired
 }
 
 export default FilmPopOut;
