@@ -1149,6 +1149,76 @@ footer {
 }
 
 
+/* Subscribe Page CSS */
+.subscribe-link {
+  font-family: Monaco, monospace;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  font-size: 0.75em;
+}
+.subscribe-link a {
+  text-decoration: none;
+}
+.subscribe-blurb {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.subscribe-container {
+  text-align: center;
+}
+.subscribe-section {
+  text-align: left;
+  /* exact width to place content exactly in middle of screen */
+  width: 266px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  margin: 0.5em 0;
+}
+.input-box {
+  padding: 0.25em;
+  width: 15em;
+}
+.subscribe-container p {
+  padding-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.checkbox-label {
+  padding-left: 0.75em;
+}
+.button {
+  width: 8em;
+  height: 3em;
+  cursor: pointer;
+  background-color: #0F0F0F;
+  border: solid grey;
+  border-width: 0.125em 0.125em 0.25em;
+  color: white;
+  border-radius: 1em;
+  padding-left: 0.75em;
+  margin-top: 2em;
+  /* margin-left: 2.5em; */
+  font-family: Monaco, monospace;
+  letter-spacing: 0.125em;
+}
+.button:focus {
+  outline: none;
+}
+.button:active {
+  border-width: 0 0 0.125em;
+  transform: translateY(0.125em);
+}
+.test {
+  width: 100%;
+  text-align: center;
+}
+.test2 {
+  display: inline-block;
+  text-align: left;
+}
+
+
 /* All Mobile Devices media query */
 @media only screen and (max-width: 1024px) {
   .hvar-pic {
