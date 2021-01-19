@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-scroll';
 
 
 class CodeItem extends React.Component {
     
     render() {
         const { id, img, content, title, open, year } = this.props.project;
-        const idJump = "#" + id.toString();
+        const idJump = id.toString();
         return (
             <CSSTransition
                 in={open}
@@ -25,11 +26,19 @@ class CodeItem extends React.Component {
                         <div className="code-blog-entry-content"> { content } </div>
                     </div>
                 ) : (
-                    <a className="code-blog-closed" href={idJump}>
-                        <h3>{ title }</h3>
-                        <hr />
-                        <p>{ year }</p>
-                    </a>
+                    <Link
+                        to={idJump}
+                        smooth={true}
+                        spy={false}
+                        duration={500}
+                        onClick={this.props.toggleProjects.bind(this, id)}
+                        >
+                        <div className="code-blog-closed" href={idJump}>
+                            <h3>{ title }</h3>
+                            <hr />
+                            <p>{ year }</p>
+                        </div>
+                    </Link>
                 )}
                 </div>
                 <br />

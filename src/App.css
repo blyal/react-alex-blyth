@@ -9,15 +9,9 @@
   overflow: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
-  transition-delay: 5s;
-}
-
 body {
   margin: 0;
   background-color: black;
-  scroll-behavior: smooth;
 }
 
 h1 {
@@ -54,7 +48,6 @@ hr {
 
 .cyan {
    color: Cyan;
-   /* text-decoration: underline; */
  }
 
  .extra-top-padding {
@@ -1320,6 +1313,7 @@ input {
   .back-to-top a {
     text-decoration-line: none;
     color: grey;
+    cursor: pointer;
   }
   .App {
     padding-bottom: 4em;
