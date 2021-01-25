@@ -94,6 +94,10 @@ figure {
   margin: 0;
   font-style: italic;
 }
+figcaption {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 
 /* Header CSS  */
