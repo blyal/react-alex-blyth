@@ -24,7 +24,7 @@ const Home = (props) => {
         <img src={'/images/Bike-Line-Brothers.JPG'} alt="A very symmetrical group of international brothers" className="now-pix" height="50%" width="50%" />
         <br /><div className="home-style">
             <h3 className="cyan">This website</h3>
-            <p>This website is meant to be a place where I can express my personal and professional interests, write about things I find fascinating and share work I’ve done for anyone who is interested to see.</p>
+            <p>This website is meant to be a place where I can express my personal and professional interests, write about things I find interesting and share work I’ve done for anyone who is interested to see.</p>
             <p>The project is the result of two related goals I had in 2020: to create a portfolio website to display my programming projects and abilities to potential employers, and to create a personal website where I could post about all kinds of things that I like and am fascinated by. As such, this website kind of blends the personal and the professional, which might seem a bit odd, but I don’t mind it — the personal and professional affect each other to a huge degree.</p>
             <p>I’m still experimenting with a lot of aspects of this website, and it will no doubt change over time as I add more content. Generally though I have quite a diverse set of interests, so whoever you are and whatever you like, hopefully there will be something for you on this website, even if it’s just that you know me and simply want to hear what I’m currently up to :)</p>
         </div><br />
