@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { CSSTransition } from 'react-transition-group';
 import classNames from 'classnames';
+import { CSSTransition } from 'react-transition-group';
 import { Link } from 'react-scroll';
+import PropTypes from 'prop-types';
 
 
 class CodeItem extends React.Component {
