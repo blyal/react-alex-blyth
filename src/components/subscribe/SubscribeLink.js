@@ -6,7 +6,7 @@ function SubscribeLink(props) {
     return (
         <>
             <br /><br /><br />
-            <div style={{display: props.displayed ? "block" : "none"}}>
+            <div className="subscribe-link-container" style={{display: props.displayed ? "block" : "none"}}>
                 <p className="cyan subscribe-link"><Link to="/subscribe">Want to receive updates for this page?</Link></p>
             </div>
         </>

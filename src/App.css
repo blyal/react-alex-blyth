@@ -1143,6 +1143,11 @@ footer {
 
 
 /* Subscribe Page CSS */
+.subscribe-link-container {
+  /* z-index: 20 to appear over the top of Cool Stuff Page Flow */
+  z-index: 20;
+  position: relative;
+}
 .subscribe-link {
   font-family: Monaco, monospace;
   cursor: pointer;
