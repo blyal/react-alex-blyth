@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
+import classNames from 'classnames';
 import { Link } from 'react-scroll';
 
 
@@ -9,6 +10,11 @@ class CodeItem extends React.Component {
     render() {
         const { id, img, content, title, open, year } = this.props.project;
         const idJump = id.toString();
+        let entryClassName = classNames({
+            "code-blog-entry": true,
+            "code-blog-open": open
+        });
+
         return (
             <CSSTransition
                 in={open}
@@ -16,7 +22,7 @@ class CodeItem extends React.Component {
                 classNames='expand'
             >
             <div>
-                <div className="code-blog-entry" id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
+                <div className={entryClassName} id={ id } onClick={this.props.toggleProjects.bind(this, id)}>
                     {open ? (
                     <div className="code-blog-no-padding-top">
                         <div>

@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
+import classNames from 'classnames';
 import { Link } from 'react-scroll';
 
 
 const BlogItem = (props) => {
         const { id, img, content, title, open, date } = props.entry;
         const idJump = id.toString();
+        let entryClassName = classNames({
+            "code-blog-entry": true,
+            "code-blog-open": open
+        });
 
         return (
             <CSSTransition
@@ -15,7 +20,7 @@ const BlogItem = (props) => {
                 classNames='expand'
             >
             <div>
-                <div className="code-blog-entry" id={ id } onClick={props.toggleBlog.bind(this, id)}>
+                <div className={entryClassName} id={ id } onClick={props.toggleBlog.bind(this, id)}>
                     {open ? (
                     <div className="code-blog-no-padding-top">
                         <div>
