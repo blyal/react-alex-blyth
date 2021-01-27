@@ -1170,6 +1170,8 @@ footer {
 }
 .subscribe-title {
   padding-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .subscribe-blurb {
   margin-top: 0;
