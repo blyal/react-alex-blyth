@@ -12,7 +12,7 @@ class CodePage extends React.Component {
             {
                 id: uuid(),
                 title: 'Learning React.js by building my personal website',
-                year: '2020',
+                year: '2020–21',
                 open: true,
                 content: <LearningReact />,
                 img: <img src={'images/react-screenshot.png'} alt="Screenshot of Coding for this page" height='100%' width='100%'/>
