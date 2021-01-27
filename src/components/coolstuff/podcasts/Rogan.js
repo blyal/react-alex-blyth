@@ -6,7 +6,7 @@ function Rogan() {
             <div>
                 <div className="pocket-img-container">
                         <a href="http://podcasts.joerogan.net/" target="_blank" rel="noopener noreferrer">
-                            <img src="images/jre.jpg" alt="The Joe Rogan Experience" className="rogan-img" />
+                            {/* <img src="images/jre.jpg" alt="The Joe Rogan Experience" className="rogan-img" /> */}
                         </a>
                 </div>
                 <div className="pocket-blurb">
@@ -22,7 +22,7 @@ function Rogan() {
                 <div className="recommended-things rogan-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table className="standard-recommendations-podcast">
+                    {/* <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a></td>
@@ -33,8 +33,8 @@ function Rogan() {
                                 <td><a href="http://podcasts.joerogan.net/podcasts/jordan-peterson-2" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#958 - Jordan Peterson</span></div></a></td>
                             </tr>
                         </tbody>
-                    </table>
-                    <div className="mobile-recommendations-podcast">
+                    </table> */}
+                    {/* <div className="mobile-recommendations-podcast">
                             <div className="mob-rec">
                                 <a href="http://podcasts.joerogan.net/podcasts/tulsi-gabbard-jocko-willink" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#1391- Tulsi Gabbard & Jocko Willink</span></div></a>
                             </div>
@@ -47,7 +47,7 @@ function Rogan() {
                             <div className="mob-rec">
                                 <a href="http://podcasts.joerogan.net/podcasts/jordan-peterson-2" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/jre-2.jpg" height="30%" width="30%"/><span>#958 - Jordan Peterson</span></div></a>
                             </div>
-                        </div>
+                        </div> */}
                 </div>
             </div>
             <div className="rogan-bar-right"></div>

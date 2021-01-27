@@ -12,7 +12,7 @@ class MentalistReview extends React.Component {
                 </p>
                 <div className="code-blog-entry-content-img">
                     <figure>
-                        <img src={'images/mentalist-jane.jpg'} alt="Patrick Jane from The Mentalist" height='100%' width='100%'/>
+                        {/* <img src={'images/mentalist-jane.jpg'} alt="Patrick Jane from The Mentalist" height='100%' width='100%'/> */}
                         <figcaption>Jane's dashing smile</figcaption>
                     </figure>
                 </div>
@@ -21,7 +21,7 @@ class MentalistReview extends React.Component {
                 </p>
                 <div className="code-blog-entry-content-img">
                     <figure>
-                        <img src={'images/mentalist-lisbon.jpg'} alt="Teresa Lisbon from The Mentalist" height='100%' width='100%'/>
+                        {/* <img src={'images/mentalist-lisbon.jpg'} alt="Teresa Lisbon from The Mentalist" height='100%' width='100%'/> */}
                         <figcaption>Cute as a button Teresa Lisbon, Jane's parter–in–crime</figcaption>
                     </figure>
                 </div>
@@ -33,7 +33,7 @@ class MentalistReview extends React.Component {
                 </p>
                 <div className="code-blog-entry-content-img">
                     <figure>
-                        <img src={'images/mentalist-redjohn.jpg'} alt="The Red John symbol from The Mentalist" height='100%' width='100%'/>
+                        {/* <img src={'images/mentalist-redjohn.jpg'} alt="The Red John symbol from The Mentalist" height='100%' width='100%'/> */}
                         <figcaption>The haunting face drawn by Red John in his victims' blood. <br />Jane symbolically lets the one drawn in his house stay up there.</figcaption>
                     </figure>
                 </div>
@@ -42,7 +42,7 @@ class MentalistReview extends React.Component {
                 </p>
                 <div className="code-blog-entry-content-img">
                     <figure>
-                        <img src={'images/mentalist-cho.jpg'} alt="Cho from The Mentalist" height='100%' width='100%'/>
+                        {/* <img src={'images/mentalist-cho.jpg'} alt="Cho from The Mentalist" height='100%' width='100%'/> */}
                         <figcaption>Jane and Cho having a moment</figcaption>
                     </figure>
                 </div>

@@ -5,7 +5,7 @@ function Ferriss() {
         <div className="ferriss-pocket">  
             <div>
                 <div className="pocket-img-container">
-                    <img src="images/ferriss.jpeg" alt="Tim Ferriss" className="ferriss-img" />
+                    {/* <img src="images/ferriss.jpeg" alt="Tim Ferriss" className="ferriss-img" /> */}
                     <div className="ferriss-wheel">
                         <div>
                             <h2>The</h2>
@@ -31,7 +31,7 @@ function Ferriss() {
                 <div className="recommended-things ferriss-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table className="standard-recommendations-podcast">
+                    {/* <table className="standard-recommendations-podcast">
                         <tbody>
                             <tr>
                                 <td><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></td>
@@ -42,8 +42,8 @@ function Ferriss() {
                                 <td><a href="https://tim.blog/2015/07/31/tara-brach/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Tara Brach on Meditation and Overcoming FOMO (Fear Of Missing Out) (#94)</span></div></a></td>
                             </tr>
                         </tbody>
-                    </table>
-                    <div className="mobile-recommendations-podcast">
+                    </table> */}
+                    {/* <div className="mobile-recommendations-podcast">
                             
                                 <div className="mob-rec"><a href="https://tim.blog/2015/12/06/jamie-foxx/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Jamie Foxx on Workout Routines, Success Habits, and Untold Hollywood Stories (#124)</span></div></a></div>
                             
@@ -52,7 +52,7 @@ function Ferriss() {
                                 <div className="mob-rec"><a href="https://tim.blog/2015/09/14/are-psychedelic-drugs-the-next-medical-breakthrough/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Are Psychedelic Drugs the Next Medical Breakthrough? (#104)</span></div></a></div>
                             
                                 <div className="mob-rec"><a href="https://tim.blog/2015/07/31/tara-brach/" target="_blank" rel="noopener noreferrer"><div><img alt="Logo" src="images/ferriss-show.jpeg" height="30%" width="30%"/><span>Tara Brach on Meditation and Overcoming FOMO (Fear Of Missing Out) (#94)</span></div></a></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="ferriss-bar-right"></div>

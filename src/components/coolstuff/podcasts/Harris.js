@@ -5,7 +5,7 @@ function Harris() {
         <div className="harris-pocket">  
             <div>
                 <div className="pocket-img-container harris-img-container">
-                            <img src="images/sam-harris.jpg" alt="Sam Harris" className="harris-img" />
+                            {/* <img src="images/sam-harris.jpg" alt="Sam Harris" className="harris-img" /> */}
                             <a href="https://samharris.org/podcast/" target="_blank" rel="noopener noreferrer">
                             <div className="harris-wheel">
                                 <div>
@@ -26,7 +26,7 @@ function Harris() {
                 <div className="recommended-things harris-recommendations">
                     <p>Recommended Episodes</p>
                     <hr />
-                    <table>
+                    {/* <table>
                         <tbody className="standard-recommendations-podcast">
                             <tr>
                                 <td><a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a></td>
@@ -37,8 +37,8 @@ function Harris() {
                                 <td><a href="https://samharris.org/podcasts/127-freedom-known/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#127 - FREEDOM FROM THE KNOWN: A Conversation with Michael Pollan</span></div></a></td>
                             </tr>
                         </tbody>
-                    </table>
-                    <div className="mobile-recommendations-podcast">
+                    </table> */}
+                    {/* <div className="mobile-recommendations-podcast">
                         <div className="mob-rec">
                             <a href="https://samharris.org/podcasts/152-trouble-facebook/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#152 - THE TROUBLE WITH FACEBOOK: A Conversation with Roger McNamee</span></div></a>
                         </div>
@@ -51,7 +51,7 @@ function Harris() {
                         <div className="mob-rec">
                             <a href="https://samharris.org/podcasts/127-freedom-known/" target="_blank" rel="noopener noreferrer"><div><img alt="Making Sense Logo" src="images/making-sense.png" height="25%" width="25%"/><span>#127 - FREEDOM FROM THE KNOWN: A Conversation with Michael Pollan</span></div></a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="harris-bar-right"></div>

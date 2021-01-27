@@ -13,8 +13,8 @@ class BlogPage extends React.Component {
                 title: 'How to Get a Job during a Pandemic',
                 date: '13th January 2021',
                 open: true,
-                content: <HowToEmployment />,
-                img: <img src={'images/Alex-Empadronado-Spain.jpg'} alt="Getting a Job in Spain" height='95%' width='95%' className='code-blog-img'/>
+                content: <HowToEmployment />
+                // img: <img src={'images/Alex-Empadronado-Spain.jpg'} alt="Getting a Job in Spain" height='95%' width='95%' className='code-blog-img'/>
             },
             {
                 id: uuid(),
@@ -22,8 +22,8 @@ class BlogPage extends React.Component {
                 title: ['Review of ', <i key="mentalist-italics">The Mentalist</i>, ' (2008 – 2015)'],
                 date: '21st October 2020',
                 open: false,
-                content: <MentalistReview />,
-                img: <img src={'images/mentalist-primary.jpg'} alt="Poster for The Mentalist show" height='95%' width='95%' className='code-blog-img'/>
+                content: <MentalistReview />
+                // img: <img src={'images/mentalist-primary.jpg'} alt="Poster for The Mentalist show" height='95%' width='95%' className='code-blog-img'/>
             }
         ]
     }

@@ -15,7 +15,7 @@ class LearningReact extends React.Component {
                 </p>
                 <div className="code-blog-entry-content-img">
                     <figure>
-                        <img src={'images/personal-website-trello.png'} alt="The scrum board for this project" height='100%' width='100%'/>
+                        {/* <img src={'images/personal-website-trello.png'} alt="The scrum board for this project" height='100%' width='100%'/> */}
                         <figcaption>The scrum board for this project</figcaption>
                     </figure>
                 </div>
