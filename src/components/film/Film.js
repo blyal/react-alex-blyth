@@ -223,7 +223,7 @@ class FilmStuff extends React.Component {
                 director: 'Richard Linklater',
                 year: '2014',
                 img: <img alt="Boyhood" src="images/boyhood-poster.jpeg" height="70%" width="70%"/>,
-                imgPortrait: <img alt="Boyhood" src="images/boyhood-small.jpg" height="95%" width="95%"/>,
+                imgPortrait: <img alt="Boyhood" src="images/boyhood.jpg" height="95%" width="95%"/>,
                 description: ['Another one where the concept doesn’t do credit to how incredible the content and effect of this movie is. If you haven’t seen this movie already you’ve probably heard of it — a movie filmed over twelve years as the main actor grew from the age of 6 until 18. Although that’s a really awesome cinematic experiment to do, just saying it like that makes it sound a bit gimmicky, and just hearing that makes it difficult to understand how well this movie actually turned out. I think a LOT of credit has to go to writer–director Richard Linklater, whose insane levels of empathy and human understanding, as well as understanding of early–2000s culture, have led to a story which feels very representative of what it means to grow up during this century. I love how there’s no ‘plot’ — the kid just grows up, and experiences some really awesome, some really troubling, and some really regular times along the way, all of which seem so real, no doubt because Linklater paid such attuned attention to the lives of the actors and of his own kids as he was creating the movie, as well as to his own upbringing. Growing up a generation or two earlier allowed him to both emphasise the universal aspects of growing up as well as the specific elements of being a kid in the early 21st Century.'],
                 related: [
                     {
@@ -406,7 +406,7 @@ class FilmStuff extends React.Component {
                     {
                         title: 'Boyhood',
                         year: '2014',
-                        img: <img alt="Boyhood" src="images/boyhood-small.jpg" height="80%" width="80%" />
+                        img: <img alt="Boyhood" src="images/boyhood.jpg" height="80%" width="80%" />
                     },
                     {
                         title: 'Dazed and Confused',
