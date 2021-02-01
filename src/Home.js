@@ -39,7 +39,7 @@ const Home = (props) => {
         <br /><div className="home-style">
             <h3 className="cyan">Get in Touch</h3>
             <p>Please don't hesitate to reach out and say hi. I welcome all feedback, suggestions, and thoughts about the site (especially if you spot a bug), and I also welcome all interesting banter and good chats (the more random the topic, the better).</p>
-            <p>I can be most easily reached through whichever of Instagram or LinkedIn you prefer, or else you can shoot me an email at alexblyth@pm.me if social media isn't your thing. Links to all my social media are at the bottom of the page, or at the top on mobile.</p>
+            <p>I can be most easily reached through whichever of Instagram or LinkedIn you prefer, or else you can shoot me an email to alexblyth@pm.me if social media isn't your thing. Links to all my social media are at the bottom of the page, or at the top on mobile.</p>
         </div><br />
         <img src={'/images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="50%" width="50%" className="now-pix" />
         </>
