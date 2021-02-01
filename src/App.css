@@ -1245,8 +1245,8 @@ input {
     width: 100%;
   }
   .now-pix {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
   }
   .home-style {
     margin-left: 10%;
@@ -1667,6 +1667,10 @@ input {
 
 /* Portrait Media Query below Surface Duo  */
 @media only screen and (max-width: 530px) and (orientation: portrait) {
+  .now-pix {
+    height: 100%;
+    width: 100%;
+  }
   .content-pocket-mob {
     padding-left: 2em;
   }
@@ -2070,10 +2074,10 @@ input {
 }
 
 /* Landscape Media Query until iPad */
-@media only screen and (max-height: 768px) and (orientation: landscape) {
+@media only screen and (max-height: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .hvar-pic {
-    height: 33%;
-    width: 33%;
+    height: 50%;
+    width: 50%;
   }
   .home-style h3 {
     font-size: 1.2em;
