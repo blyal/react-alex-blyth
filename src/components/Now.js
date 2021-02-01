@@ -11,7 +11,7 @@ class Now extends React.Component {
           <br />
           <h3 className="cyan">In 10 Seconds</h3>
           <p>Setting up my new life in Valencia. Waiting for the Spanish Government to process my residency application...</p>
-          <p>Learning new coding languages and frameworks. Staying warm and finding ways to exercise under the CoVid regime.</p>
+          <p>Learning new coding languages and frameworks. Finding ways to exercise and socialise under the CoVid regime.</p>
           <p>Creating awesome memories with people I love.</p>
           <br />
         </div>
