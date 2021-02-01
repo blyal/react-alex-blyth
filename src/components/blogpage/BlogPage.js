@@ -9,7 +9,7 @@ class BlogPage extends React.Component {
     state = {
         blogEntries: [
             {
-                id: uuid(),
+                id: "top-blog",
                 title: 'How to Get a Job during a Pandemic',
                 date: '13th January 2021',
                 open: true,

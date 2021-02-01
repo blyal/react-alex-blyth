@@ -33,7 +33,7 @@ class CodeItem extends React.Component {
                     </div>
                 ) : (
                     <Link
-                        to={idJump}
+                        to={"top-code"}
                         smooth={true}
                         spy={false}
                         duration={500}

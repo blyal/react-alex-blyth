@@ -10,7 +10,7 @@ class CodePage extends React.Component {
     state = {
         codeProjects: [
             {
-                id: uuid(),
+                id: 'top-code',
                 title: 'Learning React.js by building my personal website',
                 year: '2020–21',
                 open: true,

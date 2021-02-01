@@ -31,11 +31,13 @@ const BlogItem = (props) => {
                     </div>
                 ) : (
                     <Link
-                        to={idJump}
+                        to={"top-blog"}
                         spy={false}
                         smooth={true}
                         offset={0}
                         duration={500}
+                        delay={50}
+                        isDynamic={true}
                         onClick={props.toggleBlog.bind(this, id)}
                     >
                         <div className="code-blog-closed">
