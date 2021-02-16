@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ScrollToTopRoute from './components/additional/ScrollToTopRoute';
+import PrivacyPolicy from './components/additional/PrivacyPolicy';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import Home from './Home';
@@ -18,6 +19,7 @@ import './App.css';
 
 function App() {
 
+  const [cookiesConsented, confirmCookiesConsented] = useState(false)
   const [openMobileMenu, toggleOpenMenu] = useState(false)
   const [firstTimeLoad, notFirstLoad] = useState(true)
   const [firstTimeMobileMenu, notFirstMob] = useState(true)
@@ -80,7 +82,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div style={{display: cookiesConsented ? 'block' : 'none'}} className="App">
         <Header openMenu={openMobileMenu} firstTime={firstTimeMobileMenu} closeMenu={closeMobileMenu} toggleOverlay={toggleMobileMenu} cyanTitle={openHome} />
         <br />
         <div id="main">
@@ -100,6 +102,7 @@ function App() {
             <Footer />
         </div>
       </div>
+      <PrivacyPolicy consented={cookiesConsented} confirmConsent={confirmCookiesConsented} />
     </Router>
   );
 }

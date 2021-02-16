@@ -99,6 +99,32 @@ figcaption {
   padding-right: 1em;
 }
 
+.button {
+  width: 8em;
+  height: 3em;
+  cursor: pointer;
+  background-color: #0F0F0F;
+  border: solid grey;
+  border-width: 0.125em 0.125em 0.25em;
+  color: white;
+  border-radius: 1em;
+  padding-left: 0.75em;
+  margin-top: 2em;
+  /* margin-left: 2.5em; */
+  font-family: Monaco, monospace;
+  letter-spacing: 0.125em;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  background-color: #282828;
+}
+.button:active {
+  border-width: 0 0 0.125em;
+  transform: translateY(0.125em);
+}
+
 
 /* Header CSS  */
 
@@ -279,6 +305,32 @@ footer {
   bottom: 0;
   width: 100%;
   height: 6em;
+}
+
+
+/* Privacy Policy CSS */
+.privacy-policy {
+  text-align: center;
+  align-items: center;
+  padding: 0;
+}
+.privacy-blurb {
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.privacy-button-container {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.privacy-button {
+  margin: 0 auto;
+  width: 9em;
+  font-size: 1em;
+  color: Cyan;
 }
 
 /* Overlay CSS */
@@ -1203,31 +1255,6 @@ input {
 .checkbox-label {
   padding-left: 0.75em;
 }
-.button {
-  width: 8em;
-  height: 3em;
-  cursor: pointer;
-  background-color: #0F0F0F;
-  border: solid grey;
-  border-width: 0.125em 0.125em 0.25em;
-  color: white;
-  border-radius: 1em;
-  padding-left: 0.75em;
-  margin-top: 2em;
-  /* margin-left: 2.5em; */
-  font-family: Monaco, monospace;
-  letter-spacing: 0.125em;
-}
-.button:focus {
-  outline: none;
-}
-.button:hover {
-  background-color: #282828;
-}
-.button:active {
-  border-width: 0 0 0.125em;
-  transform: translateY(0.125em);
-}
 .centered-outer-left-inner {
   display: inline-block;
   text-align: left;
@@ -1387,6 +1414,22 @@ input {
 /* Mobile Devices smaller than iPad media query */
 @media only screen and (max-width: 765px) {
   /* This is for the film and cool stuff blurbs margins on mobile */
+  .privacy-policy {
+    padding: 0;
+  }
+  .privacy-policy h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .privacy-policy p {
+    margin: 0.5em 0;
+  }
+  .privacy-blurb {
+    width: 60%;
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
   .cs-film-blurb {
     width: 80%;
     font-size: 0.8em;
@@ -2266,6 +2309,22 @@ input {
 
 /* Landscape Media Query just above Pixel 2XL by width */
 @media only screen and (max-width: 835px) and (orientation: landscape) {
+  .privacy-policy {
+    padding: 0;
+  }
+  .privacy-policy h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .privacy-policy p {
+    margin: 0.5em 0;
+  }
+  .privacy-blurb {
+    width: 60%;
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+  }
   .cover-left {
     width: 0.75em;
   }
@@ -2516,4 +2575,22 @@ input {
   }
 }
 
-/* din-round,sans-serif */
+/* Landscape Media Query for Privacy Policy on small devices */
+@media only screen and (max-width: 320px), only screen and (max-height: 320px) {
+  .privacy-policy h2 {
+    font-size: 1.2em;
+  }
+  .privacy-blurb {
+    width: 70%;
+    font-size: 0.7em;
+    line-height: 1.4;
+  }
+  .privacy-button {
+    width: 8em;
+    height: 2.5em;
+    font-size: 0.8em;
+  }
+}
+
+
+/* possible font: din-round,sans-serif */
