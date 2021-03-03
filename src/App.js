@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import ScrollToTopRoute from './components/additional/ScrollToTopRoute';
 import PrivacyPolicy from './components/additional/PrivacyPolicy';
 import Header from './components/layout/Header';
@@ -90,7 +90,7 @@ function App() {
             <AppLinks 
               className="test" mobile={true} open={openMobileMenu} toggleOff={toggleMobileMenu}
               openNow={openNow} openBlog={openBlog} openCode={openCode} openCoolStuff={openCoolStuff} openFilmStuff={openFilmStuff} />
-            <Route exact path="/" render={(props) => <Home {...props} toggle={togglePage} />} />
+            <Route exact path="" render={(props) => <Home {...props} toggle={togglePage} />} />
             <Route path="/now" render={(props) => <Now {...props} toggle={togglePage} />} />
             <Route path="/blog" render={(props) => <BlogPage {...props} toggle={togglePage} />} />
             <Route path="/portfolio" render={(props) => <CodePage {...props} toggle={togglePage} />} />
