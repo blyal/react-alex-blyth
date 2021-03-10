@@ -1,8 +1,9 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import Blog from './Blog';
+import BlogSingular from './BlogSingular';
 import MentalistReview from './blogs/MentalistReview';
 import HowToEmployment from './blogs/HowToEmployment';
-import HowToInterview from './blogs/HowToInterview';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 
@@ -11,25 +12,14 @@ class BlogPage extends React.Component {
         blogEntries: [
             {
                 id: "top-blog",
-                keyword: 'interviews',
-                title: 'How to Get Good at Job Interviews',
-                date: '19th February 2021',
-                open: true,
-                content: <HowToInterview />,
-                img: <img src={'images/blog-interviews/views.jpg'} alt="Mountain Body" height='95%' width='95%' className='code-blog-img'/>
-            },
-            {
-                id: uuid(),
-                keyword: 'jobsearching',
                 title: 'How to Get a Job during a Pandemic',
                 date: '13th January 2021',
-                open: false,
+                open: true,
                 content: <HowToEmployment />,
                 img: <img src={'images/Alex-Empadronado-Spain.jpg'} alt="Getting a Job in Spain" height='95%' width='95%' className='code-blog-img'/>
             },
             {
                 id: uuid(),
-                keyword: 'mentalist',
                 //apparently the italics tag below needs a key, because it's part of a list. Doesn't make any difference
                 title: ['Review of ', <i key="mentalist-italics">The Mentalist</i>, ' (2008 – 2015)'],
                 date: '21st October 2020',
@@ -62,7 +52,18 @@ class BlogPage extends React.Component {
                 <br />
                 {/* <h2>Alex Blyth</h2> */}
             </div>
-            <Blog entries={this.state.blogEntries} toggleBlog={this.toggleBlog} />
+            <Route exact path='/blog' render={(props) => <Blog {...props} entries={this.state.blogEntries} toggleBlog={this.toggleBlog} />} />
+            <Route path='/blog/:id' render={(props) => 
+                <React.Fragment>
+                    {
+                        this.state.blogEntries.map((entry) => (
+                            entry.keyword === props.match.params.id ? 
+                            <BlogSingular entry={entry} />
+                            :
+                            null
+                        ))
+                    }
+                </React.Fragment>}/>
         </div>
         )
     }

@@ -1,17 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PocketContent from './PocketContent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 var classNames = require('classnames');
 
-class SelectedContent extends React.Component {
 
-    state = {
-        backInBlack: [
-            "The Happiness Lab with Dr Laurie Santos",
-            "Notes from Underground by Fyodor Dostoevsky",
-            "Norwegian Wood by Haruki Murakami"
-        ]
+interface IProps {
+    content: PocketContent[],
+    backButton: (id: string) => void
+}
+
+interface IState {
+    backInBlack: string[]
+}
+
+class SelectedContent extends React.Component<IProps, IState> {
+
+    constructor(props: IProps) {
+        super(props);
+
+        this.state = {
+            backInBlack: [
+                "The Happiness Lab with Dr Laurie Santos",
+                "Notes from Underground by Fyodor Dostoevsky",
+                "Norwegian Wood by Haruki Murakami"
+            ]
+        }
     }
     
     render() {
@@ -44,11 +58,6 @@ class SelectedContent extends React.Component {
                 : null
         ))
     }
-}
-
-SelectedContent.propTypes = {
-    content: PropTypes.array.isRequired,
-    backButton: PropTypes.func.isRequired
 }
 
 export default SelectedContent;

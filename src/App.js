@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import ScrollToTopRoute from './components/additional/ScrollToTopRoute';
 import PrivacyPolicy from './components/additional/PrivacyPolicy';
 import Header from './components/layout/Header';
