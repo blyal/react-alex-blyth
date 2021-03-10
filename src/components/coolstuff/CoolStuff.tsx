@@ -1,90 +1,108 @@
 import React from 'react';
 import SelectedContent from './SelectedContent';
+import PocketContent from './PocketContent';
+import FiveTings from './FiveTings';
 import Ferriss from './podcasts/Ferriss';
 import Rogan from './podcasts/Rogan';
 import HappinessLab from './podcasts/HappinessLab';
 import Harris from './podcasts/Harris';
 import Ellis from './podcasts/Ellis';
 import Book from './books/Book';
-import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import classNames from 'classnames';
 
-class CoolStuff extends React.Component {
+
+interface IProps {
+    toggle: (pageOpen: boolean, pageName: string) => void
+}
+
+interface IState {
+    podcastList: boolean,
+    podcasts: PocketContent[],
+    bookList: boolean,
+    books: PocketContent[]
+}
+
+class CoolStuff extends React.Component<IProps, IState> {
     
-    state = {
-        podcastList: true,
-        podcasts: [
-            {
-                id: uuid(),
-                type: 'podcast',
-                selected: false,
-                title: 'The Tim Ferriss Show',
-                content: <Ferriss />
-            },
-            {
-                id: uuid(),
-                type: 'podcast',
-                selected: false,
-                title: 'The Joe Rogan Experience',
-                content: <Rogan />
-            },
-            {
-                id: uuid(),
-                type: 'podcast',
-                selected: false,
-                title: 'The Happiness Lab with Dr Laurie Santos',
-                content: <HappinessLab />
-            },
-            {
-                id: uuid(),
-                type: 'podcast',
-                selected: false,
-                title: 'Making Sense with Sam Harris',
-                content: <Harris />
-            },
-            {
-                id: uuid(),
-                type: 'podcast',
-                selected: false,
-                title: 'The Bret Easton Ellis Podcast',
-                content: <Ellis />
-            }
-        ],
-        bookList: true,
-        books: [
-            {
-                id: uuid(),
-                type: 'book',
-                selected: false,
-                title: 'Notes from Underground by Fyodor Dostoevsky',
-                content: <Book title={'Notes from Underground'} />
-            },
-            {
-                id: uuid(),
-                type: 'book',
-                selected: false,
-                title: 'My Brilliant Friend by Elena Ferrante',
-                content: <Book title={'My Brilliant Friend'} />
-            },
-            {
-                id: uuid(),
-                type: 'book',
-                selected: false,
-                title: 'American Psycho by Bret Easton Ellis',
-                content: <Book title={'American Psycho'} />
-            },
-            {
-                id: uuid(),
-                type: 'book',
-                selected: false,
-                title: 'Norwegian Wood by Haruki Murakami',
-                content: <Book title={'Norwegian Wood'} />
-            }
-        ]
+    constructor(props: IProps) {
+
+        super(props);
+
+        this.state = {
+            podcastList: true,
+            podcasts: [
+                {
+                    id: uuid(),
+                    type: 'podcast',
+                    selected: false,
+                    title: 'The Tim Ferriss Show',
+                    content: <Ferriss />
+                },
+                {
+                    id: uuid(),
+                    type: 'podcast',
+                    selected: false,
+                    title: 'The Joe Rogan Experience',
+                    content: <Rogan />
+                },
+                {
+                    id: uuid(),
+                    type: 'podcast',
+                    selected: false,
+                    title: 'The Happiness Lab with Dr Laurie Santos',
+                    content: <HappinessLab />
+                },
+                {
+                    id: uuid(),
+                    type: 'podcast',
+                    selected: false,
+                    title: 'Making Sense with Sam Harris',
+                    content: <Harris />
+                },
+                {
+                    id: uuid(),
+                    type: 'podcast',
+                    selected: false,
+                    title: 'The Bret Easton Ellis Podcast',
+                    content: <Ellis />
+                }
+            ],
+            bookList: true,
+            books: [
+                {
+                    id: uuid(),
+                    type: 'book',
+                    selected: false,
+                    title: 'Notes from Underground by Fyodor Dostoevsky',
+                    content: <Book title={'Notes from Underground'} />
+                },
+                {
+                    id: uuid(),
+                    type: 'book',
+                    selected: false,
+                    title: 'My Brilliant Friend by Elena Ferrante',
+                    content: <Book title={'My Brilliant Friend'} />
+                },
+                {
+                    id: uuid(),
+                    type: 'book',
+                    selected: false,
+                    title: 'American Psycho by Bret Easton Ellis',
+                    content: <Book title={'American Psycho'} />
+                },
+                {
+                    id: uuid(),
+                    type: 'book',
+                    selected: false,
+                    title: 'Norwegian Wood by Haruki Murakami',
+                    content: <Book title={'Norwegian Wood'} />
+                }
+            ]
+        }
     }
     
-    togglePodcast = (id) => {
+    togglePodcast = (id: string) => {
         this.setState({
             podcastList: !this.state.podcastList,
             podcasts: this.state.podcasts.map(podcast => {
@@ -96,9 +114,10 @@ class CoolStuff extends React.Component {
                 return podcast;
             })
         })
+        console.log(this.state)
     }
 
-    toggleBook = (id) => {
+    toggleBook = (id: string) => {
         this.setState({
             bookList: !this.state.bookList,
             books: this.state.books.map(book => {
@@ -140,6 +159,8 @@ class CoolStuff extends React.Component {
                     </p>
                 </div>
                 <br />
+
+                <FiveTings />
 
                 <div className="cover-container">
                     <div className="cover-left"></div>
@@ -194,10 +215,6 @@ class CoolStuff extends React.Component {
       componentWillUnmount() {
         this.props.toggle(false, 'coolstuff');
       }
-}
-
-CoolStuff.propTypes = {
-    toggle: PropTypes.func.isRequired
 }
 
 export default CoolStuff;

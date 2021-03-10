@@ -1,5 +1,7 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import Blog from './Blog';
+import BlogSingular from './BlogSingular';
 import MentalistReview from './blogs/MentalistReview';
 import HowToEmployment from './blogs/HowToEmployment';
 import HowToInterview from './blogs/HowToInterview';
@@ -62,7 +64,18 @@ class BlogPage extends React.Component {
                 <br />
                 {/* <h2>Alex Blyth</h2> */}
             </div>
-            <Blog entries={this.state.blogEntries} toggleBlog={this.toggleBlog} />
+            <Route exact path='/blog' render={(props) => <Blog {...props} entries={this.state.blogEntries} toggleBlog={this.toggleBlog} />} />
+            <Route path='/blog/:id' render={(props) => 
+                <React.Fragment>
+                    {
+                        this.state.blogEntries.map((entry) => (
+                            entry.keyword === props.match.params.id ? 
+                            <BlogSingular entry={entry} />
+                            :
+                            null
+                        ))
+                    }
+                </React.Fragment>}/>
         </div>
         )
     }
