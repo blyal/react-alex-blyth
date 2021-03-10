@@ -29,41 +29,39 @@ class CoolStuff extends React.Component<IProps, IState> {
 
         super(props);
 
-        const id: string = uuid();
-
         this.state = {
             podcastList: true,
             podcasts: [
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'podcast',
                     selected: false,
                     title: 'The Tim Ferriss Show',
                     content: <Ferriss />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'podcast',
                     selected: false,
                     title: 'The Joe Rogan Experience',
                     content: <Rogan />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'podcast',
                     selected: false,
                     title: 'The Happiness Lab with Dr Laurie Santos',
                     content: <HappinessLab />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'podcast',
                     selected: false,
                     title: 'Making Sense with Sam Harris',
                     content: <Harris />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'podcast',
                     selected: false,
                     title: 'The Bret Easton Ellis Podcast',
@@ -73,28 +71,28 @@ class CoolStuff extends React.Component<IProps, IState> {
             bookList: true,
             books: [
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'book',
                     selected: false,
                     title: 'Notes from Underground by Fyodor Dostoevsky',
                     content: <Book title={'Notes from Underground'} />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'book',
                     selected: false,
                     title: 'My Brilliant Friend by Elena Ferrante',
                     content: <Book title={'My Brilliant Friend'} />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'book',
                     selected: false,
                     title: 'American Psycho by Bret Easton Ellis',
                     content: <Book title={'American Psycho'} />
                 },
                 {
-                    id: id,
+                    id: uuid(),
                     type: 'book',
                     selected: false,
                     title: 'Norwegian Wood by Haruki Murakami',
@@ -116,6 +114,7 @@ class CoolStuff extends React.Component<IProps, IState> {
                 return podcast;
             })
         })
+        console.log(this.state)
     }
 
     toggleBook = (id: string) => {
