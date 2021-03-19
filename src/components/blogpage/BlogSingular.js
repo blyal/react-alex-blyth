@@ -1,20 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
-export class BlogSingular extends Component {
-    render() {
+function BlogSingular(props) {
 
-        const { img, title, content } = this.props.entry;
-
+        const { img, title, content, date } = props.entry;
         return (
-            <div className="code-blog-no-padding-top">
+            <>
                 <div>
-                    { img }
+                    <Link to="/blog"><FaArrowLeft className="fa-arrow" /></Link>
+                    <p className="blog-singular-date">{date}</p>
                 </div>
-                <h3 className="cyan">{ title }</h3>
-                <div className="code-blog-entry-content"> { content } </div>
-            </div>
+                <div className="code-blog-entry blog-singular">
+                    <div>
+                        { img }
+                    </div>
+                    <h3 className="cyan">{ title }</h3>
+                    <div className="code-blog-entry-content"> { content } </div>
+                </div>
+            </>
         )
-    }
 }
 
 export default BlogSingular;

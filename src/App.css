@@ -408,6 +408,57 @@ footer {
 .employment-blog li {
   padding-bottom: 1em;
 }
+.blog-singular {
+  cursor: auto;
+  padding-top: 1em;
+  padding-bottom: 0.1em;
+  border: none;
+}
+.blog-singular-date {
+  color: #8e8b8b;
+  font-size: 1.15em;
+  margin: 0.5em auto 0.25em;
+}
+.blog-page-hr {
+  margin-bottom: 0.15em;
+}
+/* Arrow for going back on Blog  */
+.fa-arrow {
+  position: absolute;
+  left: 15%;
+  transform: scale(2);
+  color: #8e8b8b;
+  cursor: pointer;
+}
+.entries-bar {
+  display: flex;
+  color: white;
+  background-color: #3e3939;
+  width: 60%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto 0.2em;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.entries-bar:hover {
+  opacity: 1;
+}
+
+.entries-bar p {
+  margin: 0.3em;
+}
+
+.entries-bar-option {
+  font-family: Monaco, monospace;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.entries-bar-option a {
+  text-decoration-line: none;
+}
 
 /* Blog/Code page transitions  */
 .expand-enter {
@@ -1307,6 +1358,9 @@ input {
   .code-blog-no-padding-top {
     margin-top: -1em;
   }
+  .entries-bar {
+    display: none;
+  }
   .film-popout {
     width: 90%;
     left: 5%;
@@ -1410,6 +1464,10 @@ input {
   /* To give the title on the homepage a cyan color */
   .cyan-mobile {
     color: cyan;
+  }
+
+  .fa-arrow {
+    transform: scale(1.5);
   }
 }
 
@@ -1555,6 +1613,13 @@ input {
   }
   .fpo-film-body-container {
     margin-top: 2em;
+  }
+}
+
+/* Portrait Media Query below and including iPad Pro */
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+  .fa-arrow {
+    left: 5%;
   }
 }
 
@@ -1872,6 +1937,10 @@ input {
   .book-pocket {
     padding-right: 0.9em;
   }
+  
+  .fa-arrow {
+    transform: scale(1.25);
+  }
 }
 
 /* Portrait Media Query Pixel2 to below Surface Duo */
@@ -2115,6 +2184,13 @@ input {
   }
   .recommendations-mobile {
     display: none;
+  }
+}
+
+/* Landscape Media Query before iPad pro  */
+@media only screen and (max-width: 1300px) and (orientation: landscape) {
+  .fa-arrow {
+    left: 7.5%;
   }
 }
 
