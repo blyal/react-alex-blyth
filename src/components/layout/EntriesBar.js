@@ -9,7 +9,7 @@ export default function EntriesBar(props) {
             <p>Entries:</p>
             {props.entries.map(
                 (entry) => 
-                    <p className="cyan entries-bar-option"><Link to={`/blog/${entry.keyword}`}>{entry.shortTitle}</Link></p>
+                    <p key={entry.id} className="cyan entries-bar-option"><Link to={`/blog/${entry.keyword}`}>{entry.shortTitle}</Link></p>
             )}
         </div>
     )

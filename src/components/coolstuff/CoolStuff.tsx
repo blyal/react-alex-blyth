@@ -1,7 +1,7 @@
 import React from 'react';
 import SelectedContent from './SelectedContent';
 import PocketContent from './PocketContent';
-import FiveTings from './FiveTings';
+// import FiveTings from './FiveTings';
 import Ferriss from './podcasts/Ferriss';
 import Rogan from './podcasts/Rogan';
 import HappinessLab from './podcasts/HappinessLab';
@@ -114,7 +114,6 @@ class CoolStuff extends React.Component<IProps, IState> {
                 return podcast;
             })
         })
-        console.log(this.state)
     }
 
     toggleBook = (id: string) => {
@@ -160,7 +159,7 @@ class CoolStuff extends React.Component<IProps, IState> {
                 </div>
                 <br />
 
-                <FiveTings />
+                {/* <FiveTings /> */}
 
                 <div className="cover-container">
                     <div className="cover-left"></div>

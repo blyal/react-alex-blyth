@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const BlogItem = (props) => {
         const { id, img, content, title, open, date } = props.entry;
-        const idJump = id.toString();
+        // const idJump = id.toString();
         let entryClassName = classNames({
             "code-blog-entry": true,
             "code-blog-open": open
