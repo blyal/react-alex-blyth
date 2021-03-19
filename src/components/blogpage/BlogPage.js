@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import EntriesBar from '../layout/EntriesBar';
 import Blog from './Blog';
 import BlogSingular from './BlogSingular';
 import MentalistReview from './blogs/MentalistReview';
@@ -15,6 +16,7 @@ class BlogPage extends React.Component {
                 id: "top-blog",
                 keyword: 'interviews',
                 title: 'How to Get Good at Job Interviews',
+                shortTitle: "Job Interviews",
                 date: '19th February 2021',
                 open: true,
                 content: <HowToInterview />,
@@ -24,6 +26,7 @@ class BlogPage extends React.Component {
                 id: uuid(),
                 keyword: 'jobsearching',
                 title: 'How to Get a Job during a Pandemic',
+                shortTitle: 'Jobsearching Tips',
                 date: '13th January 2021',
                 open: false,
                 content: <HowToEmployment />,
@@ -34,6 +37,7 @@ class BlogPage extends React.Component {
                 keyword: 'mentalist',
                 //apparently the italics tag below needs a key, because it's part of a list. Doesn't make any difference
                 title: ['Review of ', <i key="mentalist-italics">The Mentalist</i>, ' (2008 – 2015)'],
+                shortTitle: "Mentalist TV Show",
                 date: '21st October 2020',
                 open: false,
                 content: <MentalistReview />,
@@ -60,9 +64,8 @@ class BlogPage extends React.Component {
         <div>
             <div>
                 <h2 className="cyan long-title-blog">The Cool, Interesting Blog</h2>
-                <hr />
-                <br />
-                {/* <h2>Alex Blyth</h2> */}
+                <hr className="blog-page-hr" />
+                <Route exact path='/blog' render={(props) => <EntriesBar {...props} entries={this.state.blogEntries} />}/>
             </div>
             <Route exact path='/blog' render={(props) => <Blog {...props} entries={this.state.blogEntries} toggleBlog={this.toggleBlog} />} />
             <Route path='/blog/:id' render={(props) => 
