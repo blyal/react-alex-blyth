@@ -17,7 +17,7 @@ class BlogPage extends React.Component {
                 keyword: 'interviews',
                 title: 'How to Get Good at Job Interviews',
                 shortTitle: "Job Interviews",
-                date: '19th February 2021',
+                date: '22nd March 2021',
                 open: true,
                 content: <HowToInterview />,
                 img: <img src={'images/blog-interviews/views.jpg'} alt="Mountain Body" height='95%' width='95%' className='code-blog-img'/>
