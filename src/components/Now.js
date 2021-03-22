@@ -29,7 +29,7 @@ class Now extends React.Component {
           </div>
           <p>Outside of work, I’m visiting as much of Spain as I can, enjoying my new country, as well as feeling the pulse and atmosphere of my new city. I’ve lived in new cities before, but that doesn’t stop the exhilarating feeling of being in this totally new environment, which has both a historical aesthetic as well as a contemporary vibrancy to it, as well as some stunning nature. As I’m finally adapting to the new working hours, I’m also finding more energy to do other things outside of work, such as continuing to cultivate my personal website (that you’re currently looking at), and pursuing my other interests such as wellbeing and psychology.</p>
         </div>
-        <img src={'images/Coding-Alex.jpg'} alt="A Travelling Coder" className="hvar-pic" height="33%" width="33%" />
+        <img src={'images/Coding-Alex.JPG'} alt="A Travelling Coder" className="hvar-pic" height="33%" width="33%" />
         <br />
       </>
     );
