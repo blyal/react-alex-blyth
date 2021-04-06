@@ -17,31 +17,19 @@ class FilmStuff extends React.Component {
     state = {
         popOut: false,
         selected: {
-            id: uuid(),
-            name: 'Paul Thomas Anderson',
-            born: '1970',
-            img: <img alt="The Big Lebowski" src="images/pta.jpg" height="70%" width="70%"/>,
-            bio: ['PTA is one of those rare film geniuses (probably the best there is), whose mind is just on another level. His films are so deep and so layered that it’s hard to believe that he was even consciously aware of all the implications his films seem to have — instead it’s as if he just taps into some deep resource of brilliance and insight into life. Anderson is fascinated with human behaviour, human relationships, and human emotion. His films often revolve around broken families, the human desire for power and dominance, the search for meaning in life, as well as suffering and redemption. Anderson fully recognises how difficult life can be, but also how fulfilling and funny it can be. It’s hard to tell whether his films are comedies, tragedies, or dramas. For all the messed up shit that happens in PTA movies, I somehow leave them feeling that life is more worthwhile rather than less worthwhile. Maybe his films are not for everyone, but if you want something different, something challenging, and something that’s likely to hit close to home on some level, give him a go.'],
+            id: 'Default',
+            name: '',
+            born: '',
+            img: null,
+            bio: [''],
             recommendations: [
                 {
-                    title: 'Boogie Nights',
-                    year: '1997'
-                },
-                {
-                    title: 'Magnolia',
-                    year: '1999'
-                },
-                {
-                    title: 'There Will Be Blood',
-                    year: '2007'
-                },
-                {
-                    title: 'Punch–Drunk Love',
-                    year: '2002'
+                    title: '',
+                    year: ''
                 }
             ]
         },
-        selectedType: 'Initialvalue',
+        selectedType: 'default',
         favFilms: [
             {
                 id: uuid(),
