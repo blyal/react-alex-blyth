@@ -5,27 +5,72 @@ import { v4 as uuid } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { CSSTransition } from 'react-transition-group';
-import PropTypes from 'prop-types';
 
-class FilmStuff extends React.Component {
+export interface IFilm {
+    id: string,
+    title: string,
+    director: string,
+    year: string,
+    img: any,
+    imgPortrait: any,
+    description: string[],
+    related:
+        {
+            title: string,
+            year: string,
+            director: string,
+            img: any
+        }[]
+}
 
-    constructor(props){
+export interface IDirector {
+    id: string,
+    name: string,
+    born: string,
+    img: any,
+    imgPortrait: any,
+    bio: any[],
+    recommendations:
+        {
+            title: string,
+            year: string,
+            img: any
+        }[]
+}
+
+interface IState {
+    popOut: boolean,
+    selected: IFilm | IDirector,
+    selectedType: string,
+    favFilms: IFilm[],
+    favDirectors: IDirector[]
+}
+
+interface IProps {
+    toggle: (pageOpen: boolean, pageName: string) => void
+}
+
+class FilmStuff extends React.Component<IProps, IState> {
+
+    constructor(props: IProps){
         super(props);
         this.selectItem = this.selectItem.bind(this);
     }
 
-    state = {
+    state: IState = {
         popOut: false,
         selected: {
             id: 'Default',
             name: '',
             born: '',
             img: null,
+            imgPortrait: null,
             bio: [''],
             recommendations: [
                 {
                     title: '',
-                    year: ''
+                    year: '',
+                    img: null
                 }
             ]
         },
@@ -566,13 +611,13 @@ class FilmStuff extends React.Component {
         ]
     }
 
-    togglePopOut = e => {
+    togglePopOut = () => {
         this.setState({
             popOut: !this.state.popOut
         });
     };
 
-    selectItem = (item, type) => {
+    selectItem = (item: IDirector | IFilm, type: string) => {
         this.setState({
             popOut: !this.state.popOut,
             selected: item,
@@ -659,10 +704,6 @@ class FilmStuff extends React.Component {
         this.props.toggle(false, 'filmstuff');
         document.body.style.overflow = 'scroll';
       }
-}
-
-FilmStuff.propTypes = {
-    toggle: PropTypes.func.isRequired
 }
 
 export default FilmStuff;

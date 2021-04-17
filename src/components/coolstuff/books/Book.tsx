@@ -1,9 +1,31 @@
 import React from 'react';
 import classNames from 'classnames';
 import { v4 as uuid } from 'uuid';
-import PropTypes from 'prop-types';
 
-class Book extends React.Component {
+
+interface IBook {
+    title: string;
+    author: string;
+    id: string;
+    mainImage: any;
+    paragraphs: string[];
+    related: {
+        title: string;
+        year?: string;
+        author: string;
+        image: any;
+    }[]
+}
+
+interface IProps {
+    title: string;
+}
+
+interface IState {
+    books: IBook[]
+}
+
+class Book extends React.Component<IProps, IState> {
 
     state = {
                 books: [
@@ -189,10 +211,6 @@ class Book extends React.Component {
             : null
         ))   
     }
-}
-
-Book.propTypes = {
-    title: PropTypes.string.isRequired
 }
 
 export default Book;
