@@ -11,15 +11,15 @@ export interface IFilm {
     title: string,
     director: string,
     year: string,
-    img: any,
-    imgPortrait: any,
+    img: JSX.Element,
+    imgPortrait: JSX.Element,
     description: string[],
     related:
         {
             title: string,
             year: string,
             director: string,
-            img: any
+            img: JSX.Element
         }[]
 }
 
@@ -27,14 +27,14 @@ export interface IDirector {
     id: string,
     name: string,
     born: string,
-    img: any,
-    imgPortrait: any,
+    img: JSX.Element,
+    imgPortrait: JSX.Element,
     bio: any[],
     recommendations:
         {
             title: string,
             year: string,
-            img: any
+            img: JSX.Element
         }[]
 }
 
@@ -63,14 +63,14 @@ class FilmStuff extends React.Component<IProps, IState> {
             id: 'Default',
             name: '',
             born: '',
-            img: null,
-            imgPortrait: null,
+            img: <img alt="Boogie Nights" src="images/boogie-nights-wallpaper.jpg" height="70%" width="70%"/>,
+            imgPortrait: <img alt="Boogie Nights" src="images/boogie-nights-small.jpg" height="95%" width="95%"/>,
             bio: [''],
             recommendations: [
                 {
                     title: '',
                     year: '',
-                    img: null
+                    img: <img alt="Boogie Nights" src="images/boogie-nights-small.jpg" height="95%" width="95%"/>
                 }
             ]
         },

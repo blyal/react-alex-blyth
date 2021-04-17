@@ -7,13 +7,13 @@ interface IBook {
     title: string;
     author: string;
     id: string;
-    mainImage: any;
+    mainImage: JSX.Element;
     paragraphs: string[];
     related: {
         title: string;
         year?: string;
         author: string;
-        image: any;
+        image: JSX.Element;
     }[]
 }
 
