@@ -1,7 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-class Now extends React.Component {
+interface IProps {
+  toggle: (value: boolean, page: string) => void;
+}
+
+class Now extends React.Component<IProps> {
   render() {
     return (
       <>
@@ -40,10 +43,6 @@ class Now extends React.Component {
   componentWillUnmount() {
     this.props.toggle(false, 'now');
   }
-}
-
-Now.propTypes = {
-  toggle: PropTypes.func.isRequired
 }
 
 export default Now;
