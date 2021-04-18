@@ -1,6 +1,11 @@
 import React from 'react';
 
-const PrivacyPolicy = (props) => {
+type IProps = {
+    consented: boolean;
+    confirmConsent: () => void;
+}
+
+const PrivacyPolicy = (props: IProps) => {
 
     return (
         <div className='App privacy-policy' style={{display: props.consented ? 'none' : 'flex'}}><div>
