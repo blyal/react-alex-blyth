@@ -17,20 +17,20 @@ import AppLinks from './components/layout/AppLinks';
 import './App.css';
 
 
-function App() {
+const App: React.FC = () => {
 
-  const [cookiesConsented, confirmCookiesConsented] = useState(false)
-  const [openMobileMenu, toggleOpenMenu] = useState(false)
-  const [firstTimeLoad, notFirstLoad] = useState(true)
-  const [firstTimeMobileMenu, notFirstMob] = useState(true)
-  const [closeMobileMenu, toggleCloseMenu] = useState(true)
-  const [openHome, toggleHome] = useState(false)
-  const [openNow, toggleNow] = useState(false)
-  const [openBlog, toggleBlog] = useState(false)
-  const [openCode, toggleCode] = useState(false)
-  const [openCoolStuff, toggleCoolStuff] = useState(false)
-  const [openFilmStuff, toggleFilmStuff] = useState(false)
-  const [subscribeLinkOn, toggleSubscribeLinkOn] = useState(false)
+  const [cookiesConsented, confirmCookiesConsented] = useState<boolean>(false)
+  const [openMobileMenu, toggleOpenMenu] = useState<boolean>(false)
+  const [firstTimeLoad, notFirstLoad] = useState<boolean>(true)
+  const [firstTimeMobileMenu, notFirstMob] = useState<boolean>(true)
+  const [closeMobileMenu, toggleCloseMenu] = useState<boolean>(true)
+  const [openHome, toggleHome] = useState<boolean>(false)
+  const [openNow, toggleNow] = useState<boolean>(false)
+  const [openBlog, toggleBlog] = useState<boolean>(false)
+  const [openCode, toggleCode] = useState<boolean>(false)
+  const [openCoolStuff, toggleCoolStuff] = useState<boolean>(false)
+  const [openFilmStuff, toggleFilmStuff] = useState<boolean>(false)
+  const [subscribeLinkOn, toggleSubscribeLinkOn] = useState<boolean>(false)
 
   const toggleMobileMenu = () => {
     toggleOpenMenu(value => !value)
@@ -46,7 +46,7 @@ function App() {
       }
   }
 
-  const togglePage = (val, page) => {
+  const togglePage = (val: boolean, page: string) => {
     switch (page) {
       case 'home':
         toggleHome(value => value = val)
@@ -80,6 +80,10 @@ function App() {
     }
   }
 
+  const cookiesAccepted = () => {
+    confirmCookiesConsented(value => value = true)
+  }
+
   return (
     <Router>
       <div style={{display: cookiesConsented ? 'block' : 'none'}} className="App">
@@ -88,7 +92,7 @@ function App() {
         <div id="main">
             <Overlay open={openMobileMenu} type='mobile' />
             <AppLinks 
-              className="test" mobile={true} open={openMobileMenu} toggleOff={toggleMobileMenu}
+              mobile={true} open={openMobileMenu} toggleOff={toggleMobileMenu}
               openNow={openNow} openBlog={openBlog} openCode={openCode} openCoolStuff={openCoolStuff} openFilmStuff={openFilmStuff} />
             <Route exact path="/" render={(props) => <Home {...props} toggle={togglePage} />} />
             <Route path="/now" render={(props) => <Now {...props} toggle={togglePage} />} />
@@ -102,7 +106,7 @@ function App() {
             <Footer />
         </div>
       </div>
-      <PrivacyPolicy consented={cookiesConsented} confirmConsent={confirmCookiesConsented} />
+      <PrivacyPolicy consented={cookiesConsented} confirmConsent={cookiesAccepted} />
     </Router>
   );
 }
