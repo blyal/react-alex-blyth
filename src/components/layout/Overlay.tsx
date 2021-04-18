@@ -1,8 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
-class Overlay extends React.Component {
+interface IProps {
+    open: boolean;
+    type: string;
+    close?: () => void; 
+}
+
+class Overlay extends React.Component<IProps> {
 
 render() {
 
@@ -16,12 +21,6 @@ render() {
         <div id="overlay" className={classes} onClick={this.props.close}></div>
         )
     }
-}
-
-Overlay.propTypes = {
-    open: PropTypes.bool.isRequired,
-    type: PropTypes.string.isRequired,
-    close: PropTypes.func
 }
 
 export default Overlay;

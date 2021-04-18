@@ -1,8 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
-const AppLinks = (props) => {
+type IProps = {
+    mobile: boolean;
+    open: boolean;
+    toggleOff?: () => void;
+    openNow?: boolean;
+    openBlog?: boolean;
+    openCode?: boolean;
+    openCoolStuff?: boolean;
+    openFilmStuff?: boolean;
+}
+
+const AppLinks: React.FC<IProps> = (props) => {
 
     const toggle = () => {
         if (props.toggleOff) {
@@ -19,17 +29,6 @@ const AppLinks = (props) => {
             <li className={`${props.openFilmStuff ? "cyan-mobile" : ""}`}><Link to="/film" onClick={() => toggle()}>FILM</Link></li>
         </ul>
     )
-}
-
-AppLinks.propTypes = {
-    mobile: PropTypes.bool.isRequired,
-    open: PropTypes.bool.isRequired,
-    toggleOff: PropTypes.func,
-    openNow: PropTypes.bool,
-    openBlog: PropTypes.bool,
-    openCode: PropTypes.bool,
-    openCoolStuff: PropTypes.bool,
-    openFilmStuff: PropTypes.bool
 }
 
 export default AppLinks;

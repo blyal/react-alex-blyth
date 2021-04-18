@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const PicLinks = (props) => {
+const PicLinks = () => {
     return (
         <ul className="thing-1">
             <li><a target="_blank" rel="noopener noreferrer" href="http://instagram.com/_alexblyth"><FontAwesomeIcon icon={faInstagram} size="2x" className="insta-icon" /></a></li>
