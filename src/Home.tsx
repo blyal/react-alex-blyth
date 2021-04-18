@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-const Home = (props) => {
+type IProps = {
+    toggle: (value: boolean, page: string) => void;
+}
+
+const Home = (props: IProps) => {
 
     useEffect(() => {
         props.toggle(true, 'home');
@@ -45,10 +48,6 @@ const Home = (props) => {
         <img src={'images/Amsterdam-Surprise-Reunion.jpg'} alt="A Surprise Reunion in Amsterdam" height="50%" width="50%" className="now-pix" />
         </>
     )
-}
-
-Home.propTypes = {
-    toggle: PropTypes.func.isRequired
 }
 
 export default Home;

@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import PropTypes from 'prop-types';
 
-function Subscribe(props) {
+type IProps = {
+    toggle: (value: boolean, page: string) => void;
+}
 
-    const [isVerified, verifyForm] = useState(false);
-    const [isSubmitted, confirmSubmission] = useState(false);
-    const [subscriberName, enterSubscriberName] = useState('');
-    const [subscriberEmail, enterSubscriberEmail] = useState('');
-    const [subscriptions, selectSubscriptions] = useState([]);
+function Subscribe(props: IProps) {
+
+    const [isVerified, verifyForm] = useState<boolean>(false);
+    const [isSubmitted, confirmSubmission] = useState<boolean>(false);
+    const [subscriberName, enterSubscriberName] = useState<string>('');
+    const [subscriberEmail, enterSubscriberEmail] = useState<string>('');
+    const [subscriptions, selectSubscriptions] = useState<any>([]);
 
     useEffect(() => {
         props.toggle(true, 'subscribe');
@@ -18,19 +21,19 @@ function Subscribe(props) {
         }, [props]
     );
 
-    const handleSubscriberName = e => {
-        enterSubscriberName(e.target.value)
+    const handleSubscriberName = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        enterSubscriberName(e.currentTarget.value)
     }
 
-    const handleSubscriberEmail = e => {
-        enterSubscriberEmail(e.target.value)
+    const handleSubscriberEmail = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        enterSubscriberEmail(e.currentTarget.value)
     }
 
-    const handleSubscriptions = e => {
-        if (e.target.checked) {
-            selectSubscriptions([...subscriptions, e.target.value])
+    const handleSubscriptions = (e: React.ChangeEvent<HTMLInputElement>): void => {
+        if (e.currentTarget.checked) {
+            selectSubscriptions([...subscriptions, e.currentTarget.value])
         } else {
-            selectSubscriptions(subscriptions.filter(item => item !== e.target.value))
+            selectSubscriptions(subscriptions.filter((item: string) => item !== e.target.value))
         }
     }
 
@@ -38,7 +41,7 @@ function Subscribe(props) {
         verifyForm(val => val = true)
     }
 
-    const validateForm = (e) => {
+    const validateForm = (e: React.FormEvent<HTMLFormElement>): void => {
         if (isVerified) {
             e.preventDefault();
             let subscriptionsString = subscriptions.toString();
@@ -56,11 +59,11 @@ function Subscribe(props) {
         }
     }
 
-    const postData = async (obj) => {
+    const postData = async (obj: any) => {
         try {
 
             //putting together the x-www-form-urlencoded payload (https://stackoverflow.com/questions/35325370/how-do-i-post-a-x-www-form-urlencoded-request-using-fetch)
-            let formBody = [];
+            let formBody: any = [];
             for (let item in obj) {
                 let encodedKey = encodeURIComponent(item);
                 let encodedValue = encodeURIComponent(obj[item]);
@@ -173,10 +176,6 @@ function Subscribe(props) {
             </div>
         </>
     );
-}
-
-Subscribe.propTypes = {
-    toggle: PropTypes.func.isRequired
 }
 
 export default Subscribe;

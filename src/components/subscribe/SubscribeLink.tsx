@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
-function SubscribeLink(props) {
+type ISubscribeLinkProps = {
+    displayed: boolean
+}
+
+function SubscribeLink(props: ISubscribeLinkProps) {
     return (
         <>
             <br /><br /><br />
@@ -17,9 +20,5 @@ function SubscribeLink(props) {
 //     let r = document.querySelector(':root');
 //     r.style.setProperty('--scroll', 'auto');
 // }
-
-SubscribeLink.propTypes = {
-    displayed: PropTypes.bool.isRequired
-}
 
 export default SubscribeLink;
