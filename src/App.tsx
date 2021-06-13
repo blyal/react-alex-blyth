@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Redirect, Route } from 'react-router-dom';
 import ScrollToTopRoute from './components/additional/ScrollToTopRoute';
 import PrivacyPolicy from './components/additional/PrivacyPolicy';
 import Header from './components/layout/Header';
@@ -101,6 +101,7 @@ const App: React.FC = () => {
             <Route path="/stuff" render={(props) => <CoolStuff {...props} toggle={togglePage} />} />
             <Route path="/film" render={(props) => <FilmStuff {...props} toggle={togglePage} />} />
             <ScrollToTopRoute path="/subscribe" toggle={togglePage} component={Subscribe} />
+            <Route><Redirect to="/"/></Route>
             {/* <Route path="/subscribe" render={(props) => <Subscribe {...props} toggle={togglePage} />} /> */}
             <SubscribeLink displayed={subscribeLinkOn} />
             <Footer />
