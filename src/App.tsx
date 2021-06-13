@@ -102,7 +102,6 @@ const App: React.FC = () => {
             <Route path="/film" render={(props) => <FilmStuff {...props} toggle={togglePage} />} />
             <ScrollToTopRoute path="/subscribe" toggle={togglePage} component={Subscribe} />
             <Route><Redirect to="/"/></Route>
-            {/* <Route path="/subscribe" render={(props) => <Subscribe {...props} toggle={togglePage} />} /> */}
             <SubscribeLink displayed={subscribeLinkOn} />
             <Footer />
         </div>
